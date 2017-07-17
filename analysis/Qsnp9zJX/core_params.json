@@ -9,6 +9,17 @@
           "expression": "\"20\"+year"
         },
         "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "CreateColumnWithGREL",
+        "params": {
+          "column": "hrmn",
+          "expression": "if(len(hrmn)\u003d\u003d1,\"000\"+hrmn"
+        },
+        "metaType": "PROCESSOR",
         "preview": true,
         "disabled": false,
         "alwaysShowComment": false
@@ -61,7 +72,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500262062104
+    "lastModifiedOn": 1500262170428
   },
   "creationTag": {
     "versionNumber": 0,
