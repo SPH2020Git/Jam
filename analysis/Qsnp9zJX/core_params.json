@@ -1,7 +1,19 @@
 {
   "inputDatasetSmartName": "accidents",
   "script": {
-    "steps": [],
+    "steps": [
+      {
+        "type": "CreateColumnWithGREL",
+        "params": {
+          "column": "year",
+          "expression": "\"20\"+year"
+        },
+        "metaType": "PROCESSOR",
+        "preview": true,
+        "disabled": false,
+        "alwaysShowComment": false
+      }
+    ],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
       "mode": "ALL"
@@ -35,7 +47,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
@@ -43,11 +57,11 @@
   "charts": [],
   "name": "Analyze accidents",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500261844943
+    "lastModifiedOn": 1500262062104
   },
   "creationTag": {
     "versionNumber": 0,
