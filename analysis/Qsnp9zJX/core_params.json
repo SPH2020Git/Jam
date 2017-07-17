@@ -73,6 +73,25 @@
         "preview": false,
         "disabled": false,
         "alwaysShowComment": false
+      },
+      {
+        "type": "DateParser",
+        "params": {
+          "outCol": "datetime_parsed",
+          "lang": "auto",
+          "timezone_id": "UTC",
+          "formats": [
+            "yyyy-MM-dd-HHmm"
+          ],
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "datetime"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": true,
+        "disabled": false,
+        "alwaysShowComment": false
       }
     ],
     "maxProcessedMemTableBytes": -1,
@@ -122,7 +141,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500262763199
+    "lastModifiedOn": 1500262824259
   },
   "creationTag": {
     "versionNumber": 0,
