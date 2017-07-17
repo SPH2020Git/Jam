@@ -17,7 +17,7 @@
         "type": "CreateColumnWithGREL",
         "params": {
           "column": "hrmn",
-          "expression": "if(len(hrmn)\u003d\u003d1,\"000\"+hrmn,\nif(len(hrmn)\u003d\u003d2,\"00\"+hrmn,\nif(len(hrmn)\u003d\u003d3,\"0\"+hrmn))))"
+          "expression": "if(length(hrmn)\u003d\u003d1,\"000\"+hrmn,\nif(length(hrmn)\u003d\u003d2,\"00\"+hrmn,\nif(length(hrmn)\u003d\u003d3,\"0\"+hrmn,hrmn)))"
         },
         "metaType": "PROCESSOR",
         "preview": true,
@@ -72,7 +72,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500262278199
+    "lastModifiedOn": 1500262581085
   },
   "creationTag": {
     "versionNumber": 0,
