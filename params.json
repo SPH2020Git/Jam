@@ -1,0 +1,103 @@
+{
+  "dashboardAuthorizations": {
+    "allAuthorized": false,
+    "authorizations": []
+  },
+  "exposedObjects": {
+    "objects": []
+  },
+  "projectType": "REGULAR",
+  "owner": "admin",
+  "permissions": [],
+  "additionalDashboardUsers": {
+    "users": []
+  },
+  "tutorialProject": false,
+  "settings": {
+    "flowAnchorSourcesAndSinks": true,
+    "gitCommitMode": "AUTO",
+    "disableAutomaticTriggers": false,
+    "integrations": {
+      "integrations": []
+    },
+    "flowBuildSettings": {
+      "mergeSparkPipelines": false,
+      "pruneBeforeSparkPipelines": true
+    },
+    "limitsSettings": {
+      "memSampleBytes": {
+        "soft": -1,
+        "hard": -1
+      },
+      "shakerMemTableBytes": {
+        "soft": -1,
+        "hard": -1
+      }
+    },
+    "relocationSettings": {
+      "sqlLikeRecipesInitializationMode": "RESOLVED_TABLE_REFERENCES"
+    },
+    "recipeEnginesPreferences": {
+      "forbiddenEngines": [],
+      "enginesPreferenceOrder": [],
+      "forbiddenByRecipeType": {},
+      "preferenceByRecipeType": {}
+    }
+  },
+  "name": "Jam!",
+  "projectStatus": "Sandbox",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1500261503121
+  },
+  "shortDesc": "The project *Jam!* was created by Administrator on Jul 16th 2017",
+  "tags": [],
+  "checklists": {
+    "checklists": [
+      {
+        "title": "Your new project\u0027s Todo",
+        "createdOn": 0,
+        "items": [
+          {
+            "done": true,
+            "text": "Create the project",
+            "createdOn": 1500261503122,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Set a project image (click on the color next to the project title)",
+            "createdOn": 1500261503122,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Import your [first dataset](datasets/new/)",
+            "createdOn": 1500261503122,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Invite [other users](settings/security/permissions) to collaborate",
+            "createdOn": 1500261503122,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Organize your work by replacing this with a real todo",
+            "createdOn": 1500261503122,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          }
+        ]
+      }
+    ]
+  }
+}
