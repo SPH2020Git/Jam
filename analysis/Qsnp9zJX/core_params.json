@@ -20,7 +20,57 @@
           "expression": "if(length(hrmn)\u003d\u003d1,\"000\"+hrmn,\nif(length(hrmn)\u003d\u003d2,\"00\"+hrmn,\nif(length(hrmn)\u003d\u003d3,\"0\"+hrmn,hrmn)))"
         },
         "metaType": "PROCESSOR",
-        "preview": true,
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "ColumnsConcat",
+        "params": {
+          "join": "-",
+          "columns": [
+            "year",
+            "month",
+            "day",
+            "hrmn"
+          ],
+          "outputColumn": "datetime"
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "DateParser",
+        "params": {
+          "outCol": "datetime_parsed",
+          "lang": "auto",
+          "timezone_id": "UTC",
+          "formats": [
+            "yyyy-MM-ddZ"
+          ],
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "datetime"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "ColumnsSelector",
+        "params": {
+          "keep": false,
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "datetime_parsed"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
         "disabled": false,
         "alwaysShowComment": false
       }
@@ -72,7 +122,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500262581085
+    "lastModifiedOn": 1500262763199
   },
   "creationTag": {
     "versionNumber": 0,
