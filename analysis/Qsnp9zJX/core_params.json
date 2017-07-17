@@ -77,7 +77,7 @@
       {
         "type": "DateParser",
         "params": {
-          "outCol": "datetime_parsed",
+          "outCol": "datetime",
           "lang": "auto",
           "timezone_id": "UTC",
           "formats": [
@@ -141,7 +141,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500262824259
+    "lastModifiedOn": 1500263031251
   },
   "creationTag": {
     "versionNumber": 0,
