@@ -1,7 +1,21 @@
 {
   "inputDatasetSmartName": "tester",
   "script": {
-    "steps": [],
+    "steps": [
+      {
+        "type": "JSONPathExtractor",
+        "params": {
+          "inCol": "message.body.track_list",
+          "outCol": "t",
+          "expression": "*",
+          "singleValue": true
+        },
+        "metaType": "PROCESSOR",
+        "preview": true,
+        "disabled": false,
+        "alwaysShowComment": false
+      }
+    ],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
       "mode": "ALL"
@@ -53,7 +67,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500527981068
+    "lastModifiedOn": 1500528134918
   },
   "creationTag": {
     "versionNumber": 0,
