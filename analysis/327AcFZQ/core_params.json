@@ -16,6 +16,21 @@
         "preview": false,
         "disabled": false,
         "alwaysShowComment": false
+      },
+      {
+        "type": "ArrayExtractProcessor",
+        "params": {
+          "input": "message.body.track_list",
+          "output": "Test",
+          "mode": "RANGE",
+          "index": 0,
+          "begin": 12,
+          "end": 41
+        },
+        "metaType": "PROCESSOR",
+        "preview": true,
+        "disabled": false,
+        "alwaysShowComment": false
       }
     ],
     "maxProcessedMemTableBytes": -1,
@@ -28,7 +43,11 @@
       "valueColoringMode": "HASH"
     },
     "sorting": [],
-    "analysisColumnData": {},
+    "analysisColumnData": {
+      "message.body.track_list": {
+        "meaning": "Text"
+      }
+    },
     "explorationSampling": {
       "selection": {
         "maxStoredBytes": 104857600,
@@ -65,7 +84,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500526785102
+    "lastModifiedOn": 1500527219857
   },
   "creationTag": {
     "versionNumber": 0,
