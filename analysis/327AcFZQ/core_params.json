@@ -31,9 +31,11 @@
         "alwaysShowComment": false
       },
       {
-        "type": "ArrayFold",
+        "type": "MultiColumnByPrefixFold",
         "params": {
-          "column": "t"
+          "columnNameColumn": "out",
+          "columnContentColumn": "in",
+          "columnNamePattern": "t_(.*)"
         },
         "metaType": "PROCESSOR",
         "preview": true,
@@ -88,11 +90,11 @@
   "charts": [],
   "name": "Analyze tester",
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500529981863
+    "lastModifiedOn": 1500530292282
   },
   "creationTag": {
     "versionNumber": 0,
