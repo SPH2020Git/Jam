@@ -7,11 +7,26 @@
         "params": {
           "inCol": "message.body.track_list",
           "outCol": "t",
-          "expression": "[]",
-          "singleValue": true
+          "expression": ".u\u0027track\u0027.",
+          "singleValue": false
         },
         "metaType": "PROCESSOR",
         "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "JSONFlattener",
+        "params": {
+          "inCol": "t",
+          "maxDepth": 10,
+          "flattenArrays": true,
+          "prefixOutputs": true,
+          "separator": "_",
+          "nullAsEmpty": true
+        },
+        "metaType": "PROCESSOR",
+        "preview": true,
         "disabled": false,
         "alwaysShowComment": false
       }
@@ -67,7 +82,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500528665314
+    "lastModifiedOn": 1500529081616
   },
   "creationTag": {
     "versionNumber": 0,
