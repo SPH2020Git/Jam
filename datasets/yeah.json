@@ -1,0 +1,3094 @@
+{
+  "type": "Filesystem",
+  "managed": true,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "formatParams": {
+    "style": "unix",
+    "charset": "utf8",
+    "separator": "\t",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "compress": "gz"
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1500558137134
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1500558137001
+  },
+  "tags": [
+    "creator:admin"
+  ],
+  "params": {
+    "connection": "filesystem_managed",
+    "path": "/JAM.yeah"
+  },
+  "schema": {
+    "userModified": false,
+    "columns": [
+      {
+        "name": "message.body.track_list",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "message.header.available",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "message.header.execute_time",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "message.header.status_code",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "out",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "in",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027album_coverart_100x100\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027album_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027track_edit_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027has_lyrics_crowd\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027commontrack_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027artist_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027num_favourite\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027album_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027track_spotify_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027lyrics_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027restricted\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027album_coverart_350x350\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027has_lyrics\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027track_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027commontrack_vanity_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027track_xboxmusic_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027track_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027artist_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027track_isrc\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027instrumental\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027track_rating\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027has_richsync\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027artist_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027track_length\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027album_coverart_500x500\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027track_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027subtitle_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027album_coverart_800x800\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027explicit\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027updated_time\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027track_share_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027has_subtitles\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027first_release_date\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027track_soundcloud_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027album_coverart_100x100\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027album_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027track_edit_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027has_lyrics_crowd\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027commontrack_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027artist_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027num_favourite\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027album_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027track_spotify_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027lyrics_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027restricted\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027album_coverart_350x350\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027has_lyrics\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027track_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027commontrack_vanity_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027track_xboxmusic_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027track_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027artist_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027track_isrc\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027instrumental\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027track_rating\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027has_richsync\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027artist_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027track_length\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027album_coverart_500x500\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027track_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027subtitle_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027album_coverart_800x800\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027explicit\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027updated_time\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027track_share_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027has_subtitles\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027first_release_date\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027track_soundcloud_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027album_coverart_100x100\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027album_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027track_edit_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027has_lyrics_crowd\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027commontrack_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027artist_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027num_favourite\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027album_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027track_spotify_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027lyrics_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027restricted\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027album_coverart_350x350\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027has_lyrics\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027track_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027commontrack_vanity_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027track_xboxmusic_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027track_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027artist_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027track_isrc\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027instrumental\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027track_rating\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027has_richsync\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027artist_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027track_length\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027album_coverart_500x500\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027track_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027subtitle_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027album_coverart_800x800\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027explicit\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027updated_time\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027track_share_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027has_subtitles\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027first_release_date\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027track_soundcloud_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027album_coverart_100x100\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027album_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027track_edit_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027has_lyrics_crowd\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027commontrack_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027artist_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027num_favourite\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027album_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027track_spotify_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027lyrics_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027restricted\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027album_coverart_350x350\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027has_lyrics\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027track_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027commontrack_vanity_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027track_xboxmusic_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027track_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027artist_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027track_isrc\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027instrumental\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027track_rating\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027has_richsync\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027artist_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027track_length\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027album_coverart_500x500\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027track_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027subtitle_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027album_coverart_800x800\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027explicit\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027updated_time\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027track_share_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027has_subtitles\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027first_release_date\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027track_soundcloud_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027album_coverart_100x100\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027album_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027track_edit_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027has_lyrics_crowd\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027commontrack_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027artist_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027num_favourite\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027album_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027track_spotify_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027lyrics_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027restricted\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027album_coverart_350x350\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027has_lyrics\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027track_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027commontrack_vanity_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027track_xboxmusic_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027track_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027artist_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027track_isrc\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027instrumental\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027track_rating\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_2_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_2_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_2_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_2_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_2_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027has_richsync\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027artist_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027track_length\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027album_coverart_500x500\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027track_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027subtitle_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027album_coverart_800x800\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027explicit\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027updated_time\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027track_share_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027has_subtitles\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027first_release_date\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027track_soundcloud_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027album_coverart_100x100\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027album_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027track_edit_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027has_lyrics_crowd\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027commontrack_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027artist_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027num_favourite\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027album_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027track_spotify_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027lyrics_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027restricted\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027album_coverart_350x350\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027has_lyrics\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027track_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027commontrack_vanity_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027track_xboxmusic_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027track_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027artist_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027track_isrc\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027instrumental\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027track_rating\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027has_richsync\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027artist_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027track_length\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027album_coverart_500x500\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027track_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027subtitle_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027album_coverart_800x800\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027explicit\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027updated_time\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027track_share_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027has_subtitles\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027first_release_date\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5_u\u0027track_soundcloud_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027album_coverart_100x100\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027album_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027track_edit_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027has_lyrics_crowd\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027commontrack_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027artist_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027num_favourite\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027album_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027track_spotify_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027lyrics_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027restricted\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027album_coverart_350x350\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027has_lyrics\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027track_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027commontrack_vanity_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027track_xboxmusic_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027track_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027artist_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027track_isrc\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027instrumental\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027track_rating\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027has_richsync\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027artist_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027track_length\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027album_coverart_500x500\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027track_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027subtitle_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027album_coverart_800x800\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027explicit\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027updated_time\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027track_share_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027has_subtitles\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027first_release_date\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027track_soundcloud_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027album_coverart_100x100\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027album_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027track_edit_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027has_lyrics_crowd\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027commontrack_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027artist_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027num_favourite\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027album_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027track_spotify_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027lyrics_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027restricted\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027album_coverart_350x350\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027has_lyrics\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027track_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027commontrack_vanity_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027track_xboxmusic_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027track_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027artist_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027track_isrc\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027instrumental\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027track_rating\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_2_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_2_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_2_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_2_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_2_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027has_richsync\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027artist_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027track_length\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027album_coverart_500x500\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027track_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027subtitle_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027album_coverart_800x800\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027explicit\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027updated_time\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027track_share_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027has_subtitles\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027first_release_date\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027track_soundcloud_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027album_coverart_100x100\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027album_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027track_edit_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027has_lyrics_crowd\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027commontrack_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027artist_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027num_favourite\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027album_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027track_spotify_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027lyrics_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027restricted\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027album_coverart_350x350\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027has_lyrics\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027track_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027commontrack_vanity_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027track_xboxmusic_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027track_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027artist_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027track_isrc\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027instrumental\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027track_rating\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027has_richsync\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027artist_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027track_length\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027album_coverart_500x500\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027track_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027subtitle_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027album_coverart_800x800\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027explicit\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027updated_time\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027track_share_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_parent_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name_extended\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027secondary_genres\u0027_u\u0027music_genre_list\u0027_0_u\u0027music_genre\u0027_u\u0027music_genre_vanity\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027has_subtitles\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027first_release_date\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027track_soundcloud_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027album_coverart_100x100\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027album_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027track_edit_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027has_lyrics_crowd\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027commontrack_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027artist_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027num_favourite\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027album_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027track_spotify_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027lyrics_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027restricted\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027album_coverart_350x350\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027has_lyrics\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027track_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027commontrack_vanity_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027track_xboxmusic_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027track_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027artist_name\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027track_isrc\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027instrumental\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027track_rating\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027has_richsync\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027artist_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027track_length\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027album_coverart_500x500\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027track_mbid\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027subtitle_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027album_coverart_800x800\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027explicit\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027updated_time\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027track_share_url\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027has_subtitles\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027first_release_date\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9_u\u0027track_soundcloud_id\u0027",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_0_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_5",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_9",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_1_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_2_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_3_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_4_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_2",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_6_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_7_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_2",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "t_8_u\u0027primary_genres\u0027_u\u0027music_genre_list\u0027_1",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      }
+    ]
+  },
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  }
+}
