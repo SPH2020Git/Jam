@@ -31,14 +31,14 @@
         "params": {
           "inCol": "col_3",
           "maxDepth": 10,
-          "flattenArrays": true,
+          "flattenArrays": false,
           "prefixOutputs": true,
           "separator": "_",
-          "nullAsEmpty": true
+          "nullAsEmpty": false
         },
         "metaType": "PROCESSOR",
-        "preview": true,
-        "disabled": false,
+        "preview": false,
+        "disabled": true,
         "alwaysShowComment": false
       }
     ],
@@ -124,11 +124,11 @@
   "charts": [],
   "name": "Analyze Pandas_dataframe_1_",
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500573671676
+    "lastModifiedOn": 1500574897017
   },
   "creationTag": {
     "versionNumber": 0,
