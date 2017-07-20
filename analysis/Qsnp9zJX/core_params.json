@@ -101,7 +101,7 @@
           "timezone_id": "UTC"
         },
         "metaType": "PROCESSOR",
-        "preview": true,
+        "preview": false,
         "disabled": false,
         "alwaysShowComment": false
       }
@@ -149,11 +149,11 @@
   "charts": [],
   "name": "Analyze accidents",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500263132004
+    "lastModifiedOn": 1500530755528
   },
   "creationTag": {
     "versionNumber": 0,
