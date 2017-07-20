@@ -1,7 +1,19 @@
 {
   "inputDatasetSmartName": "Pandas_dataframe_1_",
   "script": {
-    "steps": [],
+    "steps": [
+      {
+        "type": "FilterOnCustomFormula",
+        "params": {
+          "expression": "col_2\u003d\u003d0",
+          "action": "REMOVE_ROW"
+        },
+        "metaType": "PROCESSOR",
+        "preview": true,
+        "disabled": false,
+        "alwaysShowComment": false
+      }
+    ],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
       "mode": "ALL"
@@ -84,7 +96,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500572908945
+    "lastModifiedOn": 1500573021344
   },
   "creationTag": {
     "versionNumber": 0,
