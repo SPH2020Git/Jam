@@ -5,8 +5,21 @@
       {
         "type": "FilterOnCustomFormula",
         "params": {
-          "expression": "col_2\u003d\u003d0",
+          "expression": "col_2\u003d\u003d0 || col_2\u003d\u003d10 || col_2\u003e\u003d0",
           "action": "REMOVE_ROW"
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "JSONPathExtractor",
+        "params": {
+          "inCol": "col_2",
+          "outCol": "col_3",
+          "expression": ".track.",
+          "singleValue": true
         },
         "metaType": "PROCESSOR",
         "preview": true,
@@ -24,7 +37,11 @@
       "valueColoringMode": "HASH"
     },
     "sorting": [],
-    "analysisColumnData": {},
+    "analysisColumnData": {
+      "col_2": {
+        "meaning": "Text"
+      }
+    },
     "explorationSampling": {
       "selection": {
         "maxStoredBytes": 104857600,
@@ -92,11 +109,11 @@
   "charts": [],
   "name": "Analyze Pandas_dataframe_1_",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500573021344
+    "lastModifiedOn": 1500573273411
   },
   "creationTag": {
     "versionNumber": 0,
