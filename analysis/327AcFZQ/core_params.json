@@ -1,38 +1,7 @@
 {
   "inputDatasetSmartName": "tester",
   "script": {
-    "steps": [
-      {
-        "type": "JSONFlattener",
-        "params": {
-          "inCol": "message.body.track_list",
-          "maxDepth": 10,
-          "flattenArrays": true,
-          "prefixOutputs": true,
-          "separator": "",
-          "nullAsEmpty": true
-        },
-        "metaType": "PROCESSOR",
-        "preview": false,
-        "disabled": false,
-        "alwaysShowComment": false
-      },
-      {
-        "type": "ArrayExtractProcessor",
-        "params": {
-          "input": "message.body.track_list",
-          "output": "Test",
-          "mode": "RANGE",
-          "index": 0,
-          "begin": 12,
-          "end": 41
-        },
-        "metaType": "PROCESSOR",
-        "preview": true,
-        "disabled": false,
-        "alwaysShowComment": false
-      }
-    ],
+    "steps": [],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
       "mode": "ALL"
@@ -84,7 +53,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500527219857
+    "lastModifiedOn": 1500527299173
   },
   "creationTag": {
     "versionNumber": 0,
