@@ -1,7 +1,23 @@
 {
   "inputDatasetSmartName": "tester",
   "script": {
-    "steps": [],
+    "steps": [
+      {
+        "type": "JSONFlattener",
+        "params": {
+          "inCol": "message.body.track_list",
+          "maxDepth": 10,
+          "flattenArrays": true,
+          "prefixOutputs": true,
+          "separator": "",
+          "nullAsEmpty": true
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      }
+    ],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
       "mode": "ALL"
@@ -35,7 +51,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
@@ -43,11 +61,11 @@
   "charts": [],
   "name": "Analyze tester",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500526333642
+    "lastModifiedOn": 1500526785102
   },
   "creationTag": {
     "versionNumber": 0,
