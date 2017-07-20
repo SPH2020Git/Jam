@@ -38,7 +38,7 @@
         },
         "metaType": "PROCESSOR",
         "preview": false,
-        "disabled": true,
+        "disabled": false,
         "alwaysShowComment": false
       }
     ],
@@ -128,7 +128,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500574897017
+    "lastModifiedOn": 1500574959903
   },
   "creationTag": {
     "versionNumber": 0,
