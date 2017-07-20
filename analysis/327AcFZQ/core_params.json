@@ -1,7 +1,36 @@
 {
   "inputDatasetSmartName": "tester",
   "script": {
-    "steps": [],
+    "steps": [
+      {
+        "type": "JSONPathExtractor",
+        "params": {
+          "inCol": "message.body.track_list",
+          "outCol": "test",
+          "expression": "*",
+          "singleValue": true
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "JSONFlattener",
+        "params": {
+          "inCol": "test",
+          "maxDepth": 10,
+          "flattenArrays": false,
+          "prefixOutputs": true,
+          "separator": "_",
+          "nullAsEmpty": true
+        },
+        "metaType": "PROCESSOR",
+        "preview": true,
+        "disabled": false,
+        "alwaysShowComment": false
+      }
+    ],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
       "mode": "ALL"
@@ -49,11 +78,11 @@
   "charts": [],
   "name": "Analyze tester",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500527369975
+    "lastModifiedOn": 1500527582987
   },
   "creationTag": {
     "versionNumber": 0,
