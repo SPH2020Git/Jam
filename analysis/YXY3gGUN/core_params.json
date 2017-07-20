@@ -14,17 +14,6 @@
         "alwaysShowComment": false
       },
       {
-        "type": "FilterOnCustomFormula",
-        "params": {
-          "expression": "col_0\u003e0",
-          "action": "REMOVE_ROW"
-        },
-        "metaType": "PROCESSOR",
-        "preview": false,
-        "disabled": false,
-        "alwaysShowComment": false
-      },
-      {
         "type": "JSONPathExtractor",
         "params": {
           "inCol": "col_2",
@@ -135,11 +124,11 @@
   "charts": [],
   "name": "Analyze Pandas_dataframe_1_",
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500573599237
+    "lastModifiedOn": 1500573671676
   },
   "creationTag": {
     "versionNumber": 0,
