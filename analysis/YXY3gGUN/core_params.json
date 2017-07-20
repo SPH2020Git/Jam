@@ -14,12 +14,38 @@
         "alwaysShowComment": false
       },
       {
+        "type": "FilterOnCustomFormula",
+        "params": {
+          "expression": "col_0\u003e0",
+          "action": "REMOVE_ROW"
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
         "type": "JSONPathExtractor",
         "params": {
           "inCol": "col_2",
           "outCol": "col_3",
-          "expression": ".track.",
+          "expression": ".u\u0027track\u0027.",
           "singleValue": true
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "JSONFlattener",
+        "params": {
+          "inCol": "col_3",
+          "maxDepth": 10,
+          "flattenArrays": true,
+          "prefixOutputs": true,
+          "separator": "_",
+          "nullAsEmpty": true
         },
         "metaType": "PROCESSOR",
         "preview": true,
@@ -113,7 +139,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500573273411
+    "lastModifiedOn": 1500573599237
   },
   "creationTag": {
     "versionNumber": 0,
