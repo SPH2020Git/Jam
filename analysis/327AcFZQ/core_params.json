@@ -7,7 +7,7 @@
         "params": {
           "inCol": "message.body.track_list",
           "outCol": "t",
-          "expression": "$..*",
+          "expression": "[]",
           "singleValue": true
         },
         "metaType": "PROCESSOR",
@@ -67,7 +67,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500528558083
+    "lastModifiedOn": 1500528665314
   },
   "creationTag": {
     "versionNumber": 0,
