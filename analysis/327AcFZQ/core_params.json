@@ -11,7 +11,7 @@
           "singleValue": true
         },
         "metaType": "PROCESSOR",
-        "preview": true,
+        "preview": false,
         "disabled": false,
         "alwaysShowComment": false
       }
@@ -67,7 +67,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500528134918
+    "lastModifiedOn": 1500528274253
   },
   "creationTag": {
     "versionNumber": 0,
