@@ -31,7 +31,7 @@
         "params": {
           "inCol": "col_3",
           "maxDepth": 10,
-          "flattenArrays": false,
+          "flattenArrays": true,
           "prefixOutputs": true,
           "separator": "_",
           "nullAsEmpty": false
@@ -124,11 +124,11 @@
   "charts": [],
   "name": "Analyze Pandas_dataframe_1_",
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500574959903
+    "lastModifiedOn": 1500575682985
   },
   "creationTag": {
     "versionNumber": 0,
