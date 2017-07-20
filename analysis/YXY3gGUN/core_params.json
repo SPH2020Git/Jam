@@ -35,7 +35,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
@@ -43,11 +45,11 @@
   "charts": [],
   "name": "Analyze Pandas_dataframe_1_",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500572674164
+    "lastModifiedOn": 1500572702589
   },
   "creationTag": {
     "versionNumber": 0,
