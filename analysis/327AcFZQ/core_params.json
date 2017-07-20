@@ -26,6 +26,16 @@
           "nullAsEmpty": true
         },
         "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "ArrayFold",
+        "params": {
+          "column": "t"
+        },
+        "metaType": "PROCESSOR",
         "preview": true,
         "disabled": false,
         "alwaysShowComment": false
@@ -78,11 +88,11 @@
   "charts": [],
   "name": "Analyze tester",
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500529568661
+    "lastModifiedOn": 1500529981863
   },
   "creationTag": {
     "versionNumber": 0,
