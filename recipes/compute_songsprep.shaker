@@ -27,7 +27,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "DateParser",
@@ -44,6 +44,18 @@
         "lang": "auto"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArraySortProcessor",
+      "params": {
+        "input": "date",
+        "sortingType": "NUM",
+        "descending": false
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -53,7 +65,12 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "sorting": [],
+  "sorting": [
+    {
+      "column": "date",
+      "ascending": true
+    }
+  ],
   "globalSearchQuery": "",
   "coloring": {
     "scheme": "MEANING_AND_STATUS",
