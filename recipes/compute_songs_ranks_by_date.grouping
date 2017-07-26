@@ -1,0 +1,71 @@
+{
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "keys": [
+    {
+      "column": "date"
+    }
+  ],
+  "values": [
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "rank",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "song",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    }
+  ],
+  "globalCount": true,
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "enlargeYourBits": true,
+  "postFilter": {
+    "distinct": false,
+    "enabled": false
+  }
+}
