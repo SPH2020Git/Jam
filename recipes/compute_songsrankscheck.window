@@ -148,7 +148,7 @@
         }
       ],
       "limitPreceding": true,
-      "followingRows": -1,
+      "followingRows": 0,
       "windowLowerBound": 0,
       "enableLimits": true,
       "partitioningColumns": [
