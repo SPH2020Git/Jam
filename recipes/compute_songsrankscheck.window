@@ -7,14 +7,14 @@
   "keys": [],
   "values": [
     {
-      "last": true,
-      "lagDiff": false,
+      "last": false,
+      "lagDiff": true,
       "max": false,
       "column": "date",
       "count": false,
       "lagValues": "1",
       "sum": false,
-      "type": "string",
+      "type": "date",
       "lead": false,
       "dateDiffUnit": "DAY",
       "min": false,
