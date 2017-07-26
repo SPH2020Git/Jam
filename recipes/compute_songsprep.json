@@ -12,7 +12,12 @@
           "conf": []
         },
         "readParams": {
-          "map": {}
+          "map": {
+            "songs_ranks_by_date": {
+              "repartition": 10,
+              "cache": false
+            }
+          }
         }
       },
       "hadoopConfigKeys": [],
@@ -44,11 +49,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501095947265
+    "lastModifiedOn": 1501095980344
   },
   "creationTag": {
     "versionNumber": 0,
