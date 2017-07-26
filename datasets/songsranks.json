@@ -47,11 +47,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501108482988
+    "lastModifiedOn": 1501108674208
   },
   "creationTag": {
     "versionNumber": 0,
@@ -80,7 +80,25 @@
         "maxLength": -1
       },
       {
+        "name": "ranklastwk",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "ranktop",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "song",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "weeksonchart",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
