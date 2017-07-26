@@ -7,7 +7,7 @@
   "keys": [],
   "values": [
     {
-      "last": false,
+      "last": true,
       "lagDiff": false,
       "max": false,
       "column": "date",
@@ -20,7 +20,7 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
       "value": true,
