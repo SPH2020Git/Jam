@@ -52,8 +52,8 @@
           {
             "column": "date",
             "type": "ALPHANUM",
-            "maxValues": 20,
-            "generateOthersCategory": true,
+            "maxValues": 200000,
+            "generateOthersCategory": false,
             "oneTickPerBin": false,
             "filters": [],
             "isA": "dimension",
@@ -78,7 +78,8 @@
             "sort": {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Count of records, descending"
+              "label": "Count of records, ascending",
+              "sortAscending": true
             }
           }
         ],
@@ -112,7 +113,16 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [],
+        "filters": [
+          {
+            "filterType": "ALPHANUM_FACET",
+            "column": "date",
+            "columnType": "ALPHANUM",
+            "isA": "filter",
+            "excludedValues": {},
+            "explicitExclude": false
+          }
+        ],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -151,6 +161,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAIElEQVRoge3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAHgaJagAAXCxjHYAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true
       }
