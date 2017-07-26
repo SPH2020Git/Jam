@@ -44,18 +44,6 @@
         "lang": "auto"
       },
       "alwaysShowComment": false
-    },
-    {
-      "preview": true,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ArraySortProcessor",
-      "params": {
-        "input": "date",
-        "sortingType": "NUM",
-        "descending": false
-      },
-      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
