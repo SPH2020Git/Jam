@@ -50,7 +50,7 @@
     },
     {
       "last": false,
-      "lagDiff": false,
+      "lagDiff": true,
       "max": false,
       "column": "rank_max",
       "count": false,
@@ -62,7 +62,7 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
       "value": true,
