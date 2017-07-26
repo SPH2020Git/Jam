@@ -137,9 +137,9 @@
     {
       "windowLimitMode": "ROWS",
       "windowUpperBound": 0,
-      "enablePartitioning": true,
+      "enablePartitioning": false,
       "enableOrdering": true,
-      "precedingRows": 7,
+      "precedingRows": 3,
       "limitFollowing": true,
       "orders": [
         {
@@ -148,7 +148,7 @@
         }
       ],
       "limitPreceding": true,
-      "followingRows": 0,
+      "followingRows": -1,
       "windowLowerBound": 0,
       "enableLimits": true,
       "partitioningColumns": [
