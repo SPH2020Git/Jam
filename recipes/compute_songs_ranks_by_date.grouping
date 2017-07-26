@@ -5,21 +5,23 @@
   },
   "keys": [
     {
-      "column": "date"
+      "column": "date",
+      "type": "string"
     }
   ],
   "values": [
     {
       "sum2": false,
-      "min": false,
+      "min": true,
       "countDistinct": false,
       "avg": false,
       "last": false,
-      "max": false,
+      "max": true,
       "column": "rank",
-      "count": false,
+      "count": true,
       "sum": false,
       "stddev": false,
+      "type": "string",
       "first": false
     },
     {
@@ -30,9 +32,10 @@
       "last": false,
       "max": false,
       "column": "song",
-      "count": false,
+      "count": true,
       "sum": false,
       "stddev": false,
+      "type": "string",
       "first": false
     }
   ],
@@ -64,6 +67,7 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "postFilter": {
     "distinct": false,
     "enabled": false
