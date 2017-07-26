@@ -35,7 +35,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
@@ -43,11 +45,11 @@
   "charts": [],
   "name": "Analyze songs_ranks_by_date",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501095348272
+    "lastModifiedOn": 1501095388948
   },
   "creationTag": {
     "versionNumber": 0,
