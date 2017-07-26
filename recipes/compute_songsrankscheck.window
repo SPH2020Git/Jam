@@ -139,7 +139,7 @@
       "windowUpperBound": 0,
       "enablePartitioning": true,
       "enableOrdering": true,
-      "precedingRows": 2,
+      "precedingRows": 7,
       "limitFollowing": true,
       "orders": [
         {
