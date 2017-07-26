@@ -188,7 +188,7 @@
     }
   },
   "ntile": false,
-  "rank": false,
+  "rank": true,
   "denseRank": false,
   "rowNumber": false,
   "outputColumnNameOverrides": {}
