@@ -47,11 +47,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501366202154
+    "lastModifiedOn": 1501366250814
   },
   "creationTag": {
     "versionNumber": 0,
@@ -68,43 +68,25 @@
     "userModified": false,
     "columns": [
       {
-        "name": "Duration",
+        "name": "artist",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "Start date",
+        "name": "date",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "End date",
+        "name": "rank",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "Start Station",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "End Station",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "Bike#",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "Type",
+        "name": "song",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
