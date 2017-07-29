@@ -2,6 +2,30 @@
   "type": "update",
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
+  "params": {
+    "uniqueKey": [
+      "date"
+    ],
+    "filter": {
+      "distinct": false,
+      "enabled": false,
+      "uiData": {
+        "mode": "\u0026\u0026",
+        "conditions": [
+          {
+            "input": "date",
+            "operator": "contains",
+            "col": "song_count",
+            "num": 0.0
+          }
+        ]
+      }
+    },
+    "deleteMissingRows": false,
+    "addMissingRows": true,
+    "deleteMissingCols": false,
+    "addMissingCols": false
+  },
   "customMeta": {
     "kv": {}
   },
@@ -27,11 +51,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501366591747
+    "lastModifiedOn": 1501366666773
   },
   "creationTag": {
     "versionNumber": 0,
