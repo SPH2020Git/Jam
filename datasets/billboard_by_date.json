@@ -48,11 +48,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501366388723
+    "lastModifiedOn": 1501366436579
   },
   "creationTag": {
     "versionNumber": 0,
@@ -74,6 +74,12 @@
       {
         "name": "date",
         "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "song_count",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
