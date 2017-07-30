@@ -1,14 +1,28 @@
 {
   "connection": "pgsql",
   "name": "SortArtists",
-  "cells": [],
+  "cells": [
+    {
+      "id": "a3ltedfxd27",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    }
+  ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501435320050
+    "lastModifiedOn": 1501435323775
   },
   "creationTag": {
     "versionNumber": 0,
