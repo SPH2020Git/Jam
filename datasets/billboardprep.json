@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501426992066
+    "lastModifiedOn": 1501427134549
   },
   "creationTag": {
     "versionNumber": 0,
@@ -49,7 +49,7 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
         "name": "artist",
@@ -60,6 +60,7 @@
       {
         "name": "date",
         "type": "date",
+        "meaning": "Date",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
