@@ -1,4 +1,16 @@
 {
+  "uiData": {
+    "mode": "\u0026\u0026",
+    "conditions": [
+      {
+        "input": "rank_min",
+        "col": "date_min",
+        "string": "1",
+        "num": 0,
+        "operator": "\u003d\u003d [string]"
+      }
+    ]
+  },
   "distinct": false,
-  "enabled": false
+  "enabled": true
 }
