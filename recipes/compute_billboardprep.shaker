@@ -105,7 +105,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "ColumnRenamer",
@@ -116,6 +116,21 @@
             "to": "ranklastwk"
           }
         ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateComponentsExtractor",
+      "params": {
+        "outMonthColumn": "month",
+        "outYearColumn": "year",
+        "column": "date",
+        "timezone_id": "UTC",
+        "outDayColumn": "",
+        "outWeekOfYearColumn": "week"
       },
       "alwaysShowComment": false
     }
