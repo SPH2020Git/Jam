@@ -66,6 +66,28 @@
         },
         "sql": "select \"date\", count(*)\nfrom \"JAM\".billboardprep\nGROUP BY \"date\"\nORDER BY \"date\"",
         "expandedSql": "select \"date\", count(*)\nfrom \"JAM\".billboardprep\nGROUP BY \"date\"\nORDER BY \"date\""
+      },
+      {
+        "mode": "SQL",
+        "id": "eYzGTJyMZYSt",
+        "runOn": 1501428306529,
+        "runIn": 54,
+        "runBy": "admin",
+        "connection": "pgsql",
+        "state": "RUNNING",
+        "futureId": "3rqmbnMxKOKS2lQe",
+        "hash": "f9e7e73ccaa0deae35a22a10252a6293",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select \"date\", count(*)\nfrom \"JAM.billboardprep\"\nGROUP BY \"date\"\nORDER BY \"date\"",
+        "expandedSql": "select \"date\", count(*)\nfrom \"JAM.billboardprep\"\nGROUP BY \"date\"\nORDER BY \"date\""
       }
     ]
   }
