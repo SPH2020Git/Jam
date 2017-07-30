@@ -5,12 +5,6 @@
   },
   "keys": [
     {
-      "column": "date",
-      "type": "string"
-    }
-  ],
-  "values": [
-    {
       "sum2": false,
       "min": false,
       "countDistinct": false,
@@ -23,14 +17,22 @@
       "stddev": false,
       "type": "string",
       "first": false
+    }
+  ],
+  "values": [
+    {
+      "min": true,
+      "max": true,
+      "column": "date",
+      "type": "string"
     },
     {
       "sum2": false,
-      "min": false,
+      "min": true,
       "countDistinct": false,
       "avg": false,
       "last": false,
-      "max": false,
+      "max": true,
       "column": "rank",
       "count": false,
       "sum": false,
@@ -41,7 +43,7 @@
     {
       "sum2": false,
       "min": false,
-      "countDistinct": false,
+      "countDistinct": true,
       "avg": false,
       "last": false,
       "max": false,
