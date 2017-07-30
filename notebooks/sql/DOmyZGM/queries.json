@@ -225,10 +225,10 @@
         "mode": "SQL",
         "id": "IbKobIPc08ZO",
         "runOn": 1501428619196,
-        "runIn": 42,
+        "runIn": 219,
         "runBy": "admin",
         "connection": "pgsql",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "isbw0AEN8jKp6Yjg",
         "hash": "99b913bc34cd239c8346ee6ce9f303ad",
         "querySettings": {
