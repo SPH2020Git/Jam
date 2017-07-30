@@ -49,10 +49,10 @@
         "mode": "SQL",
         "id": "WIkulzekSFSq",
         "runOn": 1501428296762,
-        "runIn": 45,
+        "runIn": 54,
         "runBy": "admin",
         "connection": "pgsql",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "Rg0tiQ0HBsTyZ3qA",
         "hash": "61d557f7ccb9bddc9909093573ec398d",
         "querySettings": {
