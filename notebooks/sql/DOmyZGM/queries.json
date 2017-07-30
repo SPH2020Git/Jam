@@ -44,6 +44,28 @@
         },
         "sql": "select \"date\", count(*)\nfrom billboardprep\nGROUP BY \"date\"\nORDER BY \"date\"",
         "expandedSql": "select \"date\", count(*)\nfrom billboardprep\nGROUP BY \"date\"\nORDER BY \"date\""
+      },
+      {
+        "mode": "SQL",
+        "id": "WIkulzekSFSq",
+        "runOn": 1501428296762,
+        "runIn": 45,
+        "runBy": "admin",
+        "connection": "pgsql",
+        "state": "RUNNING",
+        "futureId": "Rg0tiQ0HBsTyZ3qA",
+        "hash": "61d557f7ccb9bddc9909093573ec398d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select \"date\", count(*)\nfrom \"JAM\".billboardprep\nGROUP BY \"date\"\nORDER BY \"date\"",
+        "expandedSql": "select \"date\", count(*)\nfrom \"JAM\".billboardprep\nGROUP BY \"date\"\nORDER BY \"date\""
       }
     ]
   }
