@@ -1,0 +1,47 @@
+{
+  "type": "grouping",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "billboard_sql",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "ArtistExp",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1501431236968
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1501431236968
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
