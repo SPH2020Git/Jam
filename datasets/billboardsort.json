@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501428745969
+    "lastModifiedOn": 1501430119031
   },
   "creationTag": {
     "versionNumber": 0,
@@ -77,13 +77,7 @@
       },
       {
         "name": "ranklastwk",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "ranklastwknum0",
-        "type": "double",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
