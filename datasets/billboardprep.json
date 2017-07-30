@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501429800672
+    "lastModifiedOn": 1501437717113
   },
   "creationTag": {
     "versionNumber": 0,
@@ -61,6 +61,24 @@
         "name": "date",
         "type": "date",
         "meaning": "Date",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "year",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "month",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "week",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
