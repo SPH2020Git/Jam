@@ -242,6 +242,28 @@
         },
         "sql": "select *\nfrom \"JAM_billboardprep\"\nORDER BY \"date\", \"rank\"\n",
         "expandedSql": "select *\nfrom \"JAM_billboardprep\"\nORDER BY \"date\", \"rank\"\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "0eyyDpZBQYuf",
+        "runOn": 1501428698742,
+        "runIn": 219,
+        "runBy": "admin",
+        "connection": "pgsql",
+        "state": "RUNNING",
+        "futureId": "wsXzb6tvlF0cEdZr",
+        "hash": "99b913bc34cd239c8346ee6ce9f303ad",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select *\nfrom \"JAM_billboardprep\"\nORDER BY \"date\", \"rank\"\n",
+        "expandedSql": "select *\nfrom \"JAM_billboardprep\"\nORDER BY \"date\", \"rank\"\n"
       }
     ]
   }
