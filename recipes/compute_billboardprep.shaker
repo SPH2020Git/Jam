@@ -120,7 +120,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "DateComponentsExtractor",
@@ -131,6 +131,23 @@
         "timezone_id": "UTC",
         "outDayColumn": "",
         "outWeekOfYearColumn": "week"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "artist",
+        "startFrom": "beginning",
+        "keepEmptyChunks": false,
+        "limit": 1,
+        "separator": "Featuring",
+        "outColPrefix": "artist_",
+        "limitOutput": false,
+        "target": "COLUMNS"
       },
       "alwaysShowComment": false
     }
