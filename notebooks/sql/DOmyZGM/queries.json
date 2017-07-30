@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "634dtq49vxn": [
+      {
+        "mode": "SQL",
+        "id": "4T4vjUMHn1kJ",
+        "runOn": 1501428153369,
+        "runIn": -1,
+        "runBy": "admin",
+        "connection": "pgsql",
+        "state": "RUNNING",
+        "futureId": "7txd6gQMFFBtFSHK",
+        "hash": "68b343cd51d8686def420e59f166a55a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select \"date\", count(*)\nfrom JAM_billboardprep\nGROUP BY \"date\"\nORDER BY \"date\"",
+        "expandedSql": "select \"date\", count(*)\nfrom JAM_billboardprep\nGROUP BY \"date\"\nORDER BY \"date\""
+      }
+    ]
+  }
+}
