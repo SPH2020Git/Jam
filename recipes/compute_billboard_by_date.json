@@ -10,7 +10,7 @@
     "main": {
       "items": [
         {
-          "ref": "billboard",
+          "ref": "billboard_sql",
           "deps": []
         }
       ]
@@ -27,11 +27,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501366436683
+    "lastModifiedOn": 1501429372260
   },
   "creationTag": {
     "versionNumber": 0,
