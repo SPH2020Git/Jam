@@ -1,3 +1,3 @@
 select *
-from "ArtistExp_filtered"
+from "JAM_ArtistExp_filtered"
 ORDER BY "date", "rank","artist"
