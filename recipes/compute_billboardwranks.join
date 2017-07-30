@@ -4,38 +4,98 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "date",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "date",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "rank",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "rank",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "song",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "song",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "artist",
+      "type": "string",
       "table": 0
     },
     {
       "name": "date",
+      "type": "string",
       "table": 0
     },
     {
       "name": "rank",
+      "type": "string",
       "table": 0
     },
     {
       "name": "song",
+      "type": "string",
       "table": 0
     },
     {
       "name": "ranklastwk",
+      "type": "string",
       "table": 1
     },
     {
       "name": "ranktop",
+      "type": "string",
       "table": 1
     },
     {
       "name": "weeksonchart",
+      "type": "string",
       "table": 1
     }
   ],
@@ -67,21 +127,12 @@
   },
   "virtualInputs": [
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "autoSelectColumns": false,
       "index": 0
     },
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "autoSelectColumns": false,
       "index": 1
     }
   ],
+  "postFilter": {},
   "enableAutoCastInJoinConditions": false
 }

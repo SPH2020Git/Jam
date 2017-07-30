@@ -10,11 +10,11 @@
     "main": {
       "items": [
         {
-          "ref": "billboard",
+          "ref": "billboard_sql",
           "deps": []
         },
         {
-          "ref": "songsranks",
+          "ref": "songsranks_sql",
           "deps": []
         }
       ]
@@ -31,11 +31,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501425027485
+    "lastModifiedOn": 1501426246601
   },
   "creationTag": {
     "versionNumber": 0,
