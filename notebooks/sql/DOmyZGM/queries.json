@@ -220,6 +220,28 @@
         },
         "sql": "select *\nfrom \"JAM_billboardprep\"\nORDER BY \"date\" \"rank\"\n",
         "expandedSql": "select *\nfrom \"JAM_billboardprep\"\nORDER BY \"date\" \"rank\"\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "IbKobIPc08ZO",
+        "runOn": 1501428619196,
+        "runIn": 42,
+        "runBy": "admin",
+        "connection": "pgsql",
+        "state": "RUNNING",
+        "futureId": "isbw0AEN8jKp6Yjg",
+        "hash": "99b913bc34cd239c8346ee6ce9f303ad",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select *\nfrom \"JAM_billboardprep\"\nORDER BY \"date\", \"rank\"\n",
+        "expandedSql": "select *\nfrom \"JAM_billboardprep\"\nORDER BY \"date\", \"rank\"\n"
       }
     ]
   }
