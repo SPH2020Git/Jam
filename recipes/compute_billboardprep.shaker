@@ -69,10 +69,12 @@
         "mode": "ROUND",
         "places": 0,
         "columns": [
-          "ranklastwknum0"
+          "ranklastwknum0",
+          "ranktop",
+          "weeksonchart"
         ],
         "precision": 0,
-        "appliesTo": "SINGLE_COLUMN"
+        "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
     },
