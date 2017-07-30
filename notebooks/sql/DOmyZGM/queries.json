@@ -176,6 +176,28 @@
         },
         "sql": "select *, count(*)\nfrom \"JAM_billboardprep\"\nORDER BY \"date\"\n",
         "expandedSql": "select *, count(*)\nfrom \"JAM_billboardprep\"\nORDER BY \"date\"\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "sCmWmiOClMA1",
+        "runOn": 1501428553472,
+        "runIn": 45,
+        "runBy": "admin",
+        "connection": "pgsql",
+        "state": "RUNNING",
+        "futureId": "4A4Nq9cGptTbMYOt",
+        "hash": "9700c84d0c266d116e2b7189c07fa69a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select *\nfrom \"JAM_billboardprep\"\nORDER BY \"date\"\n",
+        "expandedSql": "select *\nfrom \"JAM_billboardprep\"\nORDER BY \"date\"\n"
       }
     ]
   }
