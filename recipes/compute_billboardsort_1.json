@@ -1,0 +1,52 @@
+{
+  "type": "sql_query",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "allowMultipleConnections": false,
+    "displayExecutionPlan": true,
+    "skipPrerunValidate": false
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "ArtistExp_filtered",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "ArtistExpPrep",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1501433407730
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1501433407730
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
