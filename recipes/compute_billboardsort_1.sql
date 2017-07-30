@@ -1,3 +1,3 @@
 select *
-from "JAM_billboardprep"
-ORDER BY "date", "rank"
+from "JAM_ArtistExp_filtered"
+ORDER BY "date", "rank","artist"
