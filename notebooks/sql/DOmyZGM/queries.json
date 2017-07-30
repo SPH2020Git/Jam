@@ -22,6 +22,28 @@
         },
         "sql": "select \"date\", count(*)\nfrom JAM_billboardprep\nGROUP BY \"date\"\nORDER BY \"date\"",
         "expandedSql": "select \"date\", count(*)\nfrom JAM_billboardprep\nGROUP BY \"date\"\nORDER BY \"date\""
+      },
+      {
+        "mode": "SQL",
+        "id": "JETd17HR5qjM",
+        "runOn": 1501428181068,
+        "runIn": 68,
+        "runBy": "admin",
+        "connection": "pgsql",
+        "state": "RUNNING",
+        "futureId": "sghU1Whw7aDZkyrH",
+        "hash": "47ad1e76748c384b4c6303529c508c9f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select \"date\", count(*)\nfrom billboardprep\nGROUP BY \"date\"\nORDER BY \"date\"",
+        "expandedSql": "select \"date\", count(*)\nfrom billboardprep\nGROUP BY \"date\"\nORDER BY \"date\""
       }
     ]
   }
