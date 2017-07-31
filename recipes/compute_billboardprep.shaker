@@ -162,7 +162,7 @@
         "inCol": "artist_0",
         "keepEmptyChunks": false,
         "limit": 0,
-        "separator": ",",
+        "separator": "Feat.",
         "outColPrefix": "artist2_",
         "limitOutput": false,
         "target": "COLUMNS"
