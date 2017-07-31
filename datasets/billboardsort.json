@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501522625434
+    "lastModifiedOn": 1501523926842
   },
   "creationTag": {
     "versionNumber": 0,
@@ -65,24 +65,6 @@
       },
       {
         "name": "artist2_0",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "artist2_1",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "artist2_2",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "artist2_3",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
