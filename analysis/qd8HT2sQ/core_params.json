@@ -5531,6 +5531,7 @@
               "Rosco Robinson": true,
               "The Dynatones": true,
               "The Gunter Kallmann Chorus": true,
+              "Elvis Presley With The Jordanaires and The Imperials Quartet": true,
               "Don And The Goodtimes": true,
               "The Parade": true,
               "Pieces Of Eight": true,
@@ -6008,7 +6009,6 @@
               "The Shacklefords": true,
               "The Cupids": true,
               "Anna King": true,
-              "Elvis Presley With The Jubilee Four And Carole Lombard Quartet": true,
               "Boston Pops Orchestra Arthur Fiedler": true,
               "Lulu And The Luvers": true,
               "The Poppies": true,
@@ -7839,7 +7839,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501603769514
+    "lastModifiedOn": 1501603906870
   },
   "creationTag": {
     "versionNumber": 0,
