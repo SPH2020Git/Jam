@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501618688126
+    "lastModifiedOn": 1501618729944
   },
   "creationTag": {
     "versionNumber": 0,
@@ -132,6 +132,18 @@
       },
       {
         "name": "weeksonchart",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "rank_last",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "rank_lag",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
