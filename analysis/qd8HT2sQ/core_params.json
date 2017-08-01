@@ -85,7 +85,7 @@
           },
           {
             "column": "year",
-            "function": "AVG",
+            "function": "MAX",
             "type": "NUMERICAL",
             "displayed": true,
             "isA": "measure",
@@ -125,12 +125,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
-                "label": "Average of year, descending"
+                "label": "Maximum of year, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
-                "label": "Average of year, ascending",
+                "label": "Maximum of year, ascending",
                 "sortAscending": true
               }
             ],
@@ -207,7 +207,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501602091558
+    "lastModifiedOn": 1501602420379
   },
   "creationTag": {
     "versionNumber": 0,
