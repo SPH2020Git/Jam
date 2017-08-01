@@ -2768,6 +2768,14 @@
           {
             "from": "fun. ",
             "to": "Fun."
+          },
+          {
+            "from": "Elvis Presley With The Jordanaires",
+            "to": "Elvis Presley"
+          },
+          {
+            "from": "Elvis Presley With The Mello Men",
+            "to": "Elvis Presley"
           }
         ],
         "normalization": "EXACT",
