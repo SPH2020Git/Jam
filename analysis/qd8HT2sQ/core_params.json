@@ -125,7 +125,7 @@
             "numParams": {
               "mode": "FIXED_SIZE",
               "nbBins": 30,
-              "binSize": "10",
+              "binSize": "5",
               "emptyBinsMode": "ZEROS"
             },
             "maxValues": 100,
@@ -223,7 +223,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501600864377
+    "lastModifiedOn": 1501600947421
   },
   "creationTag": {
     "versionNumber": 0,
