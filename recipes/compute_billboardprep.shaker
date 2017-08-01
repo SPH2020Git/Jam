@@ -1239,11 +1239,11 @@
           },
           {
             "from": "Kanye West Jay-Z Big Sean",
-            "to": "Jay Z \u0026 Kanye West"
+            "to": "Jay-Z \u0026 Kanye West"
           },
           {
             "from": "Kanye West, Jay-Z, Big Sean",
-            "to": "Jay Z \u0026 Kanye West"
+            "to": "Jay-Z \u0026 Kanye West"
           },
           {
             "from": "Christina Milian ",
@@ -2748,6 +2748,38 @@
           {
             "from": "Alexander O Neal ",
             "to": "Alexander O\u0027Neal"
+          },
+          {
+            "from": "Lil Mama ",
+            "to": "Lil Mama"
+          },
+          {
+            "from": "Blu Cantrell ",
+            "to": "Blu Cantrell"
+          },
+          {
+            "from": "Obie Trice ",
+            "to": "Obie Trice"
+          },
+          {
+            "from": "69 Boyz ",
+            "to": "69 Boyz"
+          },
+          {
+            "from": "Ne-Yo ",
+            "to": "Ne-Yo"
+          },
+          {
+            "from": "Queen Latifah ",
+            "to": "Queen Latifah"
+          },
+          {
+            "from": "Elvin Bishop ",
+            "to": "Elvin Bishop"
+          },
+          {
+            "from": "fun. ",
+            "to": "Fun."
           }
         ],
         "normalization": "EXACT",
