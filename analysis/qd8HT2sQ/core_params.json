@@ -92,7 +92,8 @@
               "mode": "FIXED_NB",
               "nbBins": "8",
               "binSize": 100,
-              "emptyBinsMode": "ZEROS"
+              "emptyBinsMode": "ZEROS",
+              "niceBounds": true
             },
             "maxValues": 100,
             "generateOthersCategory": true,
@@ -175,11 +176,15 @@
         "boxplotValue": [],
         "filters": [
           {
-            "filterType": "ALPHANUM_FACET",
-            "column": "artist2_0",
-            "columnType": "ALPHANUM",
+            "filterType": "DATE_FACET",
+            "column": "date",
+            "columnType": "DATE",
+            "dateFilterType": "YEAR",
             "isA": "filter",
-            "excludedValues": {},
+            "excludedValues": {
+              "1958": true,
+              "1959": true
+            },
             "explicitExclude": false
           }
         ],
@@ -233,7 +238,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501605197719
+    "lastModifiedOn": 1501605479526
   },
   "creationTag": {
     "versionNumber": 0,
