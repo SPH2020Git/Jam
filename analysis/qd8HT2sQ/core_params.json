@@ -82,13 +82,25 @@
             "displayType": "column",
             "computeMode": "NORMAL",
             "computeModeDim": 0
+          },
+          {
+            "column": "year",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
           }
         ],
-        "xDimension": [
+        "xDimension": [],
+        "yDimension": [
           {
             "column": "artist2_0",
             "type": "ALPHANUM",
-            "maxValues": 500,
+            "maxValues": 1000,
             "generateOthersCategory": false,
             "oneTickPerBin": false,
             "filters": [],
@@ -109,52 +121,23 @@
                 "measureIdx": 0,
                 "label": "Count of records, ascending",
                 "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Average of year, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Average of year, ascending",
+                "sortAscending": true
               }
             ],
             "sort": {
               "type": "AGGREGATION",
               "measureIdx": 0,
               "label": "Count of records, descending"
-            }
-          }
-        ],
-        "yDimension": [
-          {
-            "column": "year",
-            "type": "NUMERICAL",
-            "numParams": {
-              "mode": "FIXED_SIZE",
-              "nbBins": 30,
-              "binSize": "5",
-              "emptyBinsMode": "ZEROS"
-            },
-            "maxValues": 100,
-            "generateOthersCategory": true,
-            "oneTickPerBin": false,
-            "filters": [],
-            "isA": "dimension",
-            "possibleSorts": [
-              {
-                "type": "NATURAL",
-                "label": "Natural ordering",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Count of records, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Count of records, ascending",
-                "sortAscending": true
-              }
-            ],
-            "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
             }
           }
         ],
@@ -224,7 +207,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501601827386
+    "lastModifiedOn": 1501602091558
   },
   "creationTag": {
     "versionNumber": 0,
