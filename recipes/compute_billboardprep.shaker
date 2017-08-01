@@ -635,19 +635,19 @@
           },
           {
             "from": "Jay Z ",
-            "to": "Jay Z"
+            "to": "Jay-Z"
           },
           {
             "from": "Jay-Z ",
-            "to": "Jay Z"
+            "to": "Jay-Z"
           },
           {
             "from": "Jay-Z  ",
-            "to": "Jay Z"
+            "to": "Jay-Z"
           },
           {
             "from": "Jay-Z",
-            "to": "Jay Z"
+            "to": "Jay-Z"
           },
           {
             "from": "Lil Wayne ",
@@ -763,10 +763,6 @@
           },
           {
             "from": "M + M",
-            "to": "M \u0026 M"
-          },
-          {
-            "from": "M",
             "to": "M \u0026 M"
           },
           {
@@ -1215,7 +1211,7 @@
           },
           {
             "from": "Jay-Z, Rihanna \u0026 Kanye West",
-            "to": "Jay-Z \u0026 Kanye West"
+            "to": "Jay-Z, Rihanna, \u0026 Kanye West"
           },
           {
             "from": "Jay Z \u0026 Kanye West",
@@ -1239,7 +1235,7 @@
           },
           {
             "from": "Kanye West Jay-Z Big Sean",
-            "to": "Jay-Z \u0026 Kanye West"
+            "to": "Jay-Z, Kanye West, \u0026 Big Sean"
           },
           {
             "from": "Kanye West, Jay-Z, Big Sean",
@@ -1619,7 +1615,7 @@
           },
           {
             "from": "BLACKstreet With Special Guests Ol\u0027 Dirty Bastard \u0026 Slash",
-            "to": "BLACKstreet \u0026 Ol Dirty Bastard"
+            "to": "BLACKstreet, Ol Dirty Bastard, \u0026 Slash"
           },
           {
             "from": "Carrie Underwood ",
@@ -1696,10 +1692,6 @@
           {
             "from": "N.O.R.E. ",
             "to": "N.O.R.E."
-          },
-          {
-            "from": "David",
-            "to": "David \u0026 David"
           },
           {
             "from": "Cham ",
@@ -1979,11 +1971,11 @@
           },
           {
             "from": "Fat Joe, Remy Ma \u0026 Jay Z ",
-            "to": "Fat Joe, Remy Ma \u0026 Jay Z"
+            "to": "Fat Joe, Remy Ma \u0026 Jay-Z"
           },
           {
             "from": "Fat Joe, Remy Ma \u0026 JAY Z ",
-            "to": "Fat Joe, Remy Ma \u0026 Jay Z"
+            "to": "Fat Joe, Remy Ma \u0026 Jay-Z"
           },
           {
             "from": "Jessie J ",
@@ -2068,10 +2060,6 @@
           {
             "from": "Terence Trent D Arby",
             "to": "Terence Trent D\u0027Arby"
-          },
-          {
-            "from": "Rene",
-            "to": "Rene \u0026 Rene"
           },
           {
             "from": "John Travolta \u0026 Olivia Newton-John",
