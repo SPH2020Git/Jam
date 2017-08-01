@@ -3,7 +3,7 @@
     "mode": "ALL"
   },
   "explorationSampling": {
-    "_refreshTrigger": 1,
+    "_refreshTrigger": 2,
     "selection": {
       "filter": {
         "distinct": false,
@@ -14,7 +14,7 @@
       "withinFirstN": -1,
       "partitionSelectionMethod": "ALL",
       "maxStoredBytes": 104857600,
-      "targetRatio": 1.0,
+      "targetRatio": 0.05,
       "maxReadUncompressedBytes": -1,
       "samplingMethod": "RANDOM_FIXED_RATIO"
     },
