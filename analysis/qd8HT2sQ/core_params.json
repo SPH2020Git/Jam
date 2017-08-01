@@ -5523,6 +5523,7 @@
               "George Martin And His Orch.": true,
               "The Blendells": true,
               "The Gestures": true,
+              "Elvis Presley With The Jordanaires, Jubilee Four \u0026 Carol Lombard Trio": true,
               "Tom and Jerrio": true,
               "Little Caesar And The Consuls": true,
               "Paul Peek": true,
@@ -5530,7 +5531,6 @@
               "Rosco Robinson": true,
               "The Dynatones": true,
               "The Gunter Kallmann Chorus": true,
-              "Elvis Presley With The Jordanaires and The Imperials Quartet": true,
               "Don And The Goodtimes": true,
               "The Parade": true,
               "Pieces Of Eight": true,
@@ -7839,7 +7839,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501603388735
+    "lastModifiedOn": 1501603540316
   },
   "creationTag": {
     "versionNumber": 0,
