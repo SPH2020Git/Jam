@@ -2796,6 +2796,10 @@
           {
             "from": "The Beatles With Billy Preston",
             "to": "The Beatles"
+          },
+          {
+            "from": "The Beatles With Tony Sheridan",
+            "to": "The Beatles"
           }
         ],
         "normalization": "EXACT",
