@@ -88,8 +88,8 @@
           {
             "column": "artist2_0",
             "type": "ALPHANUM",
-            "maxValues": 20,
-            "generateOthersCategory": true,
+            "maxValues": 100,
+            "generateOthersCategory": false,
             "oneTickPerBin": false,
             "filters": [],
             "isA": "dimension",
@@ -224,7 +224,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501601052694
+    "lastModifiedOn": 1501601165722
   },
   "creationTag": {
     "versionNumber": 0,
