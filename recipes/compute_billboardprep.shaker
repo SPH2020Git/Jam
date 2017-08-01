@@ -2776,6 +2776,26 @@
           {
             "from": "Elvis Presley With The Mello Men",
             "to": "Elvis Presley"
+          },
+          {
+            "from": "Elvis Presley With The Jordanaires, Jubilee Four \u0026 Carol Lombard",
+            "to": "Elvis Presley"
+          },
+          {
+            "from": "Elvis Presley With The Jordanaires and The Imperials Quartet",
+            "to": "Elvis Presley"
+          },
+          {
+            "from": "Elvis Presley With The Jubilee Four And Carole Lombard Quartet",
+            "to": "Elvis Presley"
+          },
+          {
+            "from": "Elvis Costello And The Attractions",
+            "to": "Elvis Costello"
+          },
+          {
+            "from": "The Beatles With Billy Preston",
+            "to": "The Beatles"
           }
         ],
         "normalization": "EXACT",
