@@ -3,7 +3,7 @@
     "mode": "ALL"
   },
   "explorationSampling": {
-    "_refreshTrigger": 0,
+    "_refreshTrigger": 1,
     "selection": {
       "filter": {
         "distinct": false,
@@ -14,9 +14,9 @@
       "withinFirstN": -1,
       "partitionSelectionMethod": "ALL",
       "maxStoredBytes": 104857600,
-      "targetRatio": 0.02,
+      "targetRatio": 1.0,
       "maxReadUncompressedBytes": -1,
-      "samplingMethod": "HEAD_SEQUENTIAL"
+      "samplingMethod": "RANDOM_FIXED_RATIO"
     },
     "autoRefreshSample": false
   },
@@ -154,7 +154,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "ColumnSplitter",
@@ -166,6 +166,541 @@
         "outColPrefix": "artist2_",
         "limitOutput": false,
         "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "Scritti Politti ",
+            "to": "Scritti Politti"
+          },
+          {
+            "from": "Jellybean ",
+            "to": "Jellybean"
+          },
+          {
+            "from": "Sia ",
+            "to": "Sia"
+          },
+          {
+            "from": "J. Cole ",
+            "to": "J. Cole"
+          },
+          {
+            "from": "Kris Kross ",
+            "to": "Kris Kross"
+          },
+          {
+            "from": "Jamie Foxx ",
+            "to": "Jamie Foxx"
+          },
+          {
+            "from": "Wale ",
+            "to": "Wale"
+          },
+          {
+            "from": "Missy \"Misdemeanor\" Elliott ",
+            "to": "Missy \"Misdemeanor\" Elliott"
+          },
+          {
+            "from": "WE the Kings ",
+            "to": "WE the Kings"
+          },
+          {
+            "from": "ScHoolboy Q ",
+            "to": "ScHoolboy Q"
+          },
+          {
+            "from": "3OH!3 ",
+            "to": "3OH!3"
+          },
+          {
+            "from": "Snoop Dogg Presents Tha Eastsidaz ",
+            "to": "Snoop Dogg Presents Tha Eastsidaz"
+          },
+          {
+            "from": "Mana ",
+            "to": "Mana"
+          },
+          {
+            "from": "MC Luscious ",
+            "to": "MC Luscious"
+          },
+          {
+            "from": "Tim McGraw ",
+            "to": "Tim McGraw"
+          },
+          {
+            "from": "Ying Yang Twins ",
+            "to": "Ying Yang Twins"
+          },
+          {
+            "from": "Clubland ",
+            "to": "Clubland"
+          },
+          {
+            "from": "Ginuwine ",
+            "to": "Ginuwine"
+          },
+          {
+            "from": "Yo Gotti ",
+            "to": "Yo Gotti"
+          },
+          {
+            "from": "Keith Urban ",
+            "to": "Keith Urban"
+          },
+          {
+            "from": "Kenny Loggins \u0026 Jim Messina",
+            "to": "Kenny Loggins With Jim Messina"
+          },
+          {
+            "from": "Roscoe Dash ",
+            "to": "Roscoe Dash"
+          },
+          {
+            "from": "Eric Church ",
+            "to": "Eric Church"
+          },
+          {
+            "from": "Charlie Puth ",
+            "to": "Charlie Puth"
+          },
+          {
+            "from": "P!nk ",
+            "to": "P!nk"
+          },
+          {
+            "from": "Zac Brown Band ",
+            "to": "Zac Brown Band"
+          },
+          {
+            "from": "Justin Timberlake ",
+            "to": "Justin Timberlake"
+          },
+          {
+            "from": "J-Kwon ",
+            "to": "J-Kwon"
+          },
+          {
+            "from": "Sean Kingston ",
+            "to": "Sean Kingston"
+          },
+          {
+            "from": "The Essex ",
+            "to": "The Essex"
+          },
+          {
+            "from": "Big Tymers ",
+            "to": "Big Tymers"
+          },
+          {
+            "from": "Ke$ha ",
+            "to": "Ke$ha"
+          },
+          {
+            "from": "T Pau",
+            "to": "T\u0027Pau"
+          },
+          {
+            "from": "New Boyz ",
+            "to": "New Boyz"
+          },
+          {
+            "from": "Chamillionaire ",
+            "to": "Chamillionaire"
+          },
+          {
+            "from": "Nastyboy Klick ",
+            "to": "Nastyboy Klick"
+          },
+          {
+            "from": "Sean Paul ",
+            "to": "Sean Paul"
+          },
+          {
+            "from": "Flo Rida ",
+            "to": "Flo Rida"
+          },
+          {
+            "from": "The Game ",
+            "to": "The Game"
+          },
+          {
+            "from": "Johnny Mathis/Deniece Williams",
+            "to": "Johnny Mathis \u0026 Deniece Williams"
+          },
+          {
+            "from": "Chris Brown ",
+            "to": "Chris Brown"
+          },
+          {
+            "from": "Isyss ",
+            "to": "Isyss"
+          },
+          {
+            "from": "Keith Murray ",
+            "to": "Keith Murray"
+          },
+          {
+            "from": "Wiz Khalifa ",
+            "to": "Wiz Khalifa"
+          },
+          {
+            "from": "John Mayer ",
+            "to": "John Mayer"
+          },
+          {
+            "from": "Ciara ",
+            "to": "Ciara"
+          },
+          {
+            "from": "TKA ",
+            "to": "TKA"
+          },
+          {
+            "from": "Lifehouse ",
+            "to": "Lifehouse"
+          },
+          {
+            "from": "Trina ",
+            "to": "Trina"
+          },
+          {
+            "from": "Fetty Wap ",
+            "to": "Fetty Wap"
+          },
+          {
+            "from": "Beyonce ",
+            "to": "Beyonce"
+          },
+          {
+            "from": "Shabba Ranks (",
+            "to": "Shabba Ranks"
+          },
+          {
+            "from": "2Pac, Notorious B.I.G., Radio, Dramacydal \u0026 Stretch",
+            "to": "2Pac, Notorious B.I.G., Radio, Dramacydal"
+          },
+          {
+            "from": "Maroon 5 ",
+            "to": "Maroon 5"
+          },
+          {
+            "from": "The-Dream ",
+            "to": "The-Dream"
+          },
+          {
+            "from": "The Platters ",
+            "to": "The Platters"
+          },
+          {
+            "from": "Bingo Boys ",
+            "to": "Bingo Boys"
+          },
+          {
+            "from": "Young Money ",
+            "to": "Young Money"
+          },
+          {
+            "from": "Big Sean ",
+            "to": "Big Sean"
+          },
+          {
+            "from": "Three 6 Mafia ",
+            "to": "Three 6 Mafia"
+          },
+          {
+            "from": "Lupe Fiasco ",
+            "to": "Lupe Fiasco"
+          },
+          {
+            "from": "Iyaz ",
+            "to": "Iyaz"
+          },
+          {
+            "from": "Monica ",
+            "to": "Monica"
+          },
+          {
+            "from": "Kelly Clarkson ",
+            "to": "Kelly Clarkson"
+          },
+          {
+            "from": "Planet Soul ",
+            "to": "Planet Soul"
+          },
+          {
+            "from": "Genius/GZA ",
+            "to": "Genius/GZA"
+          },
+          {
+            "from": "Lil\u0027 Flip ",
+            "to": "Lil\u0027 Flip"
+          },
+          {
+            "from": "Raphael Saadiq ",
+            "to": "Raphael Saadiq"
+          },
+          {
+            "from": "Soul II Soul (",
+            "to": "Soul II Soul"
+          },
+          {
+            "from": "Daddy Yankee ",
+            "to": "Daddy Yankee"
+          },
+          {
+            "from": "JoJo ",
+            "to": "JoJo"
+          },
+          {
+            "from": "A.R. Rahman \u0026 The Pussycat Dolls ",
+            "to": "A.R. Rahman \u0026 The Pussycat Dolls"
+          },
+          {
+            "from": "A R Rahman \u0026 The Pussycat Dolls ",
+            "to": "A.R. Rahman \u0026 The Pussycat Dolls"
+          },
+          {
+            "from": "Esther Phillips Little Esther",
+            "to": "Little Esther Phillips"
+          },
+          {
+            "from": "Common ",
+            "to": "Common"
+          },
+          {
+            "from": "Tyga ",
+            "to": "Tyga"
+          },
+          {
+            "from": "F.L.Y. (Fast Life Yungstaz)",
+            "to": "Fast Life Yungstaz (F.L.Y.)"
+          },
+          {
+            "from": "Bow Wow ",
+            "to": "Bow Wow Wow"
+          },
+          {
+            "from": "Lawrence Welk His Orchestra And Chorus",
+            "to": "Lawrence Welk And His Orchestra"
+          },
+          {
+            "from": "Gucci Mane ",
+            "to": "Gucci Mane"
+          },
+          {
+            "from": "French Montana ",
+            "to": "French Montana"
+          },
+          {
+            "from": "Janet ",
+            "to": "Janet"
+          },
+          {
+            "from": "Busta Rhymes ",
+            "to": "Busta Rhymes"
+          },
+          {
+            "from": "Herb Alpert ",
+            "to": "Herb Alpert"
+          },
+          {
+            "from": "Lloyd Banks ",
+            "to": "Lloyd Banks"
+          },
+          {
+            "from": "The Temptations ",
+            "to": "The Temptations"
+          },
+          {
+            "from": "Jagged Edge ",
+            "to": "Jagged Edge"
+          },
+          {
+            "from": "Lady Gaga ",
+            "to": "Lady Gaga"
+          },
+          {
+            "from": "Lady GaGa ",
+            "to": "Lady Gaga"
+          },
+          {
+            "from": "Lady GaGa",
+            "to": "Lady Gaga"
+          },
+          {
+            "from": "D\u0027Angelo",
+            "to": "D Angelo"
+          },
+          {
+            "from": "D Angelo ",
+            "to": "D Angelo"
+          },
+          {
+            "from": "D\u0027Angelo ",
+            "to": "D Angelo"
+          },
+          {
+            "from": "Lil  Mo",
+            "to": "Lil\u0027 Mo"
+          },
+          {
+            "from": "Lil Mo",
+            "to": "Lil\u0027 Mo"
+          },
+          {
+            "from": "Lil\u0027 Mo ",
+            "to": "Lil\u0027 Mo"
+          },
+          {
+            "from": "Somethin  For The People",
+            "to": "Somethin For The People"
+          },
+          {
+            "from": "Somethin\u0027 For The People ",
+            "to": "Somethin For The People"
+          },
+          {
+            "from": "Somethin\u0027 For The People",
+            "to": "Somethin For The People"
+          },
+          {
+            "from": "Soulja Boy Tell \u0027Em ",
+            "to": "Soulja Boy Tell \u0027Em"
+          },
+          {
+            "from": "Soulja Boy Tell \u0027em ",
+            "to": "Soulja Boy Tell \u0027Em"
+          },
+          {
+            "from": "Soulja Boy Tell\u0027em",
+            "to": "Soulja Boy Tell \u0027Em"
+          },
+          {
+            "from": "Soulja Boy Tell\u0027em ",
+            "to": "Soulja Boy Tell \u0027Em"
+          },
+          {
+            "from": "Cam\u0027Ron ",
+            "to": "Cam\u0027Ron"
+          },
+          {
+            "from": "Cam\u0027ron ",
+            "to": "Cam\u0027Ron"
+          },
+          {
+            "from": "Cam Ron ",
+            "to": "Cam\u0027Ron"
+          },
+          {
+            "from": "Cam Ron",
+            "to": "Cam\u0027Ron"
+          },
+          {
+            "from": "Nas",
+            "to": "NAS"
+          },
+          {
+            "from": "NAS ",
+            "to": "NAS"
+          },
+          {
+            "from": "Nas ",
+            "to": "NAS"
+          },
+          {
+            "from": "Lil Kim",
+            "to": "Lil  Kim"
+          },
+          {
+            "from": "Lil\u0027 Kim ",
+            "to": "Lil  Kim"
+          },
+          {
+            "from": "Lil Kim ",
+            "to": "Lil  Kim"
+          },
+          {
+            "from": "Lil\u0027 Kim",
+            "to": "Lil  Kim"
+          },
+          {
+            "from": "Jay Z ",
+            "to": "Jay Z"
+          },
+          {
+            "from": "Jay-Z ",
+            "to": "Jay Z"
+          },
+          {
+            "from": "Jay-Z  ",
+            "to": "Jay Z"
+          },
+          {
+            "from": "Jay-Z",
+            "to": "Jay Z"
+          },
+          {
+            "from": "Lil Wayne ",
+            "to": "Lil Wayne"
+          },
+          {
+            "from": "Lil\u0027 Wayne",
+            "to": "Lil Wayne"
+          },
+          {
+            "from": "Lil  Wayne ",
+            "to": "Lil Wayne"
+          },
+          {
+            "from": "Lil\u0027 Wayne ",
+            "to": "Lil Wayne"
+          },
+          {
+            "from": "Jay Z  Kanye West",
+            "to": "Jay Z \u0026 Kanye West"
+          },
+          {
+            "from": "Jay-Z \u0026 Kanye West ",
+            "to": "Jay Z \u0026 Kanye West"
+          },
+          {
+            "from": "Jay Z Kanye West",
+            "to": "Jay Z \u0026 Kanye West"
+          },
+          {
+            "from": "Jay Z  Kanye West ",
+            "to": "Jay Z \u0026 Kanye West"
+          },
+          {
+            "from": "Kanye West \u0026 Jay-Z",
+            "to": "Jay Z \u0026 Kanye West"
+          },
+          {
+            "from": "Jay Z Kanye West ",
+            "to": "Jay Z \u0026 Kanye West"
+          },
+          {
+            "from": "Jay Z Kanye West",
+            "to": "Jay Z \u0026 Kanye West"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "artist2_0"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
       },
       "alwaysShowComment": false
     }
