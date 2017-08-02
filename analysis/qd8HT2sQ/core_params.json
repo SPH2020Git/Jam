@@ -58,12 +58,12 @@
           "latestPartitionsN": 1,
           "samplingMethod": "FULL",
           "maxRecords": 10000,
-          "targetRatio": 0.02,
+          "targetRatio": 0.1,
           "withinFirstN": -1,
           "maxReadUncompressedBytes": -1
         },
         "autoRefreshSample": false,
-        "_refreshTrigger": 1
+        "_refreshTrigger": 3
       },
       "def": {
         "type": "pivot_table",
@@ -235,11 +235,11 @@
   ],
   "name": "Analyze billboardprep",
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501639717702
+    "lastModifiedOn": 1501639998141
   },
   "creationTag": {
     "versionNumber": 0,
