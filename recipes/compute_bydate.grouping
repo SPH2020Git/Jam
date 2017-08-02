@@ -193,7 +193,7 @@
       "first": false
     }
   ],
-  "globalCount": true,
+  "globalCount": false,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
