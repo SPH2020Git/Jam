@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501650045847
+    "lastModifiedOn": 1501650112369
   },
   "creationTag": {
     "versionNumber": 0,
@@ -52,12 +52,6 @@
     "userModified": false,
     "columns": [
       {
-        "name": "rank",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "date",
         "type": "date",
         "meaning": "Date",
@@ -65,13 +59,25 @@
         "maxLength": -1
       },
       {
-        "name": "ranklastwk_distinct",
+        "name": "rank",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "weeksonchart_distinct",
+        "name": "ranklastwk",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "weeksonchart",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "aggregateall_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
