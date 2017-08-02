@@ -68,13 +68,14 @@
       "def": {
         "type": "pivot_table",
         "variant": "normal",
-        "name": "Count by year and artist2_0",
+        "name": "Avg. of rank by year and artist2_0",
         "userEditedName": false,
         "genericDimension0": [],
         "genericDimension1": [],
         "genericMeasures": [
           {
-            "function": "COUNT",
+            "column": "rank",
+            "function": "AVG",
             "type": "NUMERICAL",
             "displayed": true,
             "isA": "measure",
@@ -109,12 +110,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Count of records, descending"
+                "label": "Average of rank, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Count of records, ascending",
+                "label": "Average of rank, ascending",
                 "sortAscending": true
               }
             ],
@@ -143,19 +144,19 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Count of records, descending"
+                "label": "Average of rank, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Count of records, ascending",
+                "label": "Average of rank, ascending",
                 "sortAscending": true
               }
             ],
             "sort": {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Count of records, descending"
+              "label": "Average of rank, descending"
             }
           }
         ],
@@ -182,8 +183,7 @@
             "dateFilterType": "YEAR",
             "isA": "filter",
             "excludedValues": {
-              "1958": true,
-              "1959": true
+              "1958": true
             },
             "explicitExclude": false
           }
@@ -238,7 +238,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501636841506
+    "lastModifiedOn": 1501638453828
   },
   "creationTag": {
     "versionNumber": 0,
