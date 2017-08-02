@@ -26,11 +26,11 @@
   "values": [
     {
       "sum2": false,
-      "min": false,
+      "min": true,
       "countDistinct": false,
       "avg": false,
       "last": false,
-      "max": false,
+      "max": true,
       "column": "date",
       "count": false,
       "sum": false,
