@@ -1,9 +1,21 @@
 {
   "preFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "conditions": [
+        {
+          "input": "rank",
+          "col": "artist_0",
+          "num": 1,
+          "operator": "\u003d\u003d [number]"
+        }
+      ]
+    },
     "distinct": false,
     "enabled": false
   },
   "ntileValues": "10",
+  "keys": [],
   "values": [
     {
       "last": false,
@@ -13,6 +25,7 @@
       "count": false,
       "lagValues": "1",
       "sum": false,
+      "type": "string",
       "lead": false,
       "dateDiffUnit": "DAY",
       "min": false,
@@ -33,6 +46,7 @@
       "count": false,
       "lagValues": "1",
       "sum": false,
+      "type": "string",
       "lead": false,
       "dateDiffUnit": "DAY",
       "min": false,
@@ -53,6 +67,7 @@
       "count": false,
       "lagValues": "1",
       "sum": false,
+      "type": "string",
       "lead": false,
       "dateDiffUnit": "DAY",
       "min": false,
@@ -73,6 +88,7 @@
       "count": false,
       "lagValues": "1",
       "sum": false,
+      "type": "string",
       "lead": false,
       "dateDiffUnit": "DAY",
       "min": false,
@@ -93,6 +109,7 @@
       "count": false,
       "lagValues": "1",
       "sum": false,
+      "type": "string",
       "lead": false,
       "dateDiffUnit": "DAY",
       "min": false,
@@ -113,6 +130,7 @@
       "count": false,
       "lagValues": "1",
       "sum": false,
+      "type": "date",
       "lead": false,
       "dateDiffUnit": "DAY",
       "min": false,
@@ -133,6 +151,7 @@
       "count": false,
       "lagValues": "1",
       "sum": false,
+      "type": "bigint",
       "lead": false,
       "dateDiffUnit": "DAY",
       "min": false,
@@ -153,6 +172,7 @@
       "count": false,
       "lagValues": "1",
       "sum": false,
+      "type": "bigint",
       "lead": false,
       "dateDiffUnit": "DAY",
       "min": false,
@@ -173,6 +193,7 @@
       "count": false,
       "lagValues": "1",
       "sum": false,
+      "type": "bigint",
       "lead": false,
       "dateDiffUnit": "DAY",
       "min": false,
@@ -193,6 +214,7 @@
       "count": false,
       "lagValues": "1",
       "sum": false,
+      "type": "bigint",
       "lead": false,
       "dateDiffUnit": "DAY",
       "min": false,
@@ -208,17 +230,18 @@
     {
       "last": false,
       "lagDiff": false,
-      "max": false,
+      "max": true,
       "column": "rank",
       "count": false,
       "lagValues": "1",
       "sum": false,
-      "lead": false,
+      "type": "bigint",
+      "lead": true,
       "dateDiffUnit": "DAY",
-      "min": false,
+      "min": true,
       "countDistinct": false,
-      "avg": false,
-      "lag": false,
+      "avg": true,
+      "lag": true,
       "leadValues": "1",
       "stddev": false,
       "value": true,
@@ -233,6 +256,7 @@
       "count": false,
       "lagValues": "1",
       "sum": false,
+      "type": "string",
       "lead": false,
       "dateDiffUnit": "DAY",
       "min": false,
@@ -253,6 +277,7 @@
       "count": false,
       "lagValues": "1",
       "sum": false,
+      "type": "bigint",
       "lead": false,
       "dateDiffUnit": "DAY",
       "min": false,
@@ -273,6 +298,7 @@
       "count": false,
       "lagValues": "1",
       "sum": false,
+      "type": "bigint",
       "lead": false,
       "dateDiffUnit": "DAY",
       "min": false,
@@ -293,6 +319,7 @@
       "count": false,
       "lagValues": "1",
       "sum": false,
+      "type": "bigint",
       "lead": false,
       "dateDiffUnit": "DAY",
       "min": false,
@@ -306,6 +333,45 @@
       "first": false
     }
   ],
+  "windows": [
+    {
+      "windowLimitMode": "ROWS",
+      "windowUpperBound": 0,
+      "enablePartitioning": true,
+      "enableOrdering": true,
+      "precedingRows": 5,
+      "limitFollowing": true,
+      "orders": [
+        {
+          "column": "date",
+          "desc": false
+        }
+      ],
+      "limitPreceding": true,
+      "followingRows": 5,
+      "windowLowerBound": 0,
+      "enableLimits": true,
+      "partitioningColumns": [
+        "artist2_0"
+      ]
+    }
+  ],
+  "postFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "conditions": [
+        {
+          "input": "rank",
+          "col": "artist_0",
+          "num": 1,
+          "operator": "\u003d\u003d [number]"
+        }
+      ]
+    },
+    "distinct": false,
+    "enabled": true
+  },
+  "cumeDist": false,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -335,24 +401,6 @@
   "ntile": false,
   "rank": false,
   "denseRank": false,
-  "windows": [
-    {
-      "windowUpperBound": 0.0,
-      "enablePartitioning": false,
-      "enableOrdering": false,
-      "precedingRows": 0,
-      "limitFollowing": false,
-      "orders": [],
-      "limitPreceding": false,
-      "followingRows": 0,
-      "windowLowerBound": 0.0,
-      "enableLimits": false
-    }
-  ],
   "rowNumber": false,
-  "postFilter": {
-    "distinct": false,
-    "enabled": false
-  },
-  "cumeDist": false
+  "outputColumnNameOverrides": {}
 }
