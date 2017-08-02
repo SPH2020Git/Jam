@@ -170,7 +170,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FindReplace",
@@ -2813,6 +2813,18 @@
         "appliesTo": "SINGLE_COLUMN",
         "stopAfterFirstMatch": false,
         "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FlagOnCustomFormula",
+      "params": {
+        "expression": "date!\u003d\"\"",
+        "action": "FLAG",
+        "flagColumn": "aggregateall"
       },
       "alwaysShowComment": false
     }
