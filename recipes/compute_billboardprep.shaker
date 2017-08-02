@@ -2800,6 +2800,10 @@
           {
             "from": "The Beatles With Tony Sheridan",
             "to": "The Beatles"
+          },
+          {
+            "from": "The Elton John Band",
+            "to": "Elton John"
           }
         ],
         "normalization": "EXACT",
