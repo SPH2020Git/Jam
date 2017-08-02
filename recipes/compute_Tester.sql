@@ -1,3 +1,3 @@
 SELECT *
   FROM "JAM_billboard_sql"
-  where "song"='Got to Get You Into My Life'
+  where "song"='Got To Get You Into My Life'
