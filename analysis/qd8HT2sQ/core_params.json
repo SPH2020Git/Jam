@@ -42,7 +42,7 @@
     "exploreUIParams": {
       "autoRefresh": true
     },
-    "globalSearchQuery": "",
+    "globalSearchQuery": "brel",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
   },
@@ -326,7 +326,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501712812969
+    "lastModifiedOn": 1501713400106
   },
   "creationTag": {
     "versionNumber": 0,
