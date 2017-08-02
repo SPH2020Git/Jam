@@ -34,7 +34,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -55,7 +55,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -97,7 +97,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -118,7 +118,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -160,7 +160,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -181,7 +181,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -202,7 +202,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -223,7 +223,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -286,7 +286,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -307,7 +307,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -328,7 +328,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     }
