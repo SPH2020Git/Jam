@@ -286,7 +286,7 @@
       "lag": false,
       "leadValues": "1",
       "stddev": false,
-      "value": false,
+      "value": true,
       "leadDiff": false,
       "first": false
     },
