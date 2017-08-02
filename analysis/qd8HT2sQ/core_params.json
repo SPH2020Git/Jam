@@ -156,7 +156,8 @@
             "sort": {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of rank, descending"
+              "label": "Average of rank, ascending",
+              "sortAscending": true
             }
           }
         ],
@@ -185,6 +186,14 @@
             "excludedValues": {
               "1958": true
             },
+            "explicitExclude": false
+          },
+          {
+            "filterType": "ALPHANUM_FACET",
+            "column": "song",
+            "columnType": "ALPHANUM",
+            "isA": "filter",
+            "excludedValues": {},
             "explicitExclude": false
           }
         ],
@@ -238,7 +247,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501638706112
+    "lastModifiedOn": 1501639221915
   },
   "creationTag": {
     "versionNumber": 0,
