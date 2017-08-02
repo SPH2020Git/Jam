@@ -5,8 +5,18 @@
   },
   "keys": [
     {
-      "column": "date",
-      "type": "date"
+      "sum2": false,
+      "min": false,
+      "countDistinct": true,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "artist2_0",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "type": "string",
+      "first": false
     }
   ],
   "values": [
@@ -41,20 +51,6 @@
     {
       "sum2": false,
       "min": false,
-      "countDistinct": true,
-      "avg": false,
-      "last": false,
-      "max": false,
-      "column": "artist2_0",
-      "count": false,
-      "sum": false,
-      "stddev": false,
-      "type": "string",
-      "first": false
-    },
-    {
-      "sum2": false,
-      "min": false,
       "countDistinct": false,
       "avg": false,
       "last": false,
@@ -79,6 +75,10 @@
       "stddev": false,
       "type": "string",
       "first": false
+    },
+    {
+      "column": "date",
+      "type": "date"
     },
     {
       "countDistinct": false,
