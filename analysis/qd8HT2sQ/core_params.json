@@ -68,22 +68,11 @@
       "def": {
         "type": "pivot_table",
         "variant": "normal",
-        "name": "Avg. of rank by year and artist2_0",
+        "name": "Count by year and artist2_0",
         "userEditedName": false,
         "genericDimension0": [],
         "genericDimension1": [],
         "genericMeasures": [
-          {
-            "column": "rank",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          },
           {
             "function": "COUNT",
             "type": "NUMERICAL",
@@ -120,22 +109,11 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of rank, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Average of rank, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 1,
                 "label": "Count of records, descending"
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 1,
+                "measureIdx": 0,
                 "label": "Count of records, ascending",
                 "sortAscending": true
               }
@@ -165,22 +143,11 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of rank, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Average of rank, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 1,
                 "label": "Count of records, descending"
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 1,
+                "measureIdx": 0,
                 "label": "Count of records, ascending",
                 "sortAscending": true
               }
@@ -188,8 +155,7 @@
             "sort": {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of rank, ascending",
-              "sortAscending": true
+              "label": "Count of records, descending"
             }
           }
         ],
@@ -328,7 +294,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501640413841
+    "lastModifiedOn": 1501640491532
   },
   "creationTag": {
     "versionNumber": 0,
