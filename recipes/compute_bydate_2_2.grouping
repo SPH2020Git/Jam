@@ -8,6 +8,12 @@
           "col": "artist_0",
           "num": 1,
           "operator": "\u003d\u003d [number]"
+        },
+        {
+          "input": "ranklastwk",
+          "col": "artist_0",
+          "num": 0,
+          "operator": "\u003d\u003d [number]"
         }
       ]
     },
