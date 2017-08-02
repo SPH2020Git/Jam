@@ -11,4 +11,3 @@ SELECT
     ON ("billboard_sql"."date" = "songsranks_sql"."date")
       AND ("billboard_sql"."rank" = "songsranks_sql"."rank")
       AND ("billboard_sql"."song" = "songsranks_sql"."song")
-  ORDER BY date
