@@ -16,6 +16,10 @@
   },
   "keys": [
     {
+      "column": "date",
+      "type": "date"
+    },
+    {
       "sum2": false,
       "min": false,
       "countDistinct": false,
@@ -30,8 +34,32 @@
       "first": false
     },
     {
-      "column": "date",
-      "type": "date"
+      "sum2": false,
+      "min": false,
+      "countDistinct": true,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "ranklastwk",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "type": "bigint",
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": true,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "weeksonchart",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "type": "bigint",
+      "first": false
     }
   ],
   "values": [
@@ -113,7 +141,7 @@
       "max": false,
       "column": "aggregateall",
       "count": false,
-      "sum": false,
+      "sum": true,
       "stddev": false,
       "type": "bigint",
       "first": false
@@ -177,39 +205,11 @@
     {
       "sum2": false,
       "min": false,
-      "countDistinct": true,
-      "avg": false,
-      "last": false,
-      "max": false,
-      "column": "ranklastwk",
-      "count": false,
-      "sum": false,
-      "stddev": false,
-      "type": "bigint",
-      "first": false
-    },
-    {
-      "sum2": false,
-      "min": false,
       "countDistinct": false,
       "avg": false,
       "last": false,
       "max": false,
       "column": "ranktop",
-      "count": false,
-      "sum": false,
-      "stddev": false,
-      "type": "bigint",
-      "first": false
-    },
-    {
-      "sum2": false,
-      "min": false,
-      "countDistinct": true,
-      "avg": false,
-      "last": false,
-      "max": false,
-      "column": "weeksonchart",
       "count": false,
       "sum": false,
       "stddev": false,
