@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501650975543
+    "lastModifiedOn": 1501651070933
   },
   "creationTag": {
     "versionNumber": 0,
@@ -51,6 +51,12 @@
   "schema": {
     "userModified": false,
     "columns": [
+      {
+        "name": "artist2_0",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
       {
         "name": "song",
         "type": "string",
