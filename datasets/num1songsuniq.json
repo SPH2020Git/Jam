@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501651070933
+    "lastModifiedOn": 1501651118464
   },
   "creationTag": {
     "versionNumber": 0,
@@ -60,6 +60,18 @@
       {
         "name": "song",
         "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "date_min",
+        "type": "date",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "date_max",
+        "type": "date",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
