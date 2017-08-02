@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501649527208
+    "lastModifiedOn": 1501650045847
   },
   "creationTag": {
     "versionNumber": 0,
@@ -52,13 +52,26 @@
     "userModified": false,
     "columns": [
       {
-        "name": "aggregateall",
+        "name": "rank",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "artist2_0_distinct",
+        "name": "date",
+        "type": "date",
+        "meaning": "Date",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "ranklastwk_distinct",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "weeksonchart_distinct",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
