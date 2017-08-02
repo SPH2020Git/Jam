@@ -5,7 +5,8 @@
   },
   "keys": [
     {
-      "column": "date"
+      "column": "date",
+      "type": "date"
     }
   ],
   "values": [
@@ -20,6 +21,7 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "string",
       "first": false
     },
     {
@@ -33,19 +35,21 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "string",
       "first": false
     },
     {
       "sum2": false,
       "min": false,
-      "countDistinct": false,
+      "countDistinct": true,
       "avg": false,
       "last": false,
       "max": false,
       "column": "artist2_0",
-      "count": false,
+      "count": true,
       "sum": false,
       "stddev": false,
+      "type": "string",
       "first": false
     },
     {
@@ -59,6 +63,7 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "string",
       "first": false
     },
     {
@@ -72,6 +77,7 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "string",
       "first": false
     },
     {
@@ -85,6 +91,7 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "bigint",
       "first": false
     },
     {
@@ -98,6 +105,7 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "bigint",
       "first": false
     },
     {
@@ -111,6 +119,7 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "bigint",
       "first": false
     },
     {
@@ -124,6 +133,7 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "bigint",
       "first": false
     },
     {
@@ -137,6 +147,7 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "string",
       "first": false
     },
     {
@@ -150,6 +161,7 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "bigint",
       "first": false
     },
     {
@@ -163,6 +175,7 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "bigint",
       "first": false
     },
     {
@@ -176,6 +189,7 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "bigint",
       "first": false
     }
   ],
@@ -207,6 +221,7 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "postFilter": {
     "distinct": false,
     "enabled": false
