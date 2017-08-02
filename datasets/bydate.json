@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501643483718
+    "lastModifiedOn": 1501643598459
   },
   "creationTag": {
     "versionNumber": 0,
@@ -66,12 +66,6 @@
       },
       {
         "name": "artist2_0_distinct",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "count",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
