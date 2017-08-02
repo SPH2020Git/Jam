@@ -1,7 +1,18 @@
 {
   "preFilter": {
-    "distinct": false,
-    "enabled": false
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "conditions": [
+        {
+          "input": "rank",
+          "col": "artist_0",
+          "num": 1,
+          "operator": "\u003d\u003d [number]"
+        }
+      ]
+    },
+    "distinct": true,
+    "enabled": true
   },
   "keys": [
     {
@@ -78,6 +89,19 @@
       "sum": false,
       "stddev": false,
       "type": "string",
+      "first": false
+    },
+    {
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "aggregateall",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "type": "bigint",
       "first": false
     },
     {
