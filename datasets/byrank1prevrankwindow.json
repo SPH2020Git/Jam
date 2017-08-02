@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501650496189
+    "lastModifiedOn": 1501650614314
   },
   "creationTag": {
     "versionNumber": 0,
@@ -52,31 +52,7 @@
     "userModified": false,
     "columns": [
       {
-        "name": "artist",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "artist_0",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "artist2_0",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "artist2_1",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "artist_1",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -89,30 +65,6 @@
         "maxLength": -1
       },
       {
-        "name": "aggregateall",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "year",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "month",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "week",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "rank",
         "type": "bigint",
         "timestampNoTzAsDate": false,
@@ -121,24 +73,6 @@
       {
         "name": "song",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "ranklastwk",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "ranktop",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "weeksonchart",
-        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
