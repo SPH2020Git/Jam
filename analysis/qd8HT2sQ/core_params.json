@@ -68,8 +68,8 @@
       "def": {
         "type": "pivot_table",
         "variant": "normal",
-        "name": "Count by year and artist2_0",
-        "userEditedName": false,
+        "name": "Chart Appearances by Artist",
+        "userEditedName": true,
         "genericDimension0": [],
         "genericDimension1": [],
         "genericMeasures": [
@@ -249,7 +249,7 @@
         "_refreshTrigger": 3
       },
       "def": {
-        "type": "grouped_columns",
+        "type": "pivot_table",
         "variant": "normal",
         "name": "New chart",
         "userEditedName": false,
@@ -324,7 +324,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501703405047
+    "lastModifiedOn": 1501703483963
   },
   "creationTag": {
     "versionNumber": 0,
