@@ -81,6 +81,19 @@
       "first": false
     },
     {
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "aggregateall",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "type": "bigint",
+      "first": false
+    },
+    {
       "sum2": false,
       "min": false,
       "countDistinct": false,
