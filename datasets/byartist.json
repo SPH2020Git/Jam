@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501645530858
+    "lastModifiedOn": 1501645608669
   },
   "creationTag": {
     "versionNumber": 0,
@@ -60,6 +60,18 @@
       {
         "name": "aggregateall_sum",
         "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "rank_avg",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "weeksonchart_avg",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
