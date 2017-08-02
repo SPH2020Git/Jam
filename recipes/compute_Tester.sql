@@ -1,3 +1,3 @@
 SELECT *
   FROM "JAM_billboard_sql"
-  where "artist"='The Beatles' and "rank"=1 and "song"='All You Need Is Love'
+  where "artist"='The Beatles'  and "artist"='The Beatles'
