@@ -5,12 +5,6 @@
   },
   "keys": [
     {
-      "column": "song",
-      "type": "string"
-    }
-  ],
-  "values": [
-    {
       "sum2": false,
       "min": false,
       "countDistinct": false,
@@ -24,6 +18,12 @@
       "type": "string",
       "first": false
     },
+    {
+      "column": "song",
+      "type": "string"
+    }
+  ],
+  "values": [
     {
       "sum2": false,
       "min": false,
