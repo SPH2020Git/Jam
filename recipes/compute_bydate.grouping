@@ -46,7 +46,7 @@
       "last": false,
       "max": false,
       "column": "artist2_0",
-      "count": true,
+      "count": false,
       "sum": false,
       "stddev": false,
       "type": "string",
