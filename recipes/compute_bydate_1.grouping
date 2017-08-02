@@ -88,7 +88,7 @@
       "max": false,
       "column": "aggregateall",
       "count": false,
-      "sum": false,
+      "sum": true,
       "stddev": false,
       "type": "bigint",
       "first": false
