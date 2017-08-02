@@ -187,14 +187,6 @@
               "1958": true
             },
             "explicitExclude": false
-          },
-          {
-            "filterType": "ALPHANUM_FACET",
-            "column": "song",
-            "columnType": "ALPHANUM",
-            "isA": "filter",
-            "excludedValues": {},
-            "explicitExclude": false
           }
         ],
         "axis1LogScale": false,
@@ -243,11 +235,11 @@
   ],
   "name": "Analyze billboardprep",
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501639221915
+    "lastModifiedOn": 1501639717702
   },
   "creationTag": {
     "versionNumber": 0,
