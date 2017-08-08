@@ -3,20 +3,58 @@
   "id": "YEA2",
   "type": "step_based",
   "name": "yea",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1502228532033
+    "lastModifiedOn": 1502228837190
   },
   "checklists": {
     "checklists": []
   },
   "tags": [],
-  "triggers": [],
-  "reporters": [],
+  "triggers": [
+    {
+      "id": "lRYOeiQI",
+      "type": "temporal",
+      "delay": 0,
+      "active": true,
+      "params": {
+        "frequency": "Minutely",
+        "daysOfWeek": [],
+        "dayOfMonth": 0,
+        "minute": 0,
+        "hour": 0,
+        "count": 1
+      }
+    }
+  ],
+  "reporters": [
+    {
+      "active": true,
+      "messaging": {
+        "type": "mail-scenario",
+        "configuration": {
+          "subject": "DSS scenario ${scenarioName}: ${outcome}",
+          "sender": "sean.hanlon@dataiku.com",
+          "recipient": "sean.hanlon@dataiku.com",
+          "sendAsHTML": false,
+          "format": "TSV",
+          "attachLog": false,
+          "messageSource": "TEMPLATE_FILE",
+          "templateFormat": "FREEMARKER",
+          "templateName": "default.ftl"
+        }
+      },
+      "id": "YSolIXDz",
+      "name": "YeahScenario",
+      "runConditionEnabled": true,
+      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
+      "phase": "START"
+    }
+  ],
   "params": {
     "steps": []
   },
