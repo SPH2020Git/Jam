@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1502297791096
+    "lastModifiedOn": 1502297915321
   },
   "creationTag": {
     "versionNumber": 0,
@@ -54,6 +54,18 @@
       {
         "name": "mxm_trackid",
         "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "song_clean",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "artist_clean",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
