@@ -1,0 +1,266 @@
+{
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "keys": [
+    {
+      "column": "song_clean"
+    }
+  ],
+  "values": [
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "artist",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "artist_0",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "artist2_0",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "artist_clean",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "artist2_1",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "artist_1",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "date",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "aggregateall",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "year",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "month",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "week",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "rank",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "song",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "artist_song_pairs",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "ranklastwk",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "ranktop",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "weeksonchart",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "first": false
+    }
+  ],
+  "globalCount": true,
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "enlargeYourBits": true,
+  "postFilter": {
+    "distinct": false,
+    "enabled": false
+  }
+}
