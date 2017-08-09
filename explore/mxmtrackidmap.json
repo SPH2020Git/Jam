@@ -66,9 +66,9 @@
           "column": "mxm_mxm_trackid",
           "params": {
             "type": "LongMeaning",
-            "ok": true,
+            "ok": false,
             "nok": false,
-            "empty": false
+            "empty": true
           }
         }
       },
@@ -97,6 +97,41 @@
         "validityFilter": {
           "type": "validity",
           "column": "mxm_song_clean",
+          "params": {
+            "type": "Text",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      },
+      {
+        "column": "artist_clean",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "artist_clean",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "the beatles": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "artist_clean",
+          "values": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "artist_clean",
           "params": {
             "type": "Text",
             "ok": true,
