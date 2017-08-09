@@ -16,6 +16,10 @@
             "billboardwranks": {
               "repartition": 10,
               "cache": false
+            },
+            "billboardranks": {
+              "repartition": 10,
+              "cache": false
             }
           }
         }
@@ -49,11 +53,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 35,
+    "versionNumber": 36,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1502287081720
+    "lastModifiedOn": 1502288143890
   },
   "creationTag": {
     "versionNumber": 0,
