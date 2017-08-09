@@ -7,6 +7,34 @@
     {
       "column": "mxm_trackid",
       "type": "bigint"
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "song_clean",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "type": "string",
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "artist_clean",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "type": "string",
+      "first": false
     }
   ],
   "values": [
@@ -73,35 +101,7 @@
       "avg": false,
       "last": false,
       "max": false,
-      "column": "artist_clean",
-      "count": false,
-      "sum": false,
-      "stddev": false,
-      "type": "string",
-      "first": false
-    },
-    {
-      "sum2": false,
-      "min": false,
-      "countDistinct": false,
-      "avg": false,
-      "last": false,
-      "max": false,
       "column": "mxm_title",
-      "count": false,
-      "sum": false,
-      "stddev": false,
-      "type": "string",
-      "first": false
-    },
-    {
-      "sum2": false,
-      "min": false,
-      "countDistinct": false,
-      "avg": false,
-      "last": false,
-      "max": false,
-      "column": "song_clean",
       "count": false,
       "sum": false,
       "stddev": false,
