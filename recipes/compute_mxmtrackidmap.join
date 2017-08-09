@@ -26,6 +26,18 @@
           "normalizeText": false,
           "type": "EQ",
           "strict": false
+        },
+        {
+          "column1": {
+            "name": "artist_clean",
+            "table": 0
+          },
+          "column2": {
+            "name": "artist_clean",
+            "table": 1
+          },
+          "maxDistance": 1,
+          "type": "EQ"
         }
       ]
     }
