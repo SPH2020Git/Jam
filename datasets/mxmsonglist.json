@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1502315180662
+    "lastModifiedOn": 1502315512344
   },
   "creationTag": {
     "versionNumber": 0,
@@ -60,6 +60,12 @@
       {
         "name": "song_clean",
         "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "mxm_trackid",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
