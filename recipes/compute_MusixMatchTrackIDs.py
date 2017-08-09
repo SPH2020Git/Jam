@@ -2,20 +2,7 @@
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
-
-import dataiku
-import json
-import requests
-import pandas as pd
-import flatten_json
-from flatten_json import flatten
-from pandas.io.json import json_normalize
-import gzip
 from IPython.display import display
-import grequests
-from lxml import html
-from bs4 import BeautifulSoup
-from urllib2 import urlopen
 import datetime
 from dateutil.parser import parse
 
