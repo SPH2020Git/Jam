@@ -2829,7 +2829,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "StringTransformer",
@@ -2841,6 +2841,581 @@
         ],
         "appliesTo": "COLUMNS",
         "truncate_limit": 0
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": true,
+      "type": "StringTransformer",
+      "params": {
+        "mode": "TO_LOWER",
+        "columns": [
+          "artist2_0"
+        ],
+        "appliesTo": "COLUMNS",
+        "truncate_limit": 0
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnCopier",
+      "params": {
+        "outputColumn": "song_clean",
+        "inputColumn": "song"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnCopier",
+      "params": {
+        "outputColumn": "artist_clean",
+        "inputColumn": "artist2_0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "StringTransformer",
+      "params": {
+        "mode": "TO_LOWER",
+        "columns": [
+          "song_clean",
+          "artist_clean"
+        ],
+        "appliesTo": "COLUMNS",
+        "truncate_limit": 0
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsConcat",
+      "params": {
+        "outputColumn": "artist_song_pairs",
+        "columns": [
+          "artist_clean",
+          "song_clean"
+        ],
+        "join": "-"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "tru-i always feel like (somebody\u0027s watching me)",
+            "to": "tru-i always feel like (somebody s watching me)"
+          },
+          {
+            "from": "jessica simpson-i think i\u0027m in love with you",
+            "to": "jessica simpson-i think i m in love with you"
+          },
+          {
+            "from": "corey hart-dancin with my mirror",
+            "to": "corey hart-dancin  with my mirror"
+          },
+          {
+            "from": "kanye west-hear \u0027em say",
+            "to": "kanye west-heard \u0027em say"
+          },
+          {
+            "from": "dru hill-we re not making love no more",
+            "to": "dru hill-we\u0027re not making love no more"
+          },
+          {
+            "from": "toni braxton-i don t want to/i love me some him",
+            "to": "toni braxton-i don\u0027t want to/i love me some him"
+          },
+          {
+            "from": "sheriff-when i m with you",
+            "to": "sheriff-when i\u0027m with you"
+          },
+          {
+            "from": "janet jackson-you want this/70\u0027s love groove",
+            "to": "janet jackson-you want this/70 s love groove"
+          },
+          {
+            "from": "public enemy-can\u0027t truss it",
+            "to": "public enemy-can t truss it"
+          },
+          {
+            "from": "third eye blind-how s it going to be",
+            "to": "third eye blind-how\u0027s it going to be"
+          },
+          {
+            "from": "go west-don t look down - the sequel",
+            "to": "go west-don\u0027t look down - the sequel"
+          },
+          {
+            "from": "she moves-it s your love",
+            "to": "she moves-it\u0027s your love"
+          },
+          {
+            "from": "do or die-still po pimpin",
+            "to": "do or die-still po  pimpin"
+          },
+          {
+            "from": "samantha fox-nothing\u0027s gonna stop me now",
+            "to": "samantha fox-nothing s gonna stop me now"
+          },
+          {
+            "from": "sweetbox-everything s gonna be alright",
+            "to": "sweetbox-everything\u0027s gonna be alright"
+          },
+          {
+            "from": "danny wilson-mary\u0027s prayer",
+            "to": "danny wilson-mary s prayer"
+          },
+          {
+            "from": "whitney houston-i believe in you and me (from \"the preacher s wife\")",
+            "to": "whitney houston-i believe in you and me (from \"the preacher\u0027s wife\")"
+          },
+          {
+            "from": "tami davis-how do i say i\u0027m sorry",
+            "to": "tami davis-how do i say i m sorry"
+          },
+          {
+            "from": "madonna-who s that girl",
+            "to": "madonna-who\u0027s that girl"
+          },
+          {
+            "from": "the moody blues-i know you re out there somewhere",
+            "to": "the moody blues-i know you\u0027re out there somewhere"
+          },
+          {
+            "from": "112-it\u0027s over now",
+            "to": "112-it s over now"
+          },
+          {
+            "from": "rascal flatts-prayin\u0027 for daylight",
+            "to": "rascal flatts-prayin for daylight"
+          },
+          {
+            "from": "d12-purple hills",
+            "to": "d-12-purple hills"
+          },
+          {
+            "from": "foreigner-i don\u0027t want to live without you",
+            "to": "foreigner-i don t want to live without you"
+          },
+          {
+            "from": "da brat-what chu like",
+            "to": "da brat-what\u0027chu like"
+          },
+          {
+            "from": "poison-i won t forget you",
+            "to": "poison-i won\u0027t forget you"
+          },
+          {
+            "from": "jesse powell-i wasn\u0027t with it",
+            "to": "jesse powell-i wasn t with it"
+          },
+          {
+            "from": "ralph tresvant-money can t buy you love (from \"mo money\")",
+            "to": "ralph tresvant-money can t buy you love (from \"mo  money\")"
+          },
+          {
+            "from": "toni braxton-he wasn\u0027t man enough",
+            "to": "toni braxton-he wasn t man enough"
+          },
+          {
+            "from": "joe-don t wanna be a player (from \"booty call\")",
+            "to": "joe-don\u0027t wanna be a player (from \"booty call\")"
+          },
+          {
+            "from": "patrick swayze (-she s like the wind",
+            "to": "patrick swayze (-she\u0027s like the wind"
+          },
+          {
+            "from": "mariah carey-can t let go",
+            "to": "mariah carey-can\u0027t let go"
+          },
+          {
+            "from": "glenn medeiros-lonely won t leave me alone",
+            "to": "glenn medeiros-lonely won\u0027t leave me alone"
+          },
+          {
+            "from": "new kids on the block-hangin tough",
+            "to": "new kids on the block-hangin  tough"
+          },
+          {
+            "from": "survivor-i can\u0027t hold back",
+            "to": "survivor-i can t hold back"
+          },
+          {
+            "from": "michael mcdonald-no lookin  back",
+            "to": "michael mcdonald-no lookin back"
+          },
+          {
+            "from": "lumidee-never leave you - uh oooh, uh oooh!",
+            "to": "lumidee-never leave you - uh ooh, uh oooh!"
+          },
+          {
+            "from": "3 doors down-citizen/soldier",
+            "to": "3 doors down-citizen soldier"
+          },
+          {
+            "from": "jo dee messina-that s the way",
+            "to": "jo dee messina-that\u0027s the way"
+          },
+          {
+            "from": "athenaeum-what i didn t know",
+            "to": "athenaeum-what i didn\u0027t know"
+          },
+          {
+            "from": "barbra streisand with kim carnes-make no mistake, he s mine",
+            "to": "barbra streisand with kim carnes-make no mistake, he\u0027s mine"
+          },
+          {
+            "from": "tom petty-runnin  down a dream",
+            "to": "tom petty-runnin down a dream"
+          },
+          {
+            "from": "mick jagger-let s work",
+            "to": "mick jagger-let\u0027s work"
+          },
+          {
+            "from": "donell jones-u know what\u0027s up",
+            "to": "donell jones-u know what s up"
+          },
+          {
+            "from": "gloria estefan-heaven s what i feel",
+            "to": "gloria estefan-heaven\u0027s what i feel"
+          },
+          {
+            "from": "cinderella-nobody\u0027s fool",
+            "to": "cinderella-nobody s fool"
+          },
+          {
+            "from": "tom petty and the heartbreakers-mary jane s last dance",
+            "to": "tom petty and the heartbreakers-mary jane\u0027s last dance"
+          },
+          {
+            "from": "b.m.u. (black men united)-u will know (from \"jason s lyric\")",
+            "to": "b.m.u. (black men united)-u will know (from \"jason\u0027s lyric\")"
+          },
+          {
+            "from": "brad paisley-he didn\u0027t have to be",
+            "to": "brad paisley-he didn t have to be"
+          },
+          {
+            "from": "uncle sam-i don t ever want to see you again",
+            "to": "uncle sam-i don\u0027t ever want to see you again"
+          },
+          {
+            "from": "urge overkill-girl, you ll be a woman soon (from \"pulp fiction\")",
+            "to": "urge overkill-girl, you\u0027ll be a woman soon (from \"pulp fiction\")"
+          },
+          {
+            "from": "whitney houston-didn t we almost have it all",
+            "to": "whitney houston-didn\u0027t we almost have it all"
+          },
+          {
+            "from": "michael jackson with siedah garrett-i just can t stop loving you",
+            "to": "michael jackson with siedah garrett-i just can\u0027t stop loving you"
+          },
+          {
+            "from": "information society-what\u0027s on your mind (pure energy)",
+            "to": "information society-what s on your mind (pure energy)"
+          },
+          {
+            "from": "bryan adams-can t stop this thing we started",
+            "to": "bryan adams-can\u0027t stop this thing we started"
+          },
+          {
+            "from": "kenny loggins-nobody\u0027s fool (theme from \"caddyshack ii\")",
+            "to": "kenny loggins-nobody s fool (theme from \"caddyshack ii\")"
+          },
+          {
+            "from": "clay walker-what s it to you",
+            "to": "clay walker-what\u0027s it to you"
+          },
+          {
+            "from": "cypress hill-we ain t goin out like that",
+            "to": "cypress hill-we ain t goin  out like that"
+          },
+          {
+            "from": "edwin mccain-i\u0027ll be",
+            "to": "edwin mccain-i ll be"
+          },
+          {
+            "from": "glenn jones-we\u0027ve only just begun (the romance is not over)",
+            "to": "glenn jones-we ve only just begun (the romance is not over)"
+          },
+          {
+            "from": "ray parker, jr.-i don\u0027t think that man should sleep alone",
+            "to": "ray parker, jr.-i don t think that man should sleep alone"
+          },
+          {
+            "from": "will to power-say it s gonna rain",
+            "to": "will to power-say it\u0027s gonna rain"
+          },
+          {
+            "from": "vanessa williams-darlin i",
+            "to": "vanessa williams-darlin  i"
+          },
+          {
+            "from": "thirty eight special-comin  down tonight",
+            "to": "thirty eight special-comin down tonight"
+          },
+          {
+            "from": "sting-we\u0027ll be together",
+            "to": "sting-we ll be together"
+          },
+          {
+            "from": "u2-in god\u0027s country",
+            "to": "u2-in god s country"
+          },
+          {
+            "from": "david ball-thinkin  problem",
+            "to": "david ball-thinkin problem"
+          },
+          {
+            "from": "jagged edge-let s get married",
+            "to": "jagged edge-let\u0027s get married"
+          },
+          {
+            "from": "whitney houston-step by step (from \"the preacher\u0027s wife\")",
+            "to": "whitney houston-step by step (from \"the preacher s wife\")"
+          },
+          {
+            "from": "great white-call it rock n roll",
+            "to": "great white-call it rock n  roll"
+          },
+          {
+            "from": "bruce springsteen-i m goin  down",
+            "to": "bruce springsteen-i m goin down"
+          },
+          {
+            "from": "glee cast-sing",
+            "to": "glee cast-sing!"
+          },
+          {
+            "from": "r.e.m.-it s the end of the world as we know it (and i feel fine)",
+            "to": "r.e.m.-it\u0027s the end of the world as we know it (and i feel fine)"
+          },
+          {
+            "from": "sweet sensation-take it while it s hot",
+            "to": "sweet sensation-take it while it\u0027s hot"
+          },
+          {
+            "from": "howard jones-you know i love you ... don\u0027t you?",
+            "to": "howard jones-you know i love you ... don t you?"
+          },
+          {
+            "from": "puff daddy-can t nobody hold me down",
+            "to": "puff daddy-can\u0027t nobody hold me down"
+          },
+          {
+            "from": "the jets-sendin all my love",
+            "to": "the jets-sendin  all my love"
+          },
+          {
+            "from": "janet-doesn t really matter",
+            "to": "janet-doesn\u0027t really matter"
+          },
+          {
+            "from": "journey-i\u0027ll be alright without you",
+            "to": "journey-i ll be alright without you"
+          },
+          {
+            "from": "rod stewart-twistin  the night away (from \"innerspace\")",
+            "to": "rod stewart-twistin the night away (from \"innerspace\")"
+          },
+          {
+            "from": "christopher williams-i m dreamin (from \"new jack city\")",
+            "to": "christopher williams-i m dreamin  (from \"new jack city\")"
+          },
+          {
+            "from": "dj taz-that\u0027s right",
+            "to": "dj taz-that s right"
+          },
+          {
+            "from": "foxy brown-i ll be",
+            "to": "foxy brown-i\u0027ll be"
+          },
+          {
+            "from": "tom petty-you don t know how it feels",
+            "to": "tom petty-you don\u0027t know how it feels"
+          },
+          {
+            "from": "jagged edge-he can\u0027t love u",
+            "to": "jagged edge-he can t love u"
+          },
+          {
+            "from": "ub40-can t help falling in love (from \"sliver\")",
+            "to": "ub40-can\u0027t help falling in love (from \"sliver\")"
+          },
+          {
+            "from": "boston-we re ready",
+            "to": "boston-we\u0027re ready"
+          },
+          {
+            "from": "tori amos-jackie s strength",
+            "to": "tori amos-jackie\u0027s strength"
+          },
+          {
+            "from": "tora tora-walkin  shoes",
+            "to": "tora tora-walkin shoes"
+          },
+          {
+            "from": "heart-nothin at all",
+            "to": "heart-nothin  at all"
+          },
+          {
+            "from": "uptown-(i know) i\u0027m losing you",
+            "to": "uptown-(i know) i m losing you"
+          },
+          {
+            "from": "cyndi lauper-the goonies `r  good enough",
+            "to": "cyndi lauper-the goonies `r good enough"
+          },
+          {
+            "from": "paula cole-i don\u0027t want to wait",
+            "to": "paula cole-i don t want to wait"
+          },
+          {
+            "from": "ll cool j-the boomin system",
+            "to": "ll cool j-the boomin  system"
+          },
+          {
+            "from": "amy grant-that s what love is for",
+            "to": "amy grant-that\u0027s what love is for"
+          },
+          {
+            "from": "l.f.o. (lyte funky ones) (-if i can\u0027t have you",
+            "to": "l.f.o. (lyte funky ones) (-if i can t have you"
+          },
+          {
+            "from": "reba mcentire-i\u0027ll be",
+            "to": "reba mcentire-i ll be"
+          },
+          {
+            "from": "andy griggs-she\u0027s more",
+            "to": "andy griggs-she s more"
+          },
+          {
+            "from": "rockell [duet with collage]-can t we try",
+            "to": "rockell [duet with collage]-can\u0027t we try"
+          },
+          {
+            "from": "timbuk 3-the future\u0027s so bright, i gotta wear shades",
+            "to": "timbuk 3-the future s so bright, i gotta wear shades"
+          },
+          {
+            "from": "jody watley-don\u0027t you want me",
+            "to": "jody watley-don t you want me"
+          },
+          {
+            "from": "deborah cox-things just ain\u0027t the same",
+            "to": "deborah cox-things just ain t the same"
+          },
+          {
+            "from": "all saints-i know where it\u0027s at",
+            "to": "all saints-i know where it s at"
+          },
+          {
+            "from": "damn yankees-where you goin  now",
+            "to": "damn yankees-where you goin now"
+          },
+          {
+            "from": "loverboy-lovin every minute of it",
+            "to": "loverboy-lovin  every minute of it"
+          },
+          {
+            "from": "ludacris-what\u0027s your fantasy",
+            "to": "ludacris-what s your fantasy"
+          },
+          {
+            "from": "r.e.m.-what\u0027s the frequency, kenneth?",
+            "to": "r.e.m.-what s the frequency, kenneth?"
+          },
+          {
+            "from": "shania twain-you\u0027re still the one",
+            "to": "shania twain-you re still the one"
+          },
+          {
+            "from": "cutting crew-i\u0027ve been in love before",
+            "to": "cutting crew-i ve been in love before"
+          },
+          {
+            "from": "the nutty squirrels-uh! oh! part 2",
+            "to": "the nutty squirrels-uh! oh! part 1"
+          },
+          {
+            "from": "bobby mcferrin-don\u0027t worry, be happy (from \"cocktail\")",
+            "to": "bobby mcferrin-don t worry, be happy (from \"cocktail\")"
+          },
+          {
+            "from": "h-town-knockin da boots",
+            "to": "h-town-knockin  da boots"
+          },
+          {
+            "from": "imajin-shorty (you keep playin\u0027 with my mind)",
+            "to": "imajin-shorty (you keep playin with my mind)"
+          },
+          {
+            "from": "imajin-shorty (you keep playin  with my mind)",
+            "to": "imajin-shorty (you keep playin with my mind)"
+          },
+          {
+            "from": "bon jovi-livin  on a prayer",
+            "to": "bon jovi-livin on a prayer"
+          },
+          {
+            "from": "bon jovi-livin\u0027 on a prayer",
+            "to": "bon jovi-livin on a prayer"
+          },
+          {
+            "from": "ricky martin-the cup of life (the official song of the world cup, france  98)",
+            "to": "ricky martin-the cup of life (the official song of the world cup, france 98)"
+          },
+          {
+            "from": "ricky martin-the cup of life (the official song of the world cup, france \u002798)",
+            "to": "ricky martin-the cup of life (the official song of the world cup, france 98)"
+          },
+          {
+            "from": "ice cube-pushin  weight",
+            "to": "ice cube-pushin\u0027 weight"
+          },
+          {
+            "from": "ice cube-pushin weight",
+            "to": "ice cube-pushin\u0027 weight"
+          },
+          {
+            "from": "poison-nothin\u0027 but a good time",
+            "to": "poison-nothin but a good time"
+          },
+          {
+            "from": "poison-nothin  but a good time",
+            "to": "poison-nothin but a good time"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "artist_song_pairs"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
       },
       "alwaysShowComment": false
     }
