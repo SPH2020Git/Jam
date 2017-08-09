@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1502313436205
+    "lastModifiedOn": 1502313691999
   },
   "creationTag": {
     "versionNumber": 0,
@@ -52,14 +52,20 @@
     "userModified": false,
     "columns": [
       {
+        "name": "artist_clean",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "song_clean",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "artist_clean",
-        "type": "string",
+        "name": "count",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
