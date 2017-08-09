@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1501645257852
+    "lastModifiedOn": 1502290386581
   },
   "creationTag": {
     "versionNumber": 0,
@@ -65,6 +65,12 @@
       },
       {
         "name": "artist2_0",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "artist_clean",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -120,6 +126,18 @@
       },
       {
         "name": "song",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "song_clean",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "artist_song_pairs",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
