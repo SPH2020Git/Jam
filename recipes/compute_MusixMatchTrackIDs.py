@@ -26,11 +26,6 @@ spillrows['index'] = spillrows.index
 spillrows= spillrows.drop_duplicates(subset='index')
 spillrows= spillrows.drop('index', axis =1)
 
-#create a merge data set with all of the additional variable fields, and remove the first column since I opened that column in the cell above
-spillrows=spillrows.drop([0],1)
-for i in range(0,len(spillrows.columns)+1):
-    spillrows=spillrows.rename(columns={i: 'spillover'+str(sum(i+len(spillrowssplit.columns)-1))})
-    
 #split the text string in the first column into multiple columns
 mxmdata=pd.DataFrame(mxmdata[0].str.split('<SEP>'))
 
@@ -44,6 +39,11 @@ mxmdata=mxmdata.rename(columns={0: 'msd_trackid',\
                                       3: 'mxm_trackid',\
                                       4: 'mxm_artist',\
                                       5: 'mxm_title'})
+
+#create a merge data set with all of the additional variable fields, and remove the first column since I opened that column in the cell above
+spillrows=spillrows.drop([0],1)
+for i in range(0,len(spillrows.columns)+1):
+    spillrows=spillrows.rename(columns={i: 'spillover'+str(sum(i+len(mxmdata.columns)-1))})
 
 # Merge the overflow rows onto the dataset where the music text is split:
 mxmdata=pd.concat([mxmdata, spillrows], axis=1)
