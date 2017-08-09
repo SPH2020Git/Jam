@@ -1,10 +1,13 @@
-# -*- coding: utf-8 -*-
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 from IPython.display import display
 import datetime
 from dateutil.parser import parse
+import matplotlib
+from matplotlib import pylab, mlab, pyplot
+from pylab import *
+from numpy import *
 
 with open("/Users/seanhanlon/Downloads/mxm_779k_matches.txt") as file:
     lines = []
