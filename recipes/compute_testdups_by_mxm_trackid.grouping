@@ -5,7 +5,8 @@
   },
   "keys": [
     {
-      "column": "mxm_trackid"
+      "column": "mxm_trackid",
+      "type": "bigint"
     }
   ],
   "values": [
@@ -20,6 +21,7 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "string",
       "first": false
     },
     {
@@ -33,6 +35,7 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "string",
       "first": false
     },
     {
@@ -46,6 +49,7 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "bigint",
       "first": false
     }
   ],
@@ -77,6 +81,7 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "postFilter": {
     "distinct": false,
     "enabled": false
