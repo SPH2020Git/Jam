@@ -5,13 +5,12 @@
   },
   "keys": [
     {
-      "sum2": false,
-      "min": false,
       "countDistinct": false,
+      "min": false,
       "avg": false,
       "last": false,
       "max": false,
-      "column": "artist_clean",
+      "column": "artist_simplified",
       "count": false,
       "sum": false,
       "stddev": false,
@@ -19,8 +18,17 @@
       "first": false
     },
     {
-      "column": "song_clean",
-      "type": "string"
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "song_simplified",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "type": "string",
+      "first": false
     }
   ],
   "values": [
@@ -60,6 +68,20 @@
       "last": false,
       "max": false,
       "column": "artist2_0",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "type": "string",
+      "first": false
+    },
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "artist_clean",
       "count": false,
       "sum": false,
       "stddev": false,
@@ -191,6 +213,10 @@
       "stddev": false,
       "type": "string",
       "first": false
+    },
+    {
+      "column": "song_clean",
+      "type": "string"
     },
     {
       "sum2": false,
