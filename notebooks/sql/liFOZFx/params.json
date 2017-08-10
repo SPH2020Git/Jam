@@ -1,14 +1,28 @@
 {
   "connection": "pgsql",
   "name": "Billboard Queries",
-  "cells": [],
+  "cells": [
+    {
+      "id": "760o4ja6d3m",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    }
+  ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1502381259114
+    "lastModifiedOn": 1502381264640
   },
   "creationTag": {
     "versionNumber": 0,
