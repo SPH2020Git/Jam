@@ -12,31 +12,25 @@
       "on": [
         {
           "column1": {
-            "name": "song_clean",
-            "table": 0
-          },
-          "dateDiffUnit": "DAY",
-          "column2": {
-            "name": "song_clean",
-            "table": 1
-          },
-          "maxMatches": 1,
-          "caseInsensitive": false,
-          "maxDistance": 0,
-          "normalizeText": false,
-          "type": "EQ",
-          "strict": false
-        },
-        {
-          "column1": {
-            "name": "artist_clean",
+            "name": "artist_simplified",
             "table": 0
           },
           "column2": {
-            "name": "artist_clean",
+            "name": "artist_simplified",
             "table": 1
           },
           "maxDistance": 1,
+          "type": "EQ"
+        },
+        {
+          "column1": {
+            "name": "song_simplified",
+            "table": 0
+          },
+          "column2": {
+            "name": "song_simplified",
+            "table": 1
+          },
           "type": "EQ"
         }
       ]
@@ -44,29 +38,9 @@
   ],
   "selectedColumns": [
     {
-      "name": "artist_clean",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "song_clean",
-      "type": "string",
-      "table": 0
-    },
-    {
       "name": "count",
       "type": "bigint",
       "table": 0
-    },
-    {
-      "name": "artist_clean",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "song_clean",
-      "type": "string",
-      "table": 1
     },
     {
       "name": "mxm_trackid",
