@@ -181,10 +181,10 @@
         "mode": "SQL",
         "id": "nQOQLUXYYEX4",
         "runOn": 1502381442134,
-        "runIn": 60,
+        "runIn": 88,
         "runBy": "admin",
         "connection": "pgsql",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "OCP3w22GOkupMog2",
         "hash": "26ed757812a917c1011eac99137e33a0",
         "querySettings": {
