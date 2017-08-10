@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "760o4ja6d3m": [
+      {
+        "mode": "SQL",
+        "id": "P47vvXWK1dTB",
+        "runOn": 1502381300491,
+        "runIn": -1,
+        "runBy": "admin",
+        "connection": "pgsql",
+        "state": "RUNNING",
+        "futureId": "xGRc8GeXYRohOPrl",
+        "hash": "dd297167037cb75073082c451756cd64",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * \nfrom \"JAM_mxmtrackidmap\"",
+        "expandedSql": "select * \nfrom \"JAM_mxmtrackidmap\""
+      }
+    ]
+  }
+}
