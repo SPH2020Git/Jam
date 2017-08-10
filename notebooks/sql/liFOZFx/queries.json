@@ -88,6 +88,28 @@
         },
         "sql": "select * \nfrom \"JAM_mxmtrackidmap\"\nwhere \"mxm_mxm_trackid\" is null\n",
         "expandedSql": "select * \nfrom \"JAM_mxmtrackidmap\"\nwhere \"mxm_mxm_trackid\" is null\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "ZWEpcRWHhaaZ",
+        "runOn": 1502381370950,
+        "runIn": 48,
+        "runBy": "admin",
+        "connection": "pgsql",
+        "state": "RUNNING",
+        "futureId": "le9jOZwB382rv5Db",
+        "hash": "d20b661a6eb2e54cdd9778a044439425",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * \nfrom \"JAM_mxmtrackidmap\"\nwhere \"mxm_mxm_trackid\" not null\n",
+        "expandedSql": "select * \nfrom \"JAM_mxmtrackidmap\"\nwhere \"mxm_mxm_trackid\" not null\n"
       }
     ]
   }
