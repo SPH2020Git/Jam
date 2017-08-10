@@ -6,108 +6,148 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "artist_simplified",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "artist_simplified",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "song_simplified",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "song_simplified",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "artist",
+      "type": "string",
       "table": 0
     },
     {
       "name": "artist_0",
+      "type": "string",
       "table": 0
     },
     {
       "name": "artist2_0",
+      "type": "string",
       "table": 0
     },
     {
       "name": "artist_clean",
+      "type": "string",
       "table": 0
     },
     {
       "name": "artist_simplified",
+      "type": "string",
       "table": 0
     },
     {
       "name": "artist2_1",
+      "type": "string",
       "table": 0
     },
     {
       "name": "artist_1",
+      "type": "string",
       "table": 0
     },
     {
       "name": "date",
+      "type": "date",
       "table": 0
     },
     {
       "name": "aggregateall",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "year",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "month",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "week",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "rank",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "song",
+      "type": "string",
       "table": 0
     },
     {
       "name": "song_clean",
+      "type": "string",
       "table": 0
     },
     {
       "name": "song_simplified",
+      "type": "string",
       "table": 0
     },
     {
       "name": "artist_song_pairs",
+      "type": "string",
       "table": 0
     },
     {
       "name": "ranklastwk",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "ranktop",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "weeksonchart",
+      "type": "bigint",
       "table": 0
     },
     {
-      "name": "count",
-      "table": 1
-    },
-    {
       "name": "mxm_mxm_trackid",
-      "table": 1
-    },
-    {
-      "name": "mxm_artist_simplified",
-      "table": 1
-    },
-    {
-      "name": "mxm_song_simplified",
-      "table": 1
-    },
-    {
-      "name": "mxm_count",
+      "type": "bigint",
       "table": 1
     }
   ],
@@ -155,5 +195,6 @@
       "index": 1
     }
   ],
+  "postFilter": {},
   "enableAutoCastInJoinConditions": false
 }
