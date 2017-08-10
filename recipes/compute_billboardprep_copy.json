@@ -3,7 +3,11 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "uniqueKey": [],
+    "uniqueKey": [
+      "date",
+      "song",
+      "artist"
+    ],
     "filter": {
       "distinct": false,
       "enabled": false
@@ -38,11 +42,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1502379021279
+    "lastModifiedOn": 1502379057307
   },
   "creationTag": {
     "versionNumber": 0,
