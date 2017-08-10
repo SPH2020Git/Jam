@@ -22,6 +22,28 @@
         },
         "sql": "select * \nfrom \"JAM_mxmtrackidmap\"",
         "expandedSql": "select * \nfrom \"JAM_mxmtrackidmap\""
+      },
+      {
+        "mode": "SQL",
+        "id": "nf2NCUvx785I",
+        "runOn": 1502381329132,
+        "runIn": 57,
+        "runBy": "admin",
+        "connection": "pgsql",
+        "state": "RUNNING",
+        "futureId": "UCOwDqM71upc6gU3",
+        "hash": "d08f1a7f910752edcd36d887a8c2ad10",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * \nfrom \"JAM_mxmtrackidmap\"\nwhere \"mxm_mxm_trackid\"!\u003d\"\"\n",
+        "expandedSql": "select * \nfrom \"JAM_mxmtrackidmap\"\nwhere \"mxm_mxm_trackid\"!\u003d\"\"\n"
       }
     ]
   }
