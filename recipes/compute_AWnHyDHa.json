@@ -16,7 +16,7 @@
     "main": {
       "items": [
         {
-          "ref": "AWnHyDHa",
+          "ref": "billboard_1",
           "deps": []
         }
       ]
@@ -33,11 +33,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1502393812907
+    "lastModifiedOn": 1502399755342
   },
   "creationTag": {
     "versionNumber": 0,
