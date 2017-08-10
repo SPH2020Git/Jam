@@ -38,12 +38,37 @@
   ],
   "selectedColumns": [
     {
+      "name": "artist_simplified",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "song_simplified",
+      "type": "string",
+      "table": 0
+    },
+    {
       "name": "count",
       "type": "bigint",
       "table": 0
     },
     {
       "name": "mxm_trackid",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "artist_simplified",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "song_simplified",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "count",
       "type": "bigint",
       "table": 1
     }
@@ -94,5 +119,6 @@
     }
   ],
   "postFilter": {},
+  "computedColumns": [],
   "enableAutoCastInJoinConditions": false
 }
