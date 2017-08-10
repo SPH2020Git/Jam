@@ -12,18 +12,6 @@
       "on": [
         {
           "column1": {
-            "name": "artist_simplified",
-            "table": 0
-          },
-          "column2": {
-            "name": "artist_simplified",
-            "table": 1
-          },
-          "maxDistance": 1,
-          "type": "EQ"
-        },
-        {
-          "column1": {
             "name": "song_simplified",
             "table": 0
           },
