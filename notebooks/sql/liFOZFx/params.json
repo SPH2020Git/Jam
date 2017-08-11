@@ -14,15 +14,28 @@
         "statementsParseMode": "SPLIT",
         "statementsExecutionMode": "PREPARED"
       }
+    },
+    {
+      "id": "q86tk9mfjl",
+      "type": "MARKDOWN",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
     }
   ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1502381264640
+    "lastModifiedOn": 1502477702676
   },
   "creationTag": {
     "versionNumber": 0,
