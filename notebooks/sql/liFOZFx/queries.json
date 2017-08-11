@@ -269,10 +269,10 @@
         "mode": "SQL",
         "id": "55m2etvNlgwd",
         "runOn": 1502471673366,
-        "runIn": 78,
+        "runIn": 129,
         "runBy": "admin",
         "connection": "pgsql",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "ybOYb9YEJ0GCi3rp",
         "hash": "db76c56fa9bb7f0996a2e9dc1677f15e",
         "querySettings": {
