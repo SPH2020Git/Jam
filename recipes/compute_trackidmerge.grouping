@@ -5,10 +5,9 @@
   },
   "keys": [
     {
-      "column": "artist_simplified"
-    }
-  ],
-  "values": [
+      "column": "artist_simplified",
+      "type": "string"
+    },
     {
       "sum2": false,
       "min": false,
@@ -20,19 +19,7 @@
       "count": false,
       "sum": false,
       "stddev": false,
-      "first": false
-    },
-    {
-      "sum2": false,
-      "min": false,
-      "countDistinct": false,
-      "avg": false,
-      "last": false,
-      "max": false,
-      "column": "count",
-      "count": false,
-      "sum": false,
-      "stddev": false,
+      "type": "string",
       "first": false
     },
     {
@@ -46,6 +33,23 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "bigint",
+      "first": false
+    }
+  ],
+  "values": [
+    {
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "count",
+      "count": false,
+      "sum": false,
+      "stddev": false,
+      "type": "bigint",
       "first": false
     },
     {
@@ -59,6 +63,7 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "string",
       "first": false
     },
     {
@@ -72,6 +77,7 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "string",
       "first": false
     },
     {
@@ -85,6 +91,7 @@
       "count": false,
       "sum": false,
       "stddev": false,
+      "type": "bigint",
       "first": false
     }
   ],
@@ -116,6 +123,7 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "postFilter": {
     "distinct": false,
     "enabled": false
