@@ -374,6 +374,28 @@
         },
         "sql": "select distinct \"artist_simplified\",\"song_simplified\",\"mxm_mxm_trackid\" \nfrom \"JAM_mxmtrackidmap\"\nwhere \"mxm_mxm_trackid\" is not null\n",
         "expandedSql": "select distinct \"artist_simplified\",\"song_simplified\",\"mxm_mxm_trackid\" \nfrom \"JAM_mxmtrackidmap\"\nwhere \"mxm_mxm_trackid\" is not null\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "Ch8uoAcjwlKt",
+        "runOn": 1502476646373,
+        "runIn": 89,
+        "runBy": "admin",
+        "connection": "pgsql",
+        "state": "RUNNING",
+        "futureId": "mGs2Pw870Hm6JaM2",
+        "hash": "db76c56fa9bb7f0996a2e9dc1677f15e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select distinct \"artist_simplified\",\"song_simplified\",\"mxm_mxm_trackid\" \nfrom \"JAM_mxmtrackidmap\"\nwhere \"mxm_mxm_trackid\" is not null\n",
+        "expandedSql": "select distinct \"artist_simplified\",\"song_simplified\",\"mxm_mxm_trackid\" \nfrom \"JAM_mxmtrackidmap\"\nwhere \"mxm_mxm_trackid\" is not null\n"
       }
     ]
   }
