@@ -352,6 +352,28 @@
         },
         "sql": "create temporary table \"Jam_test\" as\nselect distinct \"artist_simplified\",\"song_simplified\",\"mxm_mxm_trackid\" \nfrom \"JAM_mxmtrackidmap\"\nwhere \"mxm_mxm_trackid\" is not null\n",
         "expandedSql": "create temporary table \"Jam_test\" as\nselect distinct \"artist_simplified\",\"song_simplified\",\"mxm_mxm_trackid\" \nfrom \"JAM_mxmtrackidmap\"\nwhere \"mxm_mxm_trackid\" is not null\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "tBFs6an0M7xG",
+        "runOn": 1502476641122,
+        "runIn": 113,
+        "runBy": "admin",
+        "connection": "pgsql",
+        "state": "RUNNING",
+        "futureId": "wCk8taixtfisnuP0",
+        "hash": "db76c56fa9bb7f0996a2e9dc1677f15e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select distinct \"artist_simplified\",\"song_simplified\",\"mxm_mxm_trackid\" \nfrom \"JAM_mxmtrackidmap\"\nwhere \"mxm_mxm_trackid\" is not null\n",
+        "expandedSql": "select distinct \"artist_simplified\",\"song_simplified\",\"mxm_mxm_trackid\" \nfrom \"JAM_mxmtrackidmap\"\nwhere \"mxm_mxm_trackid\" is not null\n"
       }
     ]
   }
