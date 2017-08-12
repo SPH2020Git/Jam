@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1502498582671
+    "lastModifiedOn": 1502498628109
   },
   "creationTag": {
     "versionNumber": 0,
@@ -49,7 +49,7 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
         "name": "message.body",
@@ -84,6 +84,7 @@
       {
         "name": "message.body.track.album_id",
         "type": "double",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
