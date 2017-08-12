@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1502498628109
+    "lastModifiedOn": 1502498638324
   },
   "creationTag": {
     "versionNumber": 0,
@@ -84,7 +84,7 @@
       {
         "name": "message.body.track.album_id",
         "type": "double",
-        "meaning": "Text",
+        "meaning": "LongMeaning",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
