@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1502498662060
+    "lastModifiedOn": 1502656359654
   },
   "creationTag": {
     "versionNumber": 0,
@@ -49,7 +49,7 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "userModified": true,
+    "userModified": false,
     "columns": [
       {
         "name": "message.body",
@@ -83,8 +83,7 @@
       },
       {
         "name": "message.body.track.album_id",
-        "type": "double",
-        "meaning": "DoubleMeaning",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -96,7 +95,7 @@
       },
       {
         "name": "message.body.track.artist_id",
-        "type": "double",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -114,7 +113,7 @@
       },
       {
         "name": "message.body.track.commontrack_id",
-        "type": "double",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -168,7 +167,7 @@
       },
       {
         "name": "message.body.track.lyrics_id",
-        "type": "double",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -198,7 +197,7 @@
       },
       {
         "name": "message.body.track.subtitle_id",
-        "type": "double",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -210,7 +209,7 @@
       },
       {
         "name": "message.body.track.track_id",
-        "type": "double",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
