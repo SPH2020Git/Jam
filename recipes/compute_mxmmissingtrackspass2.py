@@ -31,9 +31,6 @@ for idx, val in enumerate(songslist):
             response=requests.get("https://api.musixmatch.com/ws/1.1/matcher.track.get?format=jsonp&callback=callback&q_artist="+theartist+"&q_track="+thetitle+"&apikey="+thekey).text
             responseclean = response.split("(")[1].strip(");")
             if responseclean[-1]!="}":
-#                 responseclean=ast.literal_eval(responseclean+'"}}}}') 
-#                 parsed_json=pd.io.json.json_normalize(responseclean)
-#                 thetracks=thetracks.append(parsed_json)
                 continue
             data_json = json.loads(responseclean)
             parsed_json=pd.io.json.json_normalize(data_json)
