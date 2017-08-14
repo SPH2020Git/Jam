@@ -1,0 +1,50 @@
+{
+  "type": "CustomCode_musixmatch-fetch-artist-tracks",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "customConfig": {}
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "inputs": {
+    "artist_list": {
+      "items": [
+        {
+          "ref": "mxmmissingtrackspass2",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "artists_tracks": {
+      "items": [
+        {
+          "ref": "test2",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1502722165903
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1502722165903
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
