@@ -24,7 +24,7 @@ songslist=missingtracks['song_simplified'].tolist()
 thekey="75a92c53aece5428a5e239011843a4fd"
 thetracks=pd.DataFrame()
 for idx, val in enumerate(songslist):
-        if idx<2001:
+        if idx<17236:
             theartist='"'+artistslist[idx]+'"'
             thetitle='"'+songslist[idx]+'"'
             print(theartist+thetitle)
