@@ -1,10 +1,31 @@
 {
   "dashboardAuthorizations": {
     "allAuthorized": false,
-    "authorizations": []
+    "authorizations": [
+      {
+        "objectRef": {
+          "objectId": "test",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
+      }
+    ]
   },
   "exposedObjects": {
-    "objects": []
+    "objects": [
+      {
+        "type": "DATASET",
+        "localName": "test",
+        "rules": [
+          {
+            "targetProject": "TEST",
+            "appearOnFlow": true
+          }
+        ]
+      }
+    ]
   },
   "projectType": "REGULAR",
   "owner": "admin",
@@ -46,6 +67,13 @@
   },
   "name": "Jam!",
   "projectStatus": "Sandbox",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1502907124154
+  },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
