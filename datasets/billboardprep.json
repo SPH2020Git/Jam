@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1503531877128
+    "lastModifiedOn": 1503532147443
   },
   "creationTag": {
     "versionNumber": 0,
@@ -113,7 +113,13 @@
         "maxLength": -1
       },
       {
-        "name": "newcolumn_expression",
+        "name": "number1",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "decade",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
