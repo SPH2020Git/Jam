@@ -3472,13 +3472,24 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "if(\nyear\u003e\u003d1950 \u0026\u0026 year\u003c1960,\"1950s\",\n\nif(\nyear\u003e\u003d1960 \u0026\u0026 year\u003c1970,\"1960s\",\n\nif(\nyear\u003e\u003d1970 \u0026\u0026 year\u003c1980,\"1970s\",\n\nif(\nyear\u003e\u003d1980 \u0026\u0026 year\u003c1990,\"1980s\",\n\nif(\nyear\u003e\u003d1990 \u0026\u0026 year\u003c2000,\"1990s\",\n\nif(\nyear\u003e\u003d2000 \u0026\u0026 year\u003c2010,\"2000s\",\n\nif(\nyear\u003e\u003d2010,\"2010s\",\n\n\n0)\n)\n)\n)\n)\n)\n)",
         "column": "decade"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(rank\u003d\u003d1,\"number1\",\"other\")\n",
+        "column": "number1"
       },
       "alwaysShowComment": false
     }
