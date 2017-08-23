@@ -3,7 +3,7 @@
     "mode": "ALL"
   },
   "explorationSampling": {
-    "_refreshTrigger": 3,
+    "_refreshTrigger": 4,
     "selection": {
       "filter": {
         "distinct": false,
@@ -14,7 +14,7 @@
       "withinFirstN": -1,
       "partitionSelectionMethod": "ALL",
       "maxStoredBytes": 104857600,
-      "targetRatio": 1.0,
+      "targetRatio": 0.02,
       "maxReadUncompressedBytes": -1,
       "samplingMethod": "RANDOM_FIXED_RATIO"
     },
@@ -3490,6 +3490,17 @@
       "params": {
         "expression": "if(rank\u003d\u003d1,\"number1\",\"other\")\n",
         "column": "number1"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(rank\u003c11,\"top10\",\"other\")",
+        "column": "top10"
       },
       "alwaysShowComment": false
     }
