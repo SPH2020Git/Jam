@@ -110,7 +110,7 @@
     },
     {
       "sum2": false,
-      "min": true,
+      "min": false,
       "countDistinct": false,
       "avg": false,
       "last": false,
@@ -138,7 +138,7 @@
     },
     {
       "sum2": false,
-      "min": false,
+      "min": true,
       "countDistinct": false,
       "avg": false,
       "last": false,
