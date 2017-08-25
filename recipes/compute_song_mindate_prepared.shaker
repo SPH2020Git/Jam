@@ -2,7 +2,6 @@
   "columnsSelection": {
     "mode": "ALL"
   },
-  "analysisColumnData": {},
   "explorationSampling": {
     "_refreshTrigger": 0,
     "selection": {
@@ -22,19 +21,35 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "sorting": [],
-  "exploreUIParams": {},
-  "globalSearchQuery": "",
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(\nyear\u003e\u003d1950 \u0026\u0026 year\u003c1960,\"1950s\",\n\nif(\nyear\u003e\u003d1960 \u0026\u0026 year\u003c1970,\"1960s\",\n\nif(\nyear\u003e\u003d1970 \u0026\u0026 year\u003c1980,\"1970s\",\n\nif(\nyear\u003e\u003d1980 \u0026\u0026 year\u003c1990,\"1980s\",\n\nif(\nyear\u003e\u003d1990 \u0026\u0026 year\u003c2000,\"1990s\",\n\nif(\nyear\u003e\u003d2000 \u0026\u0026 year\u003c2010,\"2000s\",\n\nif(\nyear\u003e\u003d2010,\"2010s\",\n\n\n0)\n)\n)\n)\n)\n)\n)",
+        "column": "decade"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }
