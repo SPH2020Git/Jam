@@ -29,23 +29,6 @@
         },
         {
           "column1": {
-            "name": "year",
-            "table": 0
-          },
-          "dateDiffUnit": "DAY",
-          "column2": {
-            "name": "year",
-            "table": 1
-          },
-          "maxMatches": 1,
-          "caseInsensitive": false,
-          "maxDistance": 0,
-          "normalizeText": false,
-          "type": "EQ",
-          "strict": false
-        },
-        {
-          "column1": {
             "name": "song",
             "table": 0
           },
