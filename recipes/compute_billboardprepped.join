@@ -116,11 +116,6 @@
       "table": 0
     },
     {
-      "name": "decade",
-      "type": "string",
-      "table": 0
-    },
-    {
       "name": "month",
       "type": "bigint",
       "table": 0
