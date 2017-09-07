@@ -5,11 +5,11 @@
   "name": "Yest",
   "active": true,
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1504818079908
+    "lastModifiedOn": 1504818169155
   },
   "checklists": {
     "checklists": []
@@ -54,7 +54,7 @@
       "name": "YesMT",
       "runConditionEnabled": true,
       "runCondition": "",
-      "phase": "START"
+      "phase": "END"
     }
   ],
   "params": {
