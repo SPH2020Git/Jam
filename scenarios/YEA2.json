@@ -5,11 +5,11 @@
   "name": "yea",
   "active": false,
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1504816809629
+    "lastModifiedOn": 1504817005753
   },
   "checklists": {
     "checklists": []
@@ -53,7 +53,7 @@
       "id": "YSolIXDz",
       "name": "YeahScenario",
       "runConditionEnabled": true,
-      "runCondition": "True",
+      "runCondition": "",
       "phase": "START"
     }
   ],
