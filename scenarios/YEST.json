@@ -5,11 +5,11 @@
   "name": "Yest",
   "active": true,
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1504818515041
+    "lastModifiedOn": 1504818623494
   },
   "checklists": {
     "checklists": []
@@ -55,7 +55,7 @@
       "runConditionEnabled": true,
       "runCondition": "",
       "phase": "END",
-      "variablesCode": "import json\n# compute your additional variables from the list of report items \n# and return them as a dictionary.\ndef get_variables(items_json, scenario_run_json, step_run_output_json):\n    items \u003d json.loads(items_json)\n    items[\u0027yapper\u0027]\u003d\"yapper\"\n    return {}"
+      "variablesCode": "import json\n# compute your additional variables from the list of report items \n# and return them as a dictionary.\ndef get_variables(items_json, scenario_run_json, step_run_output_json):\n    items \u003d json.loads(items_json)\n    return {}"
     }
   ],
   "params": {
