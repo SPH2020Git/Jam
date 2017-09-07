@@ -3,13 +3,13 @@
   "id": "YEST",
   "type": "step_based",
   "name": "Yest",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1504818398457
+    "lastModifiedOn": 1504818515041
   },
   "checklists": {
     "checklists": []
@@ -21,7 +21,7 @@
       "type": "temporal",
       "name": "YesTT",
       "delay": 0,
-      "active": false,
+      "active": true,
       "params": {
         "frequency": "Minutely",
         "daysOfWeek": [],
@@ -34,7 +34,7 @@
   ],
   "reporters": [
     {
-      "active": false,
+      "active": true,
       "messaging": {
         "type": "mail-scenario",
         "configuration": {
@@ -55,7 +55,7 @@
       "runConditionEnabled": true,
       "runCondition": "",
       "phase": "END",
-      "variablesCode": "import json\n# compute your additional variables from the list of report items \n# and return them as a dictionary.\ndef get_variables(items_json, scenario_run_json, step_run_output_json):\n    items \u003d json.loads(items_json)\n    yapper\u003d \"yapper\"\n    return {}"
+      "variablesCode": "import json\n# compute your additional variables from the list of report items \n# and return them as a dictionary.\ndef get_variables(items_json, scenario_run_json, step_run_output_json):\n    items \u003d json.loads(items_json)\n    items[\u0027yapper\u0027]\u003d\"yapper\"\n    return {}"
     }
   ],
   "params": {
