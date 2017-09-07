@@ -3,20 +3,60 @@
   "id": "YEST",
   "type": "step_based",
   "name": "Yest",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1504817594084
+    "lastModifiedOn": 1504817820882
   },
   "checklists": {
     "checklists": []
   },
   "tags": [],
-  "triggers": [],
-  "reporters": [],
+  "triggers": [
+    {
+      "id": "uCU6kdH1",
+      "type": "temporal",
+      "name": "YesTT",
+      "delay": 0,
+      "active": true,
+      "params": {
+        "frequency": "Minutely",
+        "daysOfWeek": [],
+        "dayOfMonth": 0,
+        "minute": 0,
+        "hour": 0,
+        "count": 1
+      }
+    }
+  ],
+  "reporters": [
+    {
+      "active": true,
+      "messaging": {
+        "type": "mail-scenario",
+        "configuration": {
+          "channelId": "TryAgain",
+          "subject": "DSS scenario ${scenarioName}: ${outcome}",
+          "sender": "sean.hanlon@dataiku.com",
+          "recipient": "sean.hanlon@dataiku.com",
+          "sendAsHTML": false,
+          "format": "TSV",
+          "attachLog": false,
+          "messageSource": "TEMPLATE_FILE",
+          "templateFormat": "FREEMARKER",
+          "templateName": "default.ftl"
+        }
+      },
+      "id": "wWlDM3Ma",
+      "name": "YesMT",
+      "runConditionEnabled": true,
+      "runCondition": "True",
+      "phase": "END"
+    }
+  ],
   "params": {
     "steps": []
   },
