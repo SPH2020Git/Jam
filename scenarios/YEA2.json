@@ -5,11 +5,11 @@
   "name": "yea",
   "active": true,
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1504817072339
+    "lastModifiedOn": 1504817444321
   },
   "checklists": {
     "checklists": []
@@ -37,7 +37,7 @@
       "messaging": {
         "type": "mail-scenario",
         "configuration": {
-          "channelId": "Anything",
+          "channelId": "TryAgain",
           "subject": "DSS scenario ${scenarioName}: ${outcome}",
           "sender": "sean.hanlon@dataiku.com",
           "recipient": "sean.hanlon@dataiku.com",
