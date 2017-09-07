@@ -3,13 +3,13 @@
   "id": "YEA2",
   "type": "step_based",
   "name": "yea",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 19,
+    "versionNumber": 20,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1504817005753
+    "lastModifiedOn": 1504817049814
   },
   "checklists": {
     "checklists": []
