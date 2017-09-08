@@ -3,13 +3,13 @@
   "id": "HPIUH",
   "type": "custom_python",
   "name": "hpiuh",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 27,
+    "versionNumber": 28,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1504831733078
+    "lastModifiedOn": 1504831750894
   },
   "checklists": {
     "checklists": []
@@ -21,7 +21,7 @@
       "type": "temporal",
       "name": "yhuy",
       "delay": 0,
-      "active": false,
+      "active": true,
       "params": {
         "frequency": "Minutely",
         "daysOfWeek": [],
@@ -34,7 +34,7 @@
   ],
   "reporters": [
     {
-      "active": false,
+      "active": true,
       "messaging": {
         "type": "mail-scenario",
         "configuration": {
