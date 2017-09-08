@@ -3,13 +3,13 @@
   "id": "HPIUH",
   "type": "custom_python",
   "name": "hpiuh",
-  "active": true,
+  "active": false,
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1504831260653
+    "lastModifiedOn": 1504831268385
   },
   "checklists": {
     "checklists": []
@@ -21,7 +21,7 @@
       "type": "temporal",
       "name": "yhuy",
       "delay": 0,
-      "active": true,
+      "active": false,
       "params": {
         "frequency": "Minutely",
         "daysOfWeek": [],
