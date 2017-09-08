@@ -18,7 +18,7 @@ scenario = Scenario()
 #    trained_model.activate_new_version()
 
 # Sending custom reports
-sender = scenario.get_message_sender("nnnm", "TryAgain") # A messaging channel
+sender = scenario.get_message_sender("nnnm", "TryAgain (smtp)") # A messaging channel
 sender.set_params(sender="dss@company.com", recipent="data-scientists@company.com")
 
 sender.send(subject="The scenario is doing well", message="All is good")
