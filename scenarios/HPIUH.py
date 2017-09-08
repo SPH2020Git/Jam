@@ -8,14 +8,14 @@ scenario = Scenario()
 # A few example steps follow
 
 # Building a dataset
-scenario.build_dataset("customers_prepared", partitions="2015-01-03")
+#scenario.build_dataset("customers_prepared", partitions="2015-01-03")
 
 # Controlling the train of a dataset
-train_ret = scenario.train_model("uSEkldfsm")
-trained_model = train_ret.get_trained_model()
-performance = get_new_version_metrics().get_performance_values()
-if performance["AUC"] > 0.85:
-    trained_model.activate_new_version()
+#train_ret = scenario.train_model("uSEkldfsm")
+#trained_model = train_ret.get_trained_model()
+#performance = get_new_version_metrics().get_performance_values()
+#if performance["AUC"] > 0.85:
+#    trained_model.activate_new_version()
 
 # Sending custom reports
 sender = scenario.get_message_sender("mail-scenario", "local-mail") # A messaging channel
