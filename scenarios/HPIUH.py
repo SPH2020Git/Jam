@@ -26,10 +26,10 @@
 from dataiku.scenario import Scenario
 scenario = Scenario()
 
-sender = scenario.get_message_sender("TryAgain (smtp)")
+thesender = scenario.get_message_sender("TryAgain (smtp)")
 
 # You can then call send() with message params.
 # params are specific to each message channel types
 
 # SMTP mail example
-message_sender.send(sender="sean.hanlon@dataiku.com", recipient="sean.hanlon@dataiku.com", subject="The scenario is doing well", message="All is good")
+thesender.send(sender="sean.hanlon@dataiku.com", recipient="sean.hanlon@dataiku.com", subject="The scenario is doing well", message="All is good")
