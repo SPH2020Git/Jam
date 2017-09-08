@@ -3,20 +3,60 @@
   "id": "HPIUH",
   "type": "custom_python",
   "name": "hpiuh",
-  "active": false,
+  "active": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1504830281063
+    "lastModifiedOn": 1504830584367
   },
   "checklists": {
     "checklists": []
   },
   "tags": [],
-  "triggers": [],
-  "reporters": [],
+  "triggers": [
+    {
+      "id": "etAEAlut",
+      "type": "temporal",
+      "name": "yhuy",
+      "delay": 0,
+      "active": true,
+      "params": {
+        "frequency": "Minutely",
+        "daysOfWeek": [],
+        "dayOfMonth": 0,
+        "minute": 0,
+        "hour": 0,
+        "count": 1
+      }
+    }
+  ],
+  "reporters": [
+    {
+      "active": true,
+      "messaging": {
+        "type": "mail-scenario",
+        "configuration": {
+          "channelId": "TryAgain",
+          "subject": "DSS scenario ${scenarioName}: ${outcome}",
+          "sender": "sean.hanlon@dataiku.com",
+          "recipient": "sean.hanlon@dataiku.com",
+          "sendAsHTML": false,
+          "format": "TSV",
+          "attachLog": false,
+          "messageSource": "TEMPLATE_FILE",
+          "templateFormat": "FREEMARKER",
+          "templateName": "basic-after-scenario.ftl"
+        }
+      },
+      "id": "XNCyv4XX",
+      "name": "nnnm",
+      "runConditionEnabled": true,
+      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
+      "phase": "END"
+    }
+  ],
   "params": {},
   "automationLocal": false
 }
