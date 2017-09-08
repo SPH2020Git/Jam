@@ -18,7 +18,7 @@ scenario = Scenario()
 #    trained_model.activate_new_version()
 
 # Sending custom reports
-sender = scenario.get_message_sender("mail-scenario", "local-mail") # A messaging channel
+sender = scenario.get_message_sender("nnnm", "local-mail") # A messaging channel
 sender.set_params(sender="sean.hanlon@dataiku.com", recipent="sean.hanlon@dataiku.com")
 
 sender.send(subject="The scenario is doing well", message="All is good")
