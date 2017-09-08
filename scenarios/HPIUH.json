@@ -5,11 +5,11 @@
   "name": "hpiuh",
   "active": false,
   "versionTag": {
-    "versionNumber": 25,
+    "versionNumber": 26,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1504831645627
+    "lastModifiedOn": 1504831656157
   },
   "checklists": {
     "checklists": []
@@ -53,7 +53,7 @@
       "id": "XNCyv4XX",
       "name": "nnnm",
       "runConditionEnabled": true,
-      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
+      "runCondition": "",
       "phase": "END"
     }
   ],
