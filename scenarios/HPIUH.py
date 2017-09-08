@@ -1,9 +1,9 @@
 # This sample code helps you get started with the custom scenario API.
 #For more details and samples, please see our Documentation
-#from dataiku.scenario import Scenario
+from dataiku.scenario import Scenario
 
 # The Scenario object is the main handle from which you initiate steps
-#scenario = Scenario()
+scenario = Scenario()
 
 # A few example steps follow
 
@@ -18,18 +18,8 @@
 #    trained_model.activate_new_version()
 
 # Sending custom reports
-#sender = scenario.get_message_sender("nnnm", "TryAgain") # A messaging channel
-#sender.set_params(sender="sean.hanlon@dataiku.com", recipent="sean.hanlon@dataiku.com")
+sender = scenario.get_message_sender("mail-scenario", "local-mail") # A messaging channel
+sender.set_params(sender="sean.hanlon@dataiku.com", recipent="sean.hanlon@dataiku.com")
 
-#sender.send(subject="The scenario is doing well", message="All is good")
+sender.send(subject="The scenario is doing well", message="All is good")
 
-from dataiku.scenario import Scenario
-scenario = Scenario()
-
-sender = scenario.get_message_sender("TryAgain")
-
-# You can then call send() with message params.
-# params are specific to each message channel types
-
-# SMTP mail example
-message_sender.send(sender="sean.hanlon@dataiku.com", recipient="sean.hanlon@dataiku.com", subject="The scenario is doing well", message="All is good")
