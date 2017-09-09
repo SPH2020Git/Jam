@@ -5,11 +5,11 @@
   "name": "hpiuh",
   "active": false,
   "versionTag": {
-    "versionNumber": 53,
+    "versionNumber": 54,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1504999677428
+    "lastModifiedOn": 1504999870036
   },
   "checklists": {
     "checklists": []
@@ -47,7 +47,7 @@
           "attachLog": false,
           "messageSource": "TEMPLATE_FILE",
           "templateFormat": "FREEMARKER",
-          "templateName": "basic-after-scenario.ftl"
+          "templateName": "default.ftl"
         }
       },
       "id": "XNCyv4XX",
