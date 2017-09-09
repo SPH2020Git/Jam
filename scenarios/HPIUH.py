@@ -26,7 +26,7 @@
 from dataiku.scenario import Scenario
 scenario = Scenario()
 
-thesender = scenario.get_message_sender("nnnm", "TryAgain (smtp)")
+thesender = scenario.get_message_sender("nnnm", "TryAgain")
 
 # You can then call send() with message params.
 # params are specific to each message channel types
