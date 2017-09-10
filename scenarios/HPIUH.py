@@ -34,4 +34,4 @@ thesender = scenario.get_message_sender("TryAgain")
 # params are specific to each message channel types
 
 # SMTP mail example
-thesender.send(sender="sean.hanlon@dataiku.com", recipient="sean.hanlon@dataiku.com", subject=${scenarioName}, message="All is good")
+thesender.send(sender="sean.hanlon@dataiku.com", recipient="sean.hanlon@dataiku.com", subject='${scenarioName}', message="All is good")
