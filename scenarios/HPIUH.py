@@ -28,10 +28,12 @@ scenario = Scenario()
 
 scenario.build_dataset("num1songsuniq")
 
+test100=scenario.get_trigger_params()
+
 thesender = scenario.get_message_sender("TryAgain")
 
 # You can then call send() with message params.
 # params are specific to each message channel types
 
 # SMTP mail example
-thesender.send(sender="sean.hanlon@dataiku.com", recipient="sean.hanlon@dataiku.com", subject=scenario(), message="All is good")
+thesender.send(sender="sean.hanlon@dataiku.com", recipient="sean.hanlon@dataiku.com", subject="DSS scenario ${scenarioName}: ${outcome}", message="All is good"+test100)
