@@ -1,6 +1,11 @@
 {
   "var1": {
-    "var1": "tester",
+    "var1": {
+      "var1": "tester",
+      "dip.home": "/Users/seanhanlon/Library/dss/dsshome",
+      "projectKey": "JAM",
+      "scenarioTriggerParams": {}
+    },
     "projectKey": "JAM",
     "dip.home": "/Users/seanhanlon/Library/dss/dsshome",
     "scenarioTriggerParams": {}
