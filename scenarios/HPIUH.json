@@ -5,11 +5,11 @@
   "name": "hpiuh",
   "active": false,
   "versionTag": {
-    "versionNumber": 66,
+    "versionNumber": 67,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1505006065951
+    "lastModifiedOn": 1505006080221
   },
   "checklists": {
     "checklists": []
@@ -34,7 +34,7 @@
   ],
   "reporters": [
     {
-      "active": false,
+      "active": true,
       "messaging": {
         "type": "mail-scenario",
         "configuration": {
