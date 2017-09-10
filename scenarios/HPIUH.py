@@ -28,7 +28,7 @@ scenario = Scenario()
 
 scenario.build_dataset("num1songsuniq")
 
-test100=scenario.set_project_variables(project_key="JAM", var1='tester')
+test100=scenario.set_project_variables(project_key="JAM", var1=scenario.get_all_variables())
 
 test100=scenario.get_trigger_params()
 
