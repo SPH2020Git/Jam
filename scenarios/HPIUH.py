@@ -28,6 +28,8 @@ scenario = Scenario()
 
 scenario.build_dataset("num1songsuniq")
 
+scenario.set_project_variables(project_key="JAM", var1='tester')
+
 test100=scenario.get_trigger_params()
 
 thesender = scenario.get_message_sender("TryAgain")
@@ -36,4 +38,4 @@ thesender = scenario.get_message_sender("TryAgain")
 # params are specific to each message channel types
 
 # SMTP mail example
-thesender.send(sender="sean.hanlon@dataiku.com", recipient="sean.hanlon@dataiku.com", subject="DSS scenario ${scenarioName}: ${outcome}", message=test100)
+thesender.send(sender="sean.hanlon@dataiku.com", recipient="sean.hanlon@dataiku.com", subject="DSS scenario ${scenarioName}: ${outcome}", message='$var1')
