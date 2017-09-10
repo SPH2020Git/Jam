@@ -28,7 +28,6 @@ scenario = Scenario()
 
 scenario.build_dataset("num1songsuniq")
 
-#thesender = scenario.get_message_sender("nnnm", "TryAgain")
 thesender = scenario.get_message_sender("TryAgain")
 
 # You can then call send() with message params.
