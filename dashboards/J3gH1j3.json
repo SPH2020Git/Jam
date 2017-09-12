@@ -7,57 +7,44 @@
           {
             "tileType": "TEXT",
             "box": {
-              "top": 5,
-              "left": 0,
-              "width": 3,
-              "height": 4
+              "top": 1,
+              "left": 6,
+              "width": 4,
+              "height": 6
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "text": "上を向いて歩こう\n\n涙がこぼれないように\n\n思い出す 春の日\n\n一人ぽっちの夜\n\n上を向いて歩こう\n\nにじんだ星をかぞえて\n\n思い出す 夏の日\n\n一人ぽっちの夜",
+              "text": "###上を向いて歩こう\n\n###涙がこぼれないように\n\n###思い出す 春の日\n\n###一人ぽっちの夜\n\n###上を向いて歩こう\n\n###にじんだ星をかぞえて\n\n###思い出す 夏の日\n\n###一人ぽっちの夜",
               "textAlign": "CENTER",
-              "isTransparent": true
+              "isTransparent": false
             },
             "autoLoad": true,
             "showTitle": "NO",
-            "borderColor": "#63cfb5",
+            "borderColor": "#011410",
             "displayMode": "INSIGHT",
             "resizeImage": false
           },
           {
             "tileType": "IMAGE",
             "box": {
-              "top": 0,
+              "top": 1,
               "left": 3,
-              "width": 9,
-              "height": 9
-            },
-            "clickAction": "DO_NOTHING",
-            "autoLoad": true,
-            "showTitle": "MOUSEOVER",
-            "displayMode": "IMAGE",
-            "imageId": "MGWSZt8",
-            "resizeImage": false
-          },
-          {
-            "tileType": "IMAGE",
-            "box": {
-              "top": 9,
-              "left": 9,
               "width": 3,
-              "height": 3
+              "height": 6
             },
             "clickAction": "DO_NOTHING",
             "autoLoad": true,
             "showTitle": "MOUSEOVER",
+            "borderColor": "#0f0601",
             "displayMode": "IMAGE",
-            "resizeImage": false
+            "imageId": "SV8vF7R",
+            "resizeImage": true
           },
           {
             "tileType": "TEXT",
             "box": {
-              "top": 0,
-              "left": 1,
+              "top": 9,
+              "left": 6,
               "width": 2,
               "height": 2
             },
@@ -75,19 +62,28 @@
           }
         ]
       },
-      "showTitle": false
+      "showTitle": false,
+      "backgroundColor": "#050000"
+    },
+    {
+      "id": "d9WxkzV",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false,
+      "backgroundColor": "#190202"
     }
   ],
   "owner": "admin",
   "listed": true,
   "name": "Billboard Hot 100",
-  "showGrid": true,
+  "showGrid": false,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1505188993589
+    "lastModifiedOn": 1505190405608
   },
   "creationTag": {
     "versionNumber": 0,
