@@ -10,14 +10,14 @@
   ],
   "owner": "admin",
   "listed": true,
-  "name": "Default dashboard",
+  "name": "Billboards",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1500261503128
+    "lastModifiedOn": 1505184955955
   },
   "creationTag": {
     "versionNumber": 0,
