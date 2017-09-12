@@ -3,7 +3,26 @@
     {
       "id": "LdQKuPU",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "tileType": "TEXT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 2,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "textAlign": "LEFT",
+              "isTransparent": false
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "displayMode": "INSIGHT",
+            "resizeImage": false
+          }
+        ]
       },
       "showTitle": false
     }
@@ -13,11 +32,11 @@
   "name": "Billboard Hot 100",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1505184965288
+    "lastModifiedOn": 1505185009492
   },
   "creationTag": {
     "versionNumber": 0,
