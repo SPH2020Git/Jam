@@ -7,18 +7,69 @@
           {
             "tileType": "TEXT",
             "box": {
-              "top": 0,
+              "top": 5,
               "left": 0,
+              "width": 3,
+              "height": 4
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "上を向いて歩こう\n\n涙がこぼれないように\n\n思い出す 春の日\n\n一人ぽっちの夜\n\n上を向いて歩こう\n\nにじんだ星をかぞえて\n\n思い出す 夏の日\n\n一人ぽっちの夜",
+              "textAlign": "CENTER",
+              "isTransparent": true
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "borderColor": "#63cfb5",
+            "displayMode": "INSIGHT",
+            "resizeImage": false
+          },
+          {
+            "tileType": "IMAGE",
+            "box": {
+              "top": 0,
+              "left": 3,
+              "width": 9,
+              "height": 9
+            },
+            "clickAction": "DO_NOTHING",
+            "autoLoad": true,
+            "showTitle": "MOUSEOVER",
+            "displayMode": "IMAGE",
+            "imageId": "MGWSZt8",
+            "resizeImage": false
+          },
+          {
+            "tileType": "IMAGE",
+            "box": {
+              "top": 9,
+              "left": 9,
+              "width": 3,
+              "height": 3
+            },
+            "clickAction": "DO_NOTHING",
+            "autoLoad": true,
+            "showTitle": "MOUSEOVER",
+            "displayMode": "IMAGE",
+            "resizeImage": false
+          },
+          {
+            "tileType": "TEXT",
+            "box": {
+              "top": 0,
+              "left": 1,
               "width": 2,
               "height": 2
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "textAlign": "LEFT",
-              "isTransparent": false
+              "text": "1960 -- Chubby Checker, The twist\n1970 -- Diana Ross, Aint\u0027 No Mountain High Enough\n1980 -- Diana Ross, Upside Down\n1990 -- Wilson Phillips, Release Me\n2000 -- Madonna, Music\n2010 -- Katy Perry, Teenage Dream",
+              "textAlign": "CENTER",
+              "isTransparent": true
             },
             "autoLoad": true,
             "showTitle": "NO",
+            "borderColor": "#b52b2b",
             "displayMode": "INSIGHT",
             "resizeImage": false
           }
@@ -32,11 +83,11 @@
   "name": "Billboard Hot 100",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1505185009492
+    "lastModifiedOn": 1505188954513
   },
   "creationTag": {
     "versionNumber": 0,
