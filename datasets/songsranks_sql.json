@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1505489801816
+    "lastModifiedOn": 1505490506803
   },
   "creationTag": {
     "versionNumber": 0,
@@ -104,7 +104,7 @@
       {
         "type": "records",
         "enabled": true,
-        "computeOnBuildMode": "PARTITION",
+        "computeOnBuildMode": "NO",
         "meta": {
           "name": "Record count",
           "level": 0
