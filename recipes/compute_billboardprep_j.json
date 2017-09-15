@@ -24,18 +24,18 @@
     "main": {
       "items": [
         {
-          "ref": "billboardprep_j",
+          "ref": "MusixMatchIDMergeTest",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1502402039814
+    "lastModifiedOn": 1505438407880
   },
   "creationTag": {
     "versionNumber": 0,
