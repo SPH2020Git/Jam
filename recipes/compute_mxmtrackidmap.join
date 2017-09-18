@@ -61,6 +61,11 @@
       "name": "count",
       "type": "bigint",
       "table": 0
+    },
+    {
+      "name": "count",
+      "type": "bigint",
+      "table": 1
     }
   ],
   "engineParams": {
