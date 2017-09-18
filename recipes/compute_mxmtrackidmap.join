@@ -48,6 +48,16 @@
       "table": 0
     },
     {
+      "name": "song_clean",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "artist_clean",
+      "type": "string",
+      "table": 0
+    },
+    {
       "name": "count",
       "type": "bigint",
       "table": 0
