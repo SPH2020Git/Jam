@@ -3464,9 +3464,9 @@
       "params": {
         "inCol": "song_simplified",
         "sortAlphabetically": true,
-        "normalize": true,
+        "normalize": false,
         "language": "english",
-        "clearStopWords": false,
+        "clearStopWords": true,
         "stem": false
       },
       "alwaysShowComment": false
