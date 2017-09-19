@@ -47,11 +47,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1505798003080
+    "lastModifiedOn": 1505798186471
   },
   "creationTag": {
     "versionNumber": 0,
@@ -66,50 +66,7 @@
   "params": {},
   "schema": {
     "userModified": false,
-    "columns": [
-      {
-        "name": "movie",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "break_even",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "earnings_ratio",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "budget_raw",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "worldwide_gross",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "production_budget",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "even",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      }
-    ]
+    "columns": []
   },
   "metrics": {
     "probes": [
