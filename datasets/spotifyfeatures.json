@@ -47,11 +47,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1505934537650
+    "lastModifiedOn": 1506285782474
   },
   "creationTag": {
     "versionNumber": 0,
@@ -68,14 +68,8 @@
     "userModified": false,
     "columns": [
       {
-        "name": "0",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "acousticness",
-        "type": "string",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -86,32 +80,20 @@
         "maxLength": -1
       },
       {
-        "name": "artistjoin",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "danceability",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "duration_ms",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "energy",
-        "type": "string",
+        "name": "duration_ms",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "findindex",
-        "type": "bigint",
+        "name": "energy",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -123,19 +105,19 @@
       },
       {
         "name": "instrumentalness",
-        "type": "string",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "key",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "liveness",
-        "type": "string",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -147,19 +129,13 @@
       },
       {
         "name": "mode",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "songjoin",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "speechiness",
-        "type": "string",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -171,7 +147,7 @@
       },
       {
         "name": "time_signature",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -195,7 +171,25 @@
       },
       {
         "name": "valence",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "artistjoin",
         "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "songjoin",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "findindex",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
