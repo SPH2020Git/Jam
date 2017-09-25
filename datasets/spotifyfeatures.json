@@ -47,11 +47,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1506285955187
+    "lastModifiedOn": 1506319053310
   },
   "creationTag": {
     "versionNumber": 0,
@@ -69,7 +69,7 @@
     "columns": [
       {
         "name": "acousticness",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -81,7 +81,7 @@
       },
       {
         "name": "danceability",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -93,7 +93,7 @@
       },
       {
         "name": "energy",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -105,19 +105,19 @@
       },
       {
         "name": "instrumentalness",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "key",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "liveness",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -129,13 +129,13 @@
       },
       {
         "name": "mode",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "speechiness",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -147,7 +147,7 @@
       },
       {
         "name": "time_signature",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -171,7 +171,7 @@
       },
       {
         "name": "valence",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
