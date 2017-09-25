@@ -47,11 +47,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1506319053310
+    "lastModifiedOn": 1506321601264
   },
   "creationTag": {
     "versionNumber": 0,
@@ -68,6 +68,12 @@
     "userModified": false,
     "columns": [
       {
+        "name": "0",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "acousticness",
         "type": "string",
         "timestampNoTzAsDate": false,
@@ -80,6 +86,12 @@
         "maxLength": -1
       },
       {
+        "name": "artistjoin",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "danceability",
         "type": "string",
         "timestampNoTzAsDate": false,
@@ -87,13 +99,19 @@
       },
       {
         "name": "duration_ms",
-        "type": "bigint",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "energy",
         "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "findindex",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -129,6 +147,12 @@
       },
       {
         "name": "mode",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "songjoin",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -172,24 +196,6 @@
       {
         "name": "valence",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "artistjoin",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "songjoin",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "findindex",
-        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
