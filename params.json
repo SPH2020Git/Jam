@@ -10,6 +10,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "mxmsonglist",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -68,11 +77,11 @@
   "name": "Jam!",
   "projectStatus": "Sandbox",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1502907124154
+    "lastModifiedOn": 1508078492969
   },
   "creationTag": {
     "versionNumber": 0,
