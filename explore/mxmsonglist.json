@@ -41,8 +41,8 @@
   },
   "charts": [
     {
-      "copySelectionFromScript": true,
-      "engineType": "SQL",
+      "copySelectionFromScript": false,
+      "engineType": "LINO",
       "refreshableSelection": {
         "selection": {
           "useMemTable": false,
@@ -52,14 +52,14 @@
           },
           "partitionSelectionMethod": "ALL",
           "latestPartitionsN": 1,
-          "samplingMethod": "FULL",
-          "maxRecords": -1,
+          "samplingMethod": "HEAD_SEQUENTIAL",
+          "maxRecords": 1000,
           "targetRatio": 0.02,
           "withinFirstN": -1,
           "maxReadUncompressedBytes": -1
         },
         "autoRefreshSample": false,
-        "_refreshTrigger": 1
+        "_refreshTrigger": 3
       },
       "def": {
         "type": "pivot_table",
@@ -169,9 +169,7 @@
             "column": "song_simplified",
             "columnType": "ALPHANUM",
             "isA": "filter",
-            "excludedValues": {
-              "": true
-            },
+            "excludedValues": {},
             "explicitExclude": false
           }
         ],
