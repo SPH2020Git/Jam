@@ -115,6 +115,7 @@
           }
         ]
       },
+      "title": "gf",
       "showTitle": false,
       "backgroundColor": "#190202"
     }
@@ -124,11 +125,11 @@
   "name": "Billboard Hot 100",
   "showGrid": false,
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1508078598507
+    "lastModifiedOn": 1508078610953
   },
   "creationTag": {
     "versionNumber": 0,
