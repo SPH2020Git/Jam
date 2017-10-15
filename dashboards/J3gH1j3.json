@@ -94,10 +94,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
-              "width": 2,
-              "height": 2
+              "top": 0,
+              "left": 0,
+              "width": 5,
+              "height": 4
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -124,11 +124,11 @@
   "name": "Billboard Hot 100",
   "showGrid": false,
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1508078549960
+    "lastModifiedOn": 1508078569432
   },
   "creationTag": {
     "versionNumber": 0,
