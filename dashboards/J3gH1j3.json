@@ -90,7 +90,30 @@
     {
       "id": "d9WxkzV",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": -1,
+              "left": -1,
+              "width": 2,
+              "height": 2
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "showXAxis": false,
+              "showYAxis": false,
+              "showLegend": false,
+              "showTooltips": false
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "kwOcUQJ",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImage": false
+          }
+        ]
       },
       "showTitle": false,
       "backgroundColor": "#190202"
@@ -101,11 +124,11 @@
   "name": "Billboard Hot 100",
   "showGrid": false,
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1508078495478
+    "lastModifiedOn": 1508078548863
   },
   "creationTag": {
     "versionNumber": 0,
