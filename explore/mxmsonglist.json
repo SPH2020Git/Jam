@@ -42,7 +42,7 @@
   "charts": [
     {
       "copySelectionFromScript": false,
-      "engineType": "LINO",
+      "engineType": "SQL",
       "refreshableSelection": {
         "selection": {
           "useMemTable": false,
@@ -59,7 +59,7 @@
           "maxReadUncompressedBytes": -1
         },
         "autoRefreshSample": false,
-        "_refreshTrigger": 3
+        "_refreshTrigger": 4
       },
       "def": {
         "type": "pivot_table",
@@ -85,7 +85,7 @@
             "column": "artist_simplified",
             "type": "ALPHANUM",
             "maxValues": 10,
-            "generateOthersCategory": false,
+            "generateOthersCategory": true,
             "oneTickPerBin": false,
             "filters": [],
             "isA": "dimension",
@@ -169,7 +169,9 @@
             "column": "song_simplified",
             "columnType": "ALPHANUM",
             "isA": "filter",
-            "excludedValues": {},
+            "excludedValues": {
+              "": true
+            },
             "explicitExclude": false
           }
         ],
