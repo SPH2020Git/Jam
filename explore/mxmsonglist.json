@@ -62,29 +62,11 @@
         "_refreshTrigger": 4
       },
       "def": {
-        "type": "boxplots",
+        "type": "grouped_columns",
         "variant": "normal",
-        "name": "Count by artist_simplified and song_simplified",
+        "name": "Avg. of count by artist_simplified",
         "userEditedName": false,
-        "genericDimension0": [],
-        "genericDimension1": [],
-        "genericMeasures": [],
-        "xDimension": [],
-        "yDimension": [],
-        "uaXDimension": [],
-        "uaYDimension": [],
-        "uaSize": [],
-        "uaShape": [],
-        "uaColor": [],
-        "uaTooltip": [],
-        "groupDimension": [],
-        "xMeasure": [],
-        "yMeasure": [],
-        "colorMeasure": [],
-        "sizeMeasure": [],
-        "geometry": [],
-        "tooltipMeasures": [],
-        "boxplotBreakdownDim": [
+        "genericDimension0": [
           {
             "column": "artist_simplified",
             "type": "ALPHANUM",
@@ -100,13 +82,14 @@
                 "sortAscending": true
               },
               {
-                "type": "COUNT",
-                "label": "Count of records, descending",
-                "sortAscending": false
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of count, descending"
               },
               {
-                "type": "COUNT",
-                "label": "Count of records, ascending",
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of count, ascending",
                 "sortAscending": true
               }
             ],
@@ -117,14 +100,37 @@
             }
           }
         ],
-        "boxplotValue": [
+        "genericDimension1": [],
+        "genericMeasures": [
           {
             "column": "count",
+            "function": "AVG",
             "type": "NUMERICAL",
-            "treatAsAlphanum": false,
-            "adminLevel": 0
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
           }
         ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
         "filters": [
           {
             "filterType": "ALPHANUM_FACET",
