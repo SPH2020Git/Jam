@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1508165530959
+    "lastModifiedOn": 1508166208820
   },
   "creationTag": {
     "versionNumber": 0,
@@ -42,6 +42,7 @@
     "partitioningType": "custom",
     "normalizeDoubles": true,
     "table": "${projectKey}_mxmsonglist",
+    "schema": "",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
@@ -49,17 +50,17 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
-        "name": "mxm_trackid",
-        "type": "bigint",
+        "name": "artist_simplified",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "artist_simplified",
-        "type": "string",
+        "name": "mxm_trackid",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
