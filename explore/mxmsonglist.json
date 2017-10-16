@@ -65,7 +65,7 @@
         "type": "grouped_columns",
         "variant": "normal",
         "name": "Avg. of count by artist_simplified",
-        "userEditedName": false,
+        "userEditedName": true,
         "genericDimension0": [
           {
             "column": "artist_simplified",
@@ -180,6 +180,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAnElEQVRoge3SvQmAMBBAYUsbO0tRd3MH07qLEwixsHI12wMv4H/i8R6kOUKST8wyIiKlxvlVrtjveT3A1gNsPcDWA2y934PPAgD/rVjgaB8uBXDt5uXqObcuNgWuet/JpV0sAU/tP3KOBMu97bDm2lxz7cC186P20BDgy7kEy3nZT4U2l67gnwYYMGDAgAEDBgwYMGDAgDUwEVHKbUi+WUgFcKeJAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true
       }
