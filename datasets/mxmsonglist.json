@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1508124536245
+    "lastModifiedOn": 1508165530959
   },
   "creationTag": {
     "versionNumber": 0,
@@ -101,7 +101,7 @@
       },
       {
         "type": "col_stats",
-        "enabled": false,
+        "enabled": true,
         "computeOnBuildMode": "NO",
         "meta": {
           "name": "Columns statistics",
@@ -137,7 +137,7 @@
       },
       {
         "type": "verify_col",
-        "enabled": false,
+        "enabled": true,
         "computeOnBuildMode": "NO",
         "meta": {
           "name": "Data validity",
