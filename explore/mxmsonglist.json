@@ -94,7 +94,7 @@
         ],
         "yDimension": [
           {
-            "column": "__COUNT__",
+            "column": "count",
             "type": "NUMERICAL",
             "numParams": {
               "mode": "FIXED_NB",
