@@ -180,7 +180,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAnElEQVRoge3SvQmAMBBAYUsbO0tRd3MH07qLEwixsHI12wMv4H/i8R6kOUKST8wyIiKlxvlVrtjveT3A1gNsPcDWA2y934PPAgD/rVjgaB8uBXDt5uXqObcuNgWuet/JpV0sAU/tP3KOBMu97bDm2lxz7cC186P20BDgy7kEy3nZT4U2l67gnwYYMGDAgAEDBgwYMGDAgDUwEVHKbUi+WUgFcKeJAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAjUlEQVRoge3POwqAMBAA0e0sPICdOZy1ncRjWRgEG72aTQQViyh+kmUG0ixLkidCROQzrZvXI/WQ/f2f1wOsPcDaA6w9wNpTA95BQvcAJ9RX4NB3Xr8PcMheKuCzpVszD97OjO07ERFjXfXYOxdngAEDBgwYMGDAgAEDBgz4U3DRjPlxVlo3RQcmIoq5BS1PMBSYQ7GRAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true
       }
