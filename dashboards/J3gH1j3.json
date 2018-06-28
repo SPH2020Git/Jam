@@ -22,7 +22,7 @@
             "showTitle": "NO",
             "borderColor": "#011410",
             "displayMode": "INSIGHT",
-            "resizeImage": false
+            "resizeImageMode": "ORIG_SIZE"
           },
           {
             "tileType": "IMAGE",
@@ -38,7 +38,7 @@
             "borderColor": "#0f0601",
             "displayMode": "IMAGE",
             "imageId": "SV8vF7R",
-            "resizeImage": true
+            "resizeImageMode": "FIT_SIZE"
           },
           {
             "tileType": "TEXT",
@@ -58,13 +58,13 @@
             "showTitle": "NO",
             "borderColor": "#b52b2b",
             "displayMode": "INSIGHT",
-            "resizeImage": false
+            "resizeImageMode": "ORIG_SIZE"
           },
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 9,
+              "left": 0,
               "width": 2,
               "height": 2
             },
@@ -73,14 +73,15 @@
               "showXAxis": false,
               "showYAxis": false,
               "showLegend": false,
-              "showTooltips": false
+              "showTooltips": false,
+              "autoPlayAnimation": true
             },
             "autoLoad": true,
             "showTitle": "YES",
             "insightId": "6wD8AqF",
             "insightType": "chart",
             "displayMode": "INSIGHT",
-            "resizeImage": false
+            "resizeImageMode": "ORIG_SIZE"
           }
         ]
       },
@@ -104,14 +105,15 @@
               "showXAxis": false,
               "showYAxis": false,
               "showLegend": false,
-              "showTooltips": false
+              "showTooltips": false,
+              "autoPlayAnimation": true
             },
             "autoLoad": true,
             "showTitle": "YES",
             "insightId": "kwOcUQJ",
             "insightType": "chart",
             "displayMode": "INSIGHT",
-            "resizeImage": false
+            "resizeImageMode": "ORIG_SIZE"
           }
         ]
       },
@@ -125,11 +127,11 @@
   "name": "Billboard Hot 100",
   "showGrid": false,
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1508078610953
+    "lastModifiedOn": 1530199660254
   },
   "creationTag": {
     "versionNumber": 0,
