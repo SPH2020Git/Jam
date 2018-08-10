@@ -1,83 +1,89 @@
 {
-  "projectKey": "JAM",
-  "id": "YEA2",
-  "type": "step_based",
-  "name": "yea",
-  "active": true,
-  "versionTag": {
-    "versionNumber": 22,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1504817444321
-  },
+  "active": true, 
+  "automationLocal": false, 
   "checklists": {
     "checklists": []
-  },
-  "tags": [],
-  "triggers": [
-    {
-      "id": "lRYOeiQI",
-      "type": "temporal",
-      "delay": 0,
-      "active": false,
-      "params": {
-        "frequency": "Minutely",
-        "daysOfWeek": [],
-        "dayOfMonth": 0,
-        "minute": 0,
-        "hour": 0,
-        "count": 2
-      }
-    }
-  ],
-  "reporters": [
-    {
-      "active": true,
-      "messaging": {
-        "type": "mail-scenario",
-        "configuration": {
-          "channelId": "TryAgain",
-          "subject": "DSS scenario ${scenarioName}: ${outcome}",
-          "sender": "sean.hanlon@dataiku.com",
-          "recipient": "sean.hanlon@dataiku.com",
-          "sendAsHTML": false,
-          "format": "TSV",
-          "attachLog": false,
-          "messageSource": "TEMPLATE_FILE",
-          "templateFormat": "FREEMARKER",
-          "templateName": "default.ftl",
-          "message": ""
-        }
-      },
-      "id": "YSolIXDz",
-      "name": "YeahScenario",
-      "runConditionEnabled": true,
-      "runCondition": "",
-      "phase": "START"
-    }
-  ],
+  }, 
+  "id": "YEA2", 
+  "name": "yea", 
   "params": {
     "steps": [
       {
-        "id": "report53a6a880996c55f221cb9879205017f4",
-        "type": "send_report",
-        "name": "report to mail-scenario",
+        "id": "report53a6a880996c55f221cb9879205017f4", 
+        "name": "report to mail-scenario", 
         "params": {
-          "failOnMessageNotSent": true,
+          "failOnMessageNotSent": true, 
           "messaging": {
-            "type": "mail-scenario",
             "configuration": {
-              "sendAsHTML": false,
-              "format": "TSV",
-              "attachLog": false,
-              "messageSource": "INLINE",
+              "attachLog": false, 
+              "attachments": [], 
+              "format": "TSV", 
+              "messageSource": "INLINE", 
+              "sendAsHTML": false, 
               "templateFormat": "FREEMARKER"
-            }
+            }, 
+            "type": "mail-scenario"
           }
-        }
+        }, 
+        "type": "send_report"
       }
     ]
-  },
-  "automationLocal": false
+  }, 
+  "projectKey": "JAM", 
+  "reporters": [
+    {
+      "active": true, 
+      "id": "YSolIXDz", 
+      "messaging": {
+        "configuration": {
+          "attachLog": false, 
+          "attachments": [], 
+          "channelId": "TryAgain", 
+          "format": "TSV", 
+          "message": "", 
+          "messageSource": "TEMPLATE_FILE", 
+          "recipient": "sean.hanlon@dataiku.com", 
+          "sendAsHTML": false, 
+          "sender": "sean.hanlon@dataiku.com", 
+          "subject": "DSS scenario ${scenarioName}: ${outcome}", 
+          "templateFormat": "FREEMARKER", 
+          "templateName": "default.ftl"
+        }, 
+        "type": "mail-scenario"
+      }, 
+      "name": "YeahScenario", 
+      "phase": "START", 
+      "runCondition": "", 
+      "runConditionEnabled": true
+    }
+  ], 
+  "tags": [], 
+  "triggers": [
+    {
+      "active": false, 
+      "delay": 0, 
+      "graceDelaySettings": {
+        "checkAgainAfterGraceDelay": false, 
+        "delay": 0
+      }, 
+      "id": "lRYOeiQI", 
+      "params": {
+        "count": 2, 
+        "dayOfMonth": 0, 
+        "daysOfWeek": [], 
+        "frequency": "Minutely", 
+        "hour": 0, 
+        "minute": 0
+      }, 
+      "type": "temporal"
+    }
+  ], 
+  "type": "step_based", 
+  "versionTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    }, 
+    "lastModifiedOn": 1504817444321, 
+    "versionNumber": 22
+  }
 }

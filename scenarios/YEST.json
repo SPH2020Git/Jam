@@ -1,66 +1,71 @@
 {
-  "projectKey": "JAM",
-  "id": "YEST",
-  "type": "step_based",
-  "name": "Yest",
-  "active": false,
-  "versionTag": {
-    "versionNumber": 12,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1504819579574
-  },
+  "active": false, 
+  "automationLocal": false, 
   "checklists": {
     "checklists": []
-  },
-  "tags": [],
-  "triggers": [
-    {
-      "id": "uCU6kdH1",
-      "type": "temporal",
-      "name": "YesTT",
-      "delay": 0,
-      "active": true,
-      "params": {
-        "frequency": "Minutely",
-        "daysOfWeek": [],
-        "dayOfMonth": 0,
-        "minute": 0,
-        "hour": 0,
-        "count": 1
-      }
-    }
-  ],
-  "reporters": [
-    {
-      "active": true,
-      "messaging": {
-        "type": "mail-scenario",
-        "configuration": {
-          "channelId": "TryAgain",
-          "subject": "DSS scenario ${scenarioName}: ${outcome}",
-          "sender": "sean.hanlon@dataiku.com",
-          "recipient": "sean.hanlon@dataiku.com",
-          "sendAsHTML": false,
-          "format": "TSV",
-          "attachLog": false,
-          "messageSource": "TEMPLATE_FILE",
-          "templateFormat": "FREEMARKER",
-          "templateName": "default.ftl",
-          "message": ""
-        }
-      },
-      "id": "wWlDM3Ma",
-      "name": "YesMT",
-      "runConditionEnabled": true,
-      "runCondition": "",
-      "phase": "END",
-      "variablesCode": "import json\n# compute your additional variables from the list of report items \n# and return them as a dictionary.\ndef get_variables(items_json, scenario_run_json, step_run_output_json):\n    items \u003d json.loads(items_json)\n    return {}"
-    }
-  ],
+  }, 
+  "id": "YEST", 
+  "name": "Yest", 
   "params": {
     "steps": []
-  },
-  "automationLocal": false
+  }, 
+  "projectKey": "JAM", 
+  "reporters": [
+    {
+      "active": true, 
+      "id": "wWlDM3Ma", 
+      "messaging": {
+        "configuration": {
+          "attachLog": false, 
+          "attachments": [], 
+          "channelId": "TryAgain", 
+          "format": "TSV", 
+          "message": "", 
+          "messageSource": "TEMPLATE_FILE", 
+          "recipient": "sean.hanlon@dataiku.com", 
+          "sendAsHTML": false, 
+          "sender": "sean.hanlon@dataiku.com", 
+          "subject": "DSS scenario ${scenarioName}: ${outcome}", 
+          "templateFormat": "FREEMARKER", 
+          "templateName": "default.ftl"
+        }, 
+        "type": "mail-scenario"
+      }, 
+      "name": "YesMT", 
+      "phase": "END", 
+      "runCondition": "", 
+      "runConditionEnabled": true, 
+      "variablesCode": "import json\n# compute your additional variables from the list of report items \n# and return them as a dictionary.\ndef get_variables(items_json, scenario_run_json, step_run_output_json):\n    items = json.loads(items_json)\n    return {}"
+    }
+  ], 
+  "tags": [], 
+  "triggers": [
+    {
+      "active": true, 
+      "delay": 0, 
+      "graceDelaySettings": {
+        "checkAgainAfterGraceDelay": false, 
+        "delay": 0
+      }, 
+      "id": "uCU6kdH1", 
+      "name": "YesTT", 
+      "params": {
+        "count": 1, 
+        "dayOfMonth": 0, 
+        "daysOfWeek": [], 
+        "frequency": "Minutely", 
+        "hour": 0, 
+        "minute": 0
+      }, 
+      "type": "temporal"
+    }
+  ], 
+  "type": "step_based", 
+  "versionTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    }, 
+    "lastModifiedOn": 1504819579574, 
+    "versionNumber": 12
+  }
 }

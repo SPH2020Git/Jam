@@ -1,202 +1,202 @@
 {
-  "type": "chart",
-  "params": {
-    "datasetSmartName": "mxmsonglist",
-    "engineType": "SQL",
-    "refreshableSelection": {
-      "selection": {
-        "useMemTable": false,
-        "filter": {
-          "distinct": false,
-          "enabled": false
-        },
-        "partitionSelectionMethod": "ALL",
-        "latestPartitionsN": 1,
-        "samplingMethod": "FULL",
-        "maxRecords": -1,
-        "targetRatio": 0.02,
-        "withinFirstN": -1,
-        "maxReadUncompressedBytes": -1
-      },
-      "autoRefreshSample": false,
-      "_refreshTrigger": 1
-    },
-    "def": {
-      "type": "pivot_table",
-      "variant": "colored",
-      "name": "Count by artist_simplified and song_simplified",
-      "userEditedName": false,
-      "genericDimension0": [],
-      "genericDimension1": [],
-      "genericMeasures": [
-        {
-          "function": "COUNT",
-          "type": "NUMERICAL",
-          "displayed": true,
-          "isA": "measure",
-          "displayAxis": "axis1",
-          "displayType": "column",
-          "computeMode": "NORMAL",
-          "computeModeDim": 0
-        }
-      ],
-      "xDimension": [
-        {
-          "column": "artist_simplified",
-          "type": "ALPHANUM",
-          "maxValues": 10,
-          "generateOthersCategory": false,
-          "oneTickPerBin": false,
-          "filters": [],
-          "isA": "dimension",
-          "possibleSorts": [
-            {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 0,
-              "label": "Count of records, descending"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 0,
-              "label": "Count of records, ascending",
-              "sortAscending": true
-            }
-          ],
-          "sort": {
-            "type": "AGGREGATION",
-            "measureIdx": 0,
-            "label": "Count of records, descending"
-          }
-        }
-      ],
-      "yDimension": [
-        {
-          "column": "song_simplified",
-          "type": "ALPHANUM",
-          "maxValues": 100,
-          "generateOthersCategory": false,
-          "oneTickPerBin": false,
-          "filters": [],
-          "isA": "dimension",
-          "possibleSorts": [
-            {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 0,
-              "label": "Count of records, descending"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 0,
-              "label": "Count of records, ascending",
-              "sortAscending": true
-            }
-          ],
-          "sort": {
-            "type": "AGGREGATION",
-            "measureIdx": 0,
-            "label": "Count of records, descending"
-          }
-        }
-      ],
-      "uaXDimension": [],
-      "uaYDimension": [],
-      "uaSize": [],
-      "uaShape": [],
-      "uaColor": [],
-      "uaTooltip": [],
-      "groupDimension": [],
-      "xMeasure": [],
-      "yMeasure": [],
-      "colorMeasure": [],
-      "sizeMeasure": [],
-      "geometry": [],
-      "tooltipMeasures": [],
-      "boxplotBreakdownDim": [],
-      "boxplotValue": [],
-      "filters": [
-        {
-          "filterType": "ALPHANUM_FACET",
-          "column": "song_simplified",
-          "columnType": "ALPHANUM",
-          "isA": "filter",
-          "excludedValues": {
-            "": true
-          },
-          "explicitExclude": false
-        }
-      ],
-      "axis1LogScale": false,
-      "axis2LogScale": false,
-      "includeZero": true,
-      "smoothing": true,
-      "showLegend": true,
-      "showXAxis": false,
-      "strokeWidth": 1,
-      "hexbinRadius": 20,
-      "hexbinNumber": 20,
-      "hexbinRadiusMode": "NUM_HEXAGONS",
-      "colorOptions": {
-        "singleColor": "#659a88",
-        "transparency": 0.75,
-        "colorPalette": "default",
-        "ccScaleMode": "NORMAL"
-      },
-      "colorPaletteType": "LINEAR",
-      "bubblesOptions": {
-        "defaultRadius": 5.0,
-        "singleShape": "FILLED_CIRCLE"
-      },
-      "xAxisMode": "NORMAL",
-      "yAxisMode": "NORMAL",
-      "pieOptions": {
-        "donutHoleSize": 54.0
-      },
-      "scatterOptions": {
-        "equalScales": false,
-        "identityLine": false
-      },
-      "mapOptions": {
-        "tilesLayer": "cartodb-positron",
-        "lockSquareGrid": false
-      },
-      "mapGridOptions": {
-        "gridLonDeg": 0.5,
-        "gridLatDeg": 0.5
-      },
-      "disableSafetyLimits": false,
-      "useLiveProcessingIfAvailable": true
-    }
-  },
-  "owner": "admin",
-  "listed": false,
-  "name": "Count by artist_simplified and song_simplified on mxmsonglist",
-  "dashboardCreationId": "J3gH1j3",
-  "versionTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1508078493122
-  },
-  "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1508078493122
-  },
-  "tags": [],
   "checklists": {
     "checklists": []
+  }, 
+  "creationTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    }, 
+    "lastModifiedOn": 1508078493122, 
+    "versionNumber": 0
+  }, 
+  "dashboardCreationId": "J3gH1j3", 
+  "listed": false, 
+  "name": "Count by artist_simplified and song_simplified on mxmsonglist", 
+  "owner": "admin", 
+  "params": {
+    "datasetSmartName": "mxmsonglist", 
+    "def": {
+      "axis1LogScale": false, 
+      "axis2LogScale": false, 
+      "boxplotBreakdownDim": [], 
+      "boxplotValue": [], 
+      "bubblesOptions": {
+        "defaultRadius": 5.0, 
+        "singleShape": "FILLED_CIRCLE"
+      }, 
+      "colorMeasure": [], 
+      "colorOptions": {
+        "ccScaleMode": "NORMAL", 
+        "colorPalette": "default", 
+        "singleColor": "#659a88", 
+        "transparency": 0.75
+      }, 
+      "colorPaletteType": "LINEAR", 
+      "disableSafetyLimits": false, 
+      "filters": [
+        {
+          "column": "song_simplified", 
+          "columnType": "ALPHANUM", 
+          "excludedValues": {
+            "": true
+          }, 
+          "explicitExclude": false, 
+          "filterType": "ALPHANUM_FACET", 
+          "isA": "filter"
+        }
+      ], 
+      "genericDimension0": [], 
+      "genericDimension1": [], 
+      "genericMeasures": [
+        {
+          "computeMode": "NORMAL", 
+          "computeModeDim": 1, 
+          "displayAxis": "axis1", 
+          "displayType": "column", 
+          "displayed": true, 
+          "function": "COUNT", 
+          "isA": "measure", 
+          "type": "NUMERICAL"
+        }
+      ], 
+      "geometry": [], 
+      "groupDimension": [], 
+      "hexbinNumber": 20, 
+      "hexbinRadius": 20, 
+      "hexbinRadiusMode": "NUM_HEXAGONS", 
+      "includeZero": true, 
+      "mapGridOptions": {
+        "gridLatDeg": 0.5, 
+        "gridLonDeg": 0.5
+      }, 
+      "mapOptions": {
+        "lockSquareGrid": false, 
+        "tilesLayer": "cartodb-positron"
+      }, 
+      "name": "Count by artist_simplified and song_simplified", 
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      }, 
+      "scatterOptions": {
+        "equalScales": false, 
+        "identityLine": false
+      }, 
+      "showLegend": true, 
+      "showXAxis": false, 
+      "sizeMeasure": [], 
+      "smoothing": true, 
+      "strokeWidth": 1, 
+      "tooltipMeasures": [], 
+      "type": "pivot_table", 
+      "uaColor": [], 
+      "uaShape": [], 
+      "uaSize": [], 
+      "uaTooltip": [], 
+      "uaXDimension": [], 
+      "uaYDimension": [], 
+      "useLiveProcessingIfAvailable": true, 
+      "userEditedName": false, 
+      "variant": "colored", 
+      "xAxisMode": "NORMAL", 
+      "xDimension": [
+        {
+          "column": "artist_simplified", 
+          "filters": [], 
+          "generateOthersCategory": false, 
+          "isA": "dimension", 
+          "maxValues": 10, 
+          "oneTickPerBin": false, 
+          "possibleSorts": [
+            {
+              "label": "Natural ordering", 
+              "sortAscending": true, 
+              "type": "NATURAL"
+            }, 
+            {
+              "label": "Count of records, descending", 
+              "measureIdx": 0, 
+              "type": "AGGREGATION"
+            }, 
+            {
+              "label": "Count of records, ascending", 
+              "measureIdx": 0, 
+              "sortAscending": true, 
+              "type": "AGGREGATION"
+            }
+          ], 
+          "sort": {
+            "label": "Count of records, descending", 
+            "measureIdx": 0, 
+            "type": "AGGREGATION"
+          }, 
+          "type": "ALPHANUM"
+        }
+      ], 
+      "xMeasure": [], 
+      "yAxisMode": "NORMAL", 
+      "yDimension": [
+        {
+          "column": "song_simplified", 
+          "filters": [], 
+          "generateOthersCategory": false, 
+          "isA": "dimension", 
+          "maxValues": 100, 
+          "oneTickPerBin": false, 
+          "possibleSorts": [
+            {
+              "label": "Natural ordering", 
+              "sortAscending": true, 
+              "type": "NATURAL"
+            }, 
+            {
+              "label": "Count of records, descending", 
+              "measureIdx": 0, 
+              "type": "AGGREGATION"
+            }, 
+            {
+              "label": "Count of records, ascending", 
+              "measureIdx": 0, 
+              "sortAscending": true, 
+              "type": "AGGREGATION"
+            }
+          ], 
+          "sort": {
+            "label": "Count of records, descending", 
+            "measureIdx": 0, 
+            "type": "AGGREGATION"
+          }, 
+          "type": "ALPHANUM"
+        }
+      ], 
+      "yMeasure": []
+    }, 
+    "engineType": "SQL", 
+    "refreshableSelection": {
+      "_refreshTrigger": 1, 
+      "autoRefreshSample": false, 
+      "selection": {
+        "filter": {
+          "distinct": false, 
+          "enabled": false
+        }, 
+        "latestPartitionsN": 1, 
+        "maxReadUncompressedBytes": -1, 
+        "maxRecords": -1, 
+        "partitionSelectionMethod": "ALL", 
+        "samplingMethod": "FULL", 
+        "targetRatio": 0.02, 
+        "useMemTable": false, 
+        "withinFirstN": -1
+      }
+    }
+  }, 
+  "tags": [], 
+  "type": "chart", 
+  "versionTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    }, 
+    "lastModifiedOn": 1508078493122, 
+    "versionNumber": 0
   }
 }

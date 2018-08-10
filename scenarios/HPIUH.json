@@ -1,62 +1,67 @@
 {
-  "projectKey": "JAM",
-  "id": "HPIUH",
-  "type": "custom_python",
-  "name": "hpiuh",
-  "active": false,
-  "versionTag": {
-    "versionNumber": 113,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1505051772762
-  },
+  "active": false, 
+  "automationLocal": false, 
   "checklists": {
     "checklists": []
-  },
-  "tags": [],
-  "triggers": [
-    {
-      "id": "etAEAlut",
-      "type": "temporal",
-      "name": "yhuy",
-      "delay": 0,
-      "active": false,
-      "params": {
-        "frequency": "Minutely",
-        "daysOfWeek": [],
-        "dayOfMonth": 0,
-        "minute": 0,
-        "hour": 0,
-        "count": 1
-      }
-    }
-  ],
+  }, 
+  "id": "HPIUH", 
+  "name": "hpiuh", 
+  "params": {}, 
+  "projectKey": "JAM", 
   "reporters": [
     {
-      "active": false,
+      "active": false, 
+      "id": "XNCyv4XX", 
       "messaging": {
-        "type": "mail-scenario",
         "configuration": {
-          "channelId": "TryAgain",
-          "subject": "DSS scenario ${scenarioName}: ${outcome}",
-          "sender": "sean.hanlon@dataiku.com",
-          "recipient": "sean.hanlon@dataiku.com",
-          "sendAsHTML": false,
-          "format": "TSV",
-          "attachLog": false,
-          "messageSource": "TEMPLATE_FILE",
-          "templateFormat": "FREEMARKER",
+          "attachLog": false, 
+          "attachments": [], 
+          "channelId": "TryAgain", 
+          "format": "TSV", 
+          "messageSource": "TEMPLATE_FILE", 
+          "recipient": "sean.hanlon@dataiku.com", 
+          "sendAsHTML": false, 
+          "sender": "sean.hanlon@dataiku.com", 
+          "subject": "DSS scenario ${scenarioName}: ${outcome}", 
+          "templateFormat": "FREEMARKER", 
           "templateName": "default.ftl"
-        }
-      },
-      "id": "XNCyv4XX",
-      "name": "nnnm",
-      "runConditionEnabled": true,
-      "runCondition": "",
-      "phase": "END"
+        }, 
+        "type": "mail-scenario"
+      }, 
+      "name": "nnnm", 
+      "phase": "END", 
+      "runCondition": "", 
+      "runConditionEnabled": true
     }
-  ],
-  "params": {},
-  "automationLocal": false
+  ], 
+  "tags": [], 
+  "triggers": [
+    {
+      "active": false, 
+      "delay": 0, 
+      "graceDelaySettings": {
+        "checkAgainAfterGraceDelay": false, 
+        "delay": 0
+      }, 
+      "id": "etAEAlut", 
+      "name": "yhuy", 
+      "params": {
+        "count": 1, 
+        "dayOfMonth": 0, 
+        "daysOfWeek": [], 
+        "frequency": "Minutely", 
+        "hour": 0, 
+        "minute": 0
+      }, 
+      "type": "temporal"
+    }
+  ], 
+  "type": "custom_python", 
+  "versionTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    }, 
+    "lastModifiedOn": 1505051772762, 
+    "versionNumber": 113
+  }
 }

@@ -1,213 +1,214 @@
 {
-  "joins": [
-    {
-      "table2": 1,
-      "table1": 0,
-      "conditionsMode": "AND",
-      "rightLimit": {
-        "decisionColumn": {}
-      },
-      "type": "LEFT",
-      "outerJoinOnTheLeft": true,
-      "on": [
-        {
-          "column1": {
-            "name": "artist2_0",
-            "table": 0
-          },
-          "dateDiffUnit": "DAY",
-          "column2": {
-            "name": "artist2_0",
-            "table": 1
-          },
-          "maxMatches": 1,
-          "caseInsensitive": false,
-          "maxDistance": 0,
-          "normalizeText": false,
-          "type": "EQ",
-          "strict": false
-        },
-        {
-          "column1": {
-            "name": "song",
-            "table": 0
-          },
-          "dateDiffUnit": "DAY",
-          "column2": {
-            "name": "song",
-            "table": 1
-          },
-          "maxMatches": 1,
-          "caseInsensitive": false,
-          "maxDistance": 0,
-          "normalizeText": false,
-          "type": "EQ",
-          "strict": false
-        }
-      ]
-    }
-  ],
-  "selectedColumns": [
-    {
-      "name": "artist",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "artist_0",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "artist2_0",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "artist_clean",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "artist_simplified",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "artist2_1",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "artist_1",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "date",
-      "type": "date",
-      "table": 0
-    },
-    {
-      "name": "aggregateall",
-      "type": "bigint",
-      "table": 0
-    },
-    {
-      "name": "year",
-      "type": "bigint",
-      "table": 0
-    },
-    {
-      "name": "month",
-      "type": "bigint",
-      "table": 0
-    },
-    {
-      "name": "week",
-      "type": "bigint",
-      "table": 0
-    },
-    {
-      "name": "rank",
-      "type": "bigint",
-      "table": 0
-    },
-    {
-      "name": "top10",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "number1",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "song",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "song_clean",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "song_simplified",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "artist_song_pairs",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "ranklastwk",
-      "type": "bigint",
-      "table": 0
-    },
-    {
-      "name": "ranktop",
-      "type": "bigint",
-      "table": 0
-    },
-    {
-      "name": "weeksonchart",
-      "type": "bigint",
-      "table": 0
-    },
-    {
-      "name": "decade",
-      "type": "string",
-      "table": 1
-    }
-  ],
+  "computedColumns": [], 
+  "enableAutoCastInJoinConditions": false, 
   "engineParams": {
     "hive": {
-      "skipPrerunValidate": false,
-      "hiveconf": [],
-      "inheritConf": "default",
-      "addDkuUdf": false,
-      "executionEngine": "HIVECLI_LOCAL"
-    },
+      "addDkuUdf": false, 
+      "executionEngine": "HIVECLI_LOCAL", 
+      "hiveconf": [], 
+      "inheritConf": "default", 
+      "skipPrerunValidate": false
+    }, 
     "impala": {
       "forceStreamMode": true
-    },
-    "lowerCaseSchemaIfEngineRequiresIt": true,
+    }, 
+    "lowerCaseSchemaIfEngineRequiresIt": true, 
     "sparkSQL": {
-      "pipelineAllowMerge": true,
-      "useGlobalMetastore": false,
-      "pipelineAllowStart": true,
+      "overwriteOutputSchema": false, 
+      "pipelineAllowMerge": true, 
+      "pipelineAllowStart": true, 
       "readParams": {
         "map": {}
-      },
-      "overwriteOutputSchema": false,
+      }, 
       "sparkConfig": {
-        "inheritConf": "default",
-        "conf": []
-      }
+        "conf": [], 
+        "inheritConf": "default"
+      }, 
+      "useGlobalMetastore": false
     }
-  },
+  }, 
+  "joins": [
+    {
+      "conditionsMode": "AND", 
+      "on": [
+        {
+          "caseInsensitive": false, 
+          "column1": {
+            "name": "artist2_0", 
+            "table": 0
+          }, 
+          "column2": {
+            "name": "artist2_0", 
+            "table": 1
+          }, 
+          "dateDiffUnit": "DAY", 
+          "maxDistance": 0, 
+          "maxMatches": 1, 
+          "normalizeText": false, 
+          "strict": false, 
+          "type": "EQ"
+        }, 
+        {
+          "caseInsensitive": false, 
+          "column1": {
+            "name": "song", 
+            "table": 0
+          }, 
+          "column2": {
+            "name": "song", 
+            "table": 1
+          }, 
+          "dateDiffUnit": "DAY", 
+          "maxDistance": 0, 
+          "maxMatches": 1, 
+          "normalizeText": false, 
+          "strict": false, 
+          "type": "EQ"
+        }
+      ], 
+      "outerJoinOnTheLeft": true, 
+      "rightLimit": {
+        "decisionColumn": {}
+      }, 
+      "table1": 0, 
+      "table2": 1, 
+      "type": "LEFT"
+    }
+  ], 
+  "postFilter": {}, 
+  "selectedColumns": [
+    {
+      "name": "artist", 
+      "table": 0, 
+      "type": "string"
+    }, 
+    {
+      "name": "artist_0", 
+      "table": 0, 
+      "type": "string"
+    }, 
+    {
+      "name": "artist2_0", 
+      "table": 0, 
+      "type": "string"
+    }, 
+    {
+      "name": "artist_clean", 
+      "table": 0, 
+      "type": "string"
+    }, 
+    {
+      "name": "artist_simplified", 
+      "table": 0, 
+      "type": "string"
+    }, 
+    {
+      "name": "artist2_1", 
+      "table": 0, 
+      "type": "string"
+    }, 
+    {
+      "name": "artist_1", 
+      "table": 0, 
+      "type": "string"
+    }, 
+    {
+      "name": "date", 
+      "table": 0, 
+      "type": "date"
+    }, 
+    {
+      "name": "aggregateall", 
+      "table": 0, 
+      "type": "bigint"
+    }, 
+    {
+      "name": "year", 
+      "table": 0, 
+      "type": "bigint"
+    }, 
+    {
+      "name": "month", 
+      "table": 0, 
+      "type": "bigint"
+    }, 
+    {
+      "name": "week", 
+      "table": 0, 
+      "type": "bigint"
+    }, 
+    {
+      "name": "rank", 
+      "table": 0, 
+      "type": "bigint"
+    }, 
+    {
+      "name": "top10", 
+      "table": 0, 
+      "type": "string"
+    }, 
+    {
+      "name": "number1", 
+      "table": 0, 
+      "type": "string"
+    }, 
+    {
+      "name": "song", 
+      "table": 0, 
+      "type": "string"
+    }, 
+    {
+      "name": "song_clean", 
+      "table": 0, 
+      "type": "string"
+    }, 
+    {
+      "name": "song_simplified", 
+      "table": 0, 
+      "type": "string"
+    }, 
+    {
+      "name": "artist_song_pairs", 
+      "table": 0, 
+      "type": "string"
+    }, 
+    {
+      "name": "ranklastwk", 
+      "table": 0, 
+      "type": "bigint"
+    }, 
+    {
+      "name": "ranktop", 
+      "table": 0, 
+      "type": "bigint"
+    }, 
+    {
+      "name": "weeksonchart", 
+      "table": 0, 
+      "type": "bigint"
+    }, 
+    {
+      "name": "decade", 
+      "table": 1, 
+      "type": "string"
+    }
+  ], 
   "virtualInputs": [
     {
+      "autoSelectColumns": false, 
+      "index": 0, 
       "preFilter": {
-        "distinct": false,
+        "distinct": false, 
         "enabled": false
-      },
-      "autoSelectColumns": false,
-      "index": 0
-    },
+      }
+    }, 
     {
+      "autoSelectColumns": false, 
+      "index": 1, 
       "preFilter": {
-        "distinct": false,
+        "distinct": false, 
         "enabled": false
-      },
-      "autoSelectColumns": false,
-      "index": 1
+      }
     }
-  ],
-  "postFilter": {},
-  "enableAutoCastInJoinConditions": false
+  ]
 }

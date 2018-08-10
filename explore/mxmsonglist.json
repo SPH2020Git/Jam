@@ -1,189 +1,192 @@
 {
-  "script": {
-    "steps": [],
-    "maxProcessedMemTableBytes": -1,
-    "columnsSelection": {
-      "mode": "ALL"
-    },
-    "coloring": {
-      "scheme": "MEANING_AND_STATUS",
-      "individualColumns": [],
-      "valueColoringMode": "HASH"
-    },
-    "sorting": [],
-    "analysisColumnData": {},
-    "explorationSampling": {
-      "selection": {
-        "maxStoredBytes": 104857600,
-        "filter": {
-          "distinct": false,
-          "enabled": false
-        },
-        "partitionSelectionMethod": "ALL",
-        "latestPartitionsN": 1,
-        "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 10000,
-        "targetRatio": 0.02,
-        "withinFirstN": -1,
-        "maxReadUncompressedBytes": -1
-      },
-      "autoRefreshSample": false,
-      "_refreshTrigger": 0
-    },
-    "vizSampling": {
-      "autoRefreshSample": false,
-      "_refreshTrigger": 0
-    },
-    "exploreUIParams": {},
-    "globalSearchQuery": "",
-    "explorationFilters": [],
-    "previewMode": "ALL_ROWS"
-  },
   "charts": [
     {
-      "copySelectionFromScript": false,
-      "engineType": "LINO",
-      "refreshableSelection": {
-        "selection": {
-          "useMemTable": false,
-          "filter": {
-            "distinct": false,
-            "enabled": false
-          },
-          "partitionSelectionMethod": "ALL",
-          "latestPartitionsN": 1,
-          "samplingMethod": "HEAD_SEQUENTIAL",
-          "maxRecords": 1000,
-          "targetRatio": 0.02,
-          "withinFirstN": -1,
-          "maxReadUncompressedBytes": -1
-        },
-        "autoRefreshSample": false,
-        "_refreshTrigger": 4
-      },
+      "copySelectionFromScript": false, 
       "def": {
-        "type": "grouped_columns",
-        "variant": "normal",
-        "name": "Avg. of count by artist_simplified",
-        "userEditedName": true,
-        "genericDimension0": [
-          {
-            "column": "artist_simplified",
-            "type": "ALPHANUM",
-            "maxValues": 10,
-            "generateOthersCategory": true,
-            "oneTickPerBin": false,
-            "filters": [],
-            "isA": "dimension",
-            "possibleSorts": [
-              {
-                "type": "NATURAL",
-                "label": "Natural ordering",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Average of count, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Average of count, ascending",
-                "sortAscending": true
-              }
-            ],
-            "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
-            }
-          }
-        ],
-        "genericDimension1": [],
-        "genericMeasures": [
-          {
-            "column": "count",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          }
-        ],
-        "xDimension": [],
-        "yDimension": [],
-        "uaXDimension": [],
-        "uaYDimension": [],
-        "uaSize": [],
-        "uaShape": [],
-        "uaColor": [],
-        "uaTooltip": [],
-        "groupDimension": [],
-        "xMeasure": [],
-        "yMeasure": [],
-        "colorMeasure": [],
-        "sizeMeasure": [],
-        "geometry": [],
-        "tooltipMeasures": [],
-        "boxplotBreakdownDim": [],
-        "boxplotValue": [],
+        "axis1LogScale": false, 
+        "axis2LogScale": false, 
+        "boxplotBreakdownDim": [], 
+        "boxplotValue": [], 
+        "bubblesOptions": {
+          "defaultRadius": 5.0, 
+          "singleShape": "FILLED_CIRCLE"
+        }, 
+        "colorMeasure": [], 
+        "colorOptions": {
+          "ccScaleMode": "NORMAL", 
+          "colorPalette": "default", 
+          "singleColor": "#659a88", 
+          "transparency": 0.75
+        }, 
+        "colorPaletteType": "LINEAR", 
+        "computeMode": "NORMAL", 
+        "disableSafetyLimits": false, 
         "filters": [
           {
-            "filterType": "ALPHANUM_FACET",
-            "column": "song_simplified",
-            "columnType": "ALPHANUM",
-            "isA": "filter",
-            "excludedValues": {},
-            "explicitExclude": false
+            "column": "song_simplified", 
+            "columnType": "ALPHANUM", 
+            "excludedValues": {}, 
+            "explicitExclude": false, 
+            "filterType": "ALPHANUM_FACET", 
+            "isA": "filter"
           }
-        ],
-        "axis1LogScale": false,
-        "axis2LogScale": false,
-        "includeZero": true,
-        "smoothing": true,
-        "showLegend": true,
-        "showXAxis": false,
-        "strokeWidth": 1,
-        "hexbinRadius": 20,
-        "hexbinNumber": 20,
-        "hexbinRadiusMode": "NUM_HEXAGONS",
-        "colorOptions": {
-          "singleColor": "#659a88",
-          "transparency": 0.75,
-          "colorPalette": "default",
-          "ccScaleMode": "NORMAL"
-        },
-        "colorPaletteType": "LINEAR",
-        "bubblesOptions": {
-          "defaultRadius": 5.0,
-          "singleShape": "FILLED_CIRCLE"
-        },
-        "computeMode": "NORMAL",
-        "xAxisMode": "NORMAL",
-        "yAxisMode": "NORMAL",
+        ], 
+        "genericDimension0": [
+          {
+            "column": "artist_simplified", 
+            "filters": [], 
+            "generateOthersCategory": true, 
+            "isA": "dimension", 
+            "maxValues": 10, 
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            }, 
+            "oneTickPerBin": false, 
+            "possibleSorts": [
+              {
+                "label": "Natural ordering", 
+                "sortAscending": true, 
+                "type": "NATURAL"
+              }, 
+              {
+                "label": "Average of count, descending", 
+                "measureIdx": 0, 
+                "type": "AGGREGATION"
+              }, 
+              {
+                "label": "Average of count, ascending", 
+                "measureIdx": 0, 
+                "sortAscending": true, 
+                "type": "AGGREGATION"
+              }
+            ], 
+            "sort": {
+              "label": "Natural ordering", 
+              "sortAscending": true, 
+              "type": "NATURAL"
+            }, 
+            "type": "ALPHANUM"
+          }
+        ], 
+        "genericDimension1": [], 
+        "genericMeasures": [
+          {
+            "column": "count", 
+            "computeMode": "NORMAL", 
+            "computeModeDim": 1, 
+            "displayAxis": "axis1", 
+            "displayType": "column", 
+            "displayed": true, 
+            "function": "AVG", 
+            "isA": "measure", 
+            "type": "NUMERICAL"
+          }
+        ], 
+        "geometry": [], 
+        "groupDimension": [], 
+        "hexbinNumber": 20, 
+        "hexbinRadius": 20, 
+        "hexbinRadiusMode": "NUM_HEXAGONS", 
+        "includeZero": true, 
+        "mapGridOptions": {
+          "gridLatDeg": 0.5, 
+          "gridLonDeg": 0.5
+        }, 
+        "mapOptions": {
+          "lockSquareGrid": false, 
+          "tilesLayer": "cartodb-positron"
+        }, 
+        "name": "Avg. of count by artist_simplified", 
         "pieOptions": {
           "donutHoleSize": 54.0
-        },
+        }, 
         "scatterOptions": {
-          "equalScales": false,
+          "equalScales": false, 
           "identityLine": false
-        },
-        "mapOptions": {
-          "tilesLayer": "cartodb-positron",
-          "lockSquareGrid": false
-        },
-        "mapGridOptions": {
-          "gridLonDeg": 0.5,
-          "gridLatDeg": 0.5
-        },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAjUlEQVRoge3POwqAMBAA0e0sPICdOZy1ncRjWRgEG72aTQQViyh+kmUG0ixLkidCROQzrZvXI/WQ/f2f1wOsPcDaA6w9wNpTA95BQvcAJ9RX4NB3Xr8PcMheKuCzpVszD97OjO07ERFjXfXYOxdngAEDBgwYMGDAgAEDBgz4U3DRjPlxVlo3RQcmIoq5BS1PMBSYQ7GRAAAAAElFTkSuQmCC",
-        "disableSafetyLimits": false,
-        "useLiveProcessingIfAvailable": true
+        }, 
+        "showLegend": true, 
+        "showXAxis": false, 
+        "sizeMeasure": [], 
+        "smoothing": true, 
+        "strokeWidth": 1, 
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAjUlEQVRoge3POwqAMBAA0e0sPICdOZy1ncRjWRgEG72aTQQViyh+kmUG0ixLkidCROQzrZvXI/WQ/f2f1wOsPcDaA6w9wNpTA95BQvcAJ9RX4NB3Xr8PcMheKuCzpVszD97OjO07ERFjXfXYOxdngAEDBgwYMGDAgAEDBgz4U3DRjPlxVlo3RQcmIoq5BS1PMBSYQ7GRAAAAAElFTkSuQmCC", 
+        "tooltipMeasures": [], 
+        "type": "grouped_columns", 
+        "uaColor": [], 
+        "uaShape": [], 
+        "uaSize": [], 
+        "uaTooltip": [], 
+        "uaXDimension": [], 
+        "uaYDimension": [], 
+        "useLiveProcessingIfAvailable": true, 
+        "userEditedName": true, 
+        "variant": "normal", 
+        "xAxisMode": "NORMAL", 
+        "xDimension": [], 
+        "xMeasure": [], 
+        "yAxisMode": "NORMAL", 
+        "yDimension": [], 
+        "yMeasure": []
+      }, 
+      "engineType": "LINO", 
+      "refreshableSelection": {
+        "_refreshTrigger": 4, 
+        "autoRefreshSample": false, 
+        "selection": {
+          "filter": {
+            "distinct": false, 
+            "enabled": false
+          }, 
+          "latestPartitionsN": 1, 
+          "maxReadUncompressedBytes": -1, 
+          "maxRecords": 1000, 
+          "partitionSelectionMethod": "ALL", 
+          "samplingMethod": "HEAD_SEQUENTIAL", 
+          "targetRatio": 0.02, 
+          "useMemTable": false, 
+          "withinFirstN": -1
+        }
       }
     }
-  ]
+  ], 
+  "script": {
+    "analysisColumnData": {}, 
+    "coloring": {
+      "individualColumns": [], 
+      "scheme": "MEANING_AND_STATUS", 
+      "valueColoringMode": "HASH"
+    }, 
+    "columnsSelection": {
+      "mode": "ALL"
+    }, 
+    "explorationFilters": [], 
+    "explorationSampling": {
+      "_refreshTrigger": 0, 
+      "autoRefreshSample": false, 
+      "selection": {
+        "filter": {
+          "distinct": false, 
+          "enabled": false
+        }, 
+        "latestPartitionsN": 1, 
+        "maxReadUncompressedBytes": -1, 
+        "maxRecords": 10000, 
+        "maxStoredBytes": 104857600, 
+        "partitionSelectionMethod": "ALL", 
+        "samplingMethod": "HEAD_SEQUENTIAL", 
+        "targetRatio": 0.02, 
+        "withinFirstN": -1
+      }
+    }, 
+    "exploreUIParams": {}, 
+    "globalSearchQuery": "", 
+    "maxProcessedMemTableBytes": -1, 
+    "previewMode": "ALL_ROWS", 
+    "sorting": [], 
+    "steps": [], 
+    "vizSampling": {
+      "_refreshTrigger": 0, 
+      "autoRefreshSample": false
+    }
+  }
 }
